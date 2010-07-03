@@ -1,4 +1,5 @@
-<!ENTITY PRODUCT "Documentation">
+<!ENTITY PRODUCT "BlazeBlogger">
+<!ENTITY VERSION "1.1.0">
 <!ENTITY BOOKID "User_Guide">
 <!ENTITY YEAR "2010">
-<!ENTITY HOLDER "| You need to change the HOLDER entity in the en-US/User_Guide.ent file |">
+<!ENTITY HOLDER "Jaromir Hradilek">
