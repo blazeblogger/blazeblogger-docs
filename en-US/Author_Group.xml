@@ -4,14 +4,10 @@
 %BOOK_ENTITIES;
 ]>
 <authorgroup>
-	<author>
-		<firstname>Dude</firstname>
-		<surname>McPants</surname>
-		<affiliation>
-			<orgname>Somewhere</orgname>
-			<orgdiv>Someone</orgdiv>
-		</affiliation>
-		<email>Dude.McPants@example.com</email>
-	</author>
+  <author>
+    <firstname>Jaromir</firstname>
+    <surname>Hradilek</surname>
+    <email>jhradilek@gmail.com</email>
+  </author>
 </authorgroup>
 
