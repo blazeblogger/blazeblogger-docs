@@ -12,7 +12,7 @@
   <pubsnumber>0</pubsnumber>
   <abstract>
     <para>
-      This book will help you obtain, install, and use &PRODUCT; &VERSION; for managing different kinds of websites without the need of database servers or a server side scripting. Furthermore, it contains useful tips on how to set up some additional tools, as well as a complete reference of all available commands.
+      This book will help you obtain, install, and use <application>&PRODUCT; &VERSION;</application> for managing different kinds of websites without the need of database servers or a server side scripting. Furthermore, it contains useful tips on how to set up some additional tools, as well as a complete reference of all available commands.
     </para>
   </abstract>
   <corpauthor>
