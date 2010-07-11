@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-User_Guide-Reference">
+  <title>Reference</title>
+  <para>
+    This chapter covers all available &PRODUCT; commands and their respective command line options.
+  </para>
+  <xi:include href="blaze-init.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="blaze-config.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="blaze-add.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="blaze-edit.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="blaze-remove.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="blaze-list.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="blaze-make.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="blaze-log.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+</chapter>

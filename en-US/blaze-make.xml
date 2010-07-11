@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<section id="sect-User_Guide-Reference-make">
+  <title><command>blaze-make</command></title>
+  <indexterm>
+    <primary>commands</primary>
+    <secondary>core utilities</secondary>
+    <tertiary><command>blaze-make</command></tertiary>
+  </indexterm>
+  <para>
+    <command>blaze-make</command>.
+  </para>
+  <section id="sect-User_Guide-Reference-make-Synopsis">
+    <title>Synopsis</title>
+    <screen><command>blaze-make</command></screen>
+  </section>
+  <section id="sect-User_Guide-Reference-make-Description">
+    <title>Description</title>
+    <para>
+      Hic sunt leones.
+    </para>
+  </section>
+  <section id="sect-User_Guide-Reference-make-Options">
+    <title>Options</title>
+    <variablelist>
+      <varlistentry>
+        <term><command>-h</command>, <command>--help</command></term>
+        <listitem>
+          <para>
+            Displays usage information and exits.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><command>-v</command>, <command>--version</command></term>
+        <listitem>
+          <para>
+            Displays version information and exits.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </section>
+  <section id="sect-User_Guide-Reference-make-Example">
+    <title>Example Usage</title>
+    <para>
+      Hic sunt leones.
+    </para>
+  </section>
+  <section id="sect-User_Guide-Reference-make-See">
+    <title>See Also</title>
+    <para>
+      Hic sunt leones.
+    </para>
+  </section>
+</section>
