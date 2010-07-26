@@ -5,40 +5,320 @@
 ]>
 <section id="sect-User_Guide-Reference-config">
   <title><command>blaze-config</command></title>
+  <indexterm significance="preferred">
+    <primary><command>blaze-config</command></primary>
+  </indexterm>
   <indexterm>
-    <primary>commands</primary>
-    <secondary>core utilities</secondary>
-    <tertiary><command>blaze-config</command></tertiary>
+    <primary><command>config</command></primary>
+    <see><command>blaze-config</command></see>
   </indexterm>
   <para>
-    <command>blaze-config</command>.
+    <command>blaze-config</command> displays or sets &PRODUCT; configuration options.
   </para>
   <section id="sect-User_Guide-Reference-config-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-config</command></screen>
+    <screen><command>blaze-config</command> [<option>-qV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-E</option> <replaceable>editor</replaceable>] <replaceable>option</replaceable> [<replaceable>value...</replaceable>]
+
+<command>blaze-config</command> <option>-e</option> [<option>-b</option> <replaceable>directory</replaceable>]
+
+<command>blaze-config</command> <option>-h</option>|<option>-v</option></screen>
   </section>
   <section id="sect-User_Guide-Reference-config-Description">
     <title>Description</title>
     <para>
-      Hic sunt leones.
+      <command>blaze-config</command> either sets &PRODUCT; configuration options, or displays their current value. Additionally, it can also open a configuration file in a an external text editor.
     </para>
   </section>
   <section id="sect-User_Guide-Reference-config-Options">
     <title>Options</title>
+    <section id="sect-User_Guide-Reference-config-Options-Command_Line">
+      <title>Command Line Options</title>
+      <variablelist>
+        <varlistentry>
+          <term><option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable></term>
+          <listitem>
+            <para>
+              Enables you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>-E</option> <replaceable>editor</replaceable>, <option>--editor</option> <replaceable>editor</replaceable></term>
+          <listitem>
+            <para>
+              Enables you to specify an external text <replaceable>editor</replaceable>. When supplied, this option overrides the relevant configuration option.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>-e</option>, <option>--edit</option></term>
+          <listitem>
+            <para>
+              Enables you to edit the configuration in a text editor.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>-q</option>, <option>--quiet</option></term>
+          <listitem>
+            <para>
+              Disables displaying of unnecessary messages.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>-V</option>, <option>--verbose</option></term>
+          <listitem>
+            <para>
+              Enables displaying of all messages. This is the default option.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>-h</option>, <option>--help</option></term>
+          <listitem>
+            <para>
+              Displays usage information and exits.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>-v</option>, <option>--version</option></term>
+          <listitem>
+            <para>
+              Displays version information and exits.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
+    <section id="sect-User_Guide-Reference-config-Options-Configuration">
+      <title>Configuration Options</title>
+      <variablelist>
+        <varlistentry>
+          <term><option>blog.title=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A title of your blog.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>blog.subtitle=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A subtitle of your blog.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>blog.theme=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A theme for your blog. Note that it must point to an existing file in the <filename class="directory">.blaze/theme/</filename> directory. The default option is <literal>default.html</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>blog.style=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A style sheet for your blog. Note that it must point to an existing file in the <filename class="directory">.blaze/style/</filename> directory. The default option is <literal>default.css</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>blog.lang=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A translation of your blog. Note that it must point to an existing file in the <filename class="directory">.blaze/lang/</filename> directory. The default option is <literal>en_US</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>blog.posts=<replaceable>integer</replaceable></option></term>
+          <listitem>
+            <para>
+              A number of blog posts to be listed on a single page. The default option is <literal>10</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>color.list=<replaceable>boolean</replaceable></option></term>
+          <listitem>
+            <para>
+              A boolean to enable (<literal>true</literal>) or disable (<literal>false</literal>) colors in the <command>blaze-list</command> output. The default option is <literal>false</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>color.log=<replaceable>boolean</replaceable></option></term>
+          <listitem>
+            <para>
+              A boolean to enable (<literal>true</literal>) or disable (<literal>false</literal>) colors in the <command>blaze-log</command> output. The default option is <literal>false</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>core.doctype=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A document type. It can be either <literal>html</literal> for HTML, or <literal>xhtml</literal> for the XHTML standard. The default option is <literal>html</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>core.extension=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A file extension. The default option is <literal>html</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>core.encoding=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A character encoding. Note that it has to be in a form that is recognized by <acronym>W3C</acronym> standards. The default option is <literal>UTF-8</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>core.editor=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              An external text editor. When supplied, this option overrides the system-wide settings.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>core.processor=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              An external application to be used to process newly added or edited blog posts and pages. Note that you must supply <literal>%in%</literal> and <literal>%out%</literal> in place of an input and output file name respectively. This option is disabled by default.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>feed.baseurl=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A <acronym>URL</acronym> of your blog, for example <literal>http://example.com</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>feed.posts=<replaceable>integer</replaceable></option></term>
+          <listitem>
+            <para>
+              A number of blog posts to be listed in the feed. The default option is <literal>10</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>feed.fullposts=<replaceable>boolean</replaceable></option></term>
+          <listitem>
+            <para>
+              A boolean to enable (<literal>true</literal>) or disable (<literal>false</literal>) inclusion of the whole content of a blog post in the feed. The default option is <literal>false</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>post.author=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A location of a blog post author name, as it can either be placed above the post (<literal>top</literal>), below it (<literal>bottom</literal>), or nowhere on the page (<literal>none</literal>). The default option is <literal>top</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>post.date=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A location of a date of publishing, as it can either be placed above the post (<literal>top</literal>), below it (<literal>bottom</literal>), or nowhere on the page (<literal>none</literal>). The default option is <literal>top</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>post.tags=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A location of post tags, as they can either be placed above the post (<literal>top</literal>), below it (<literal>bottom</literal>), or nowhere on the page (<literal>none</literal>). The default option is <literal>top</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>user.name=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              Your full name to be used in the copyright notice, and as the default post author. The default option is <literal>admin</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>user.nickname=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              Your nickname to be used as the default value in the author field of a new post. When supplied, this option overrides the <option>user.name</option> setting. This option is disabled by default.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>user.email=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              Your email address. The default option is <literal>admin@localhost</literal>.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
+  </section>
+  <section id="sect-User_Guide-Reference-config-Environment">
+    <title>Environment Variables</title>
     <variablelist>
       <varlistentry>
-        <term><command>-h</command>, <command>--help</command></term>
+        <term><varname>EDITOR</varname></term>
         <listitem>
           <para>
-            Displays usage information and exits.
+            Unless the <option>core.editor</option> option is set, &PRODUCT; tries to use system-wide settings to decide which editor to use.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </section>
+  <section id="sect-User_Guide-Reference-config-Files">
+    <title>Files</title>
+    <variablelist>
+      <varlistentry>
+        <term><filename>.blaze/config</filename></term>
+        <listitem>
+          <para>
+            A file containing the configuration.
           </para>
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><command>-v</command>, <command>--version</command></term>
+        <term><filename class="directory">.blaze/theme/</filename></term>
         <listitem>
           <para>
-            Displays version information and exits.
+            A directory containing blog themes.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><filename class="directory">.blaze/style/</filename></term>
+        <listitem>
+          <para>
+            A directory containing style sheets.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><filename class="directory">.blaze/lang/</filename></term>
+        <listitem>
+          <para>
+            A directory containing language files.
           </para>
         </listitem>
       </varlistentry>
@@ -46,14 +326,66 @@
   </section>
   <section id="sect-User_Guide-Reference-config-Example">
     <title>Example Usage</title>
-    <para>
-      Hic sunt leones.
-    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          Configure the default text editor:
+        </para>
+        <screen>~]$ <command>blaze-config core.editor nano</command>
+The option has been successfully saved.</screen>
+      </listitem>
+      <listitem>
+        <para>
+          Configure the user information:
+        </para>
+        <screen>~]$ <command>blaze-config user.name Jaromir Hradilek</command>
+The option has been successfully saved.
+~]$ <command>blaze-config user.email jhradilek@gmail.com</command>
+The option has been successfully saved.</screen>
+      </listitem>
+      <listitem>
+        <para>
+          Configure the blog appearance:
+        </para>
+        <screen>~]$ <command>blaze-config blog.title BlazeBlogger</command>
+The option has been successfully saved.
+~]$ <command>blaze-config blog.subtitle a CMS without boundaries</command>
+The option has been successfully saved.
+~]$ <command>blaze-config blog.theme keepitsimple.html</command>
+The option has been successfully saved.
+~]$ <command>blaze-config blog.style keepitsimple.css</command>
+The option has been successfully saved.</screen>
+      </listitem>
+      <listitem>
+        <para>
+          Configure the RSS feed:
+        </para>
+        <screen>~]$ <command>blaze-config feed.fullposts true</command>
+The option has been successfully saved.
+~]$ <command>blaze-config feed.posts 10</command>
+The option has been successfully saved.
+~]$ <command>blaze-config feed.baseurl http://blaze.blackened.cz/</command>
+The option has been successfully saved.</screen>
+      </listitem>
+      <listitem>
+        <para>
+          Open the configuration in a text editor:
+        </para>
+        <screen>~]$ <command>blaze-config -e</command></screen>
+      </listitem>
+    </itemizedlist>
   </section>
   <section id="sect-User_Guide-Reference-config-See">
     <title>See Also</title>
-    <para>
-      Hic sunt leones.
-    </para>
+    <variablelist>
+      <varlistentry>
+        <term><xref linkend="sect-User_Guide-Reference-init" /></term>
+        <listitem>
+          <para>
+            <command>blaze-init</command> creates a &PRODUCT; repostory, or recovers a previously corrupted one.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
   </section>
 </section>
