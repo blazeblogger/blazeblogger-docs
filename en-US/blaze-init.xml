@@ -5,29 +5,65 @@
 ]>
 <section id="sect-User_Guide-Reference-init">
   <title><command>blaze-init</command></title>
+  <indexterm significance="preferred">
+    <primary><command>blaze-init</command></primary>
+  </indexterm>
   <indexterm>
-    <primary>commands</primary>
-    <secondary>core utilities</secondary>
-    <tertiary><command>blaze-init</command></tertiary>
+    <primary><command>init</command></primary>
+    <see><command>blaze-init</command></see>
   </indexterm>
   <para>
-    <command>blaze-init</command>.
+    <command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one.
   </para>
   <section id="sect-User_Guide-Reference-init-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-init</command></screen>
+    <screen><command>blaze-init</command> [<option>-fqV</option>] [<option>-b</option> <replaceable>directory</replaceable>]
+
+<command>blaze-init</command> <option>-h</option>|<option>-v</option></screen>
   </section>
   <section id="sect-User_Guide-Reference-init-Description">
     <title>Description</title>
     <para>
-      Hic sunt leones.
+      <command>blaze-init</command> either creates a fresh new &PRODUCT; repository, or recovers an existing one in case it is corrupted. Optionally, it can also revert a configuration and default templates to their original state, leaving all user data (that is, both blog posts and pages) intact. 
     </para>
   </section>
   <section id="sect-User_Guide-Reference-init-Options">
     <title>Options</title>
     <variablelist>
       <varlistentry>
-        <term><command>-h</command>, <command>--help</command></term>
+        <term><option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable></term>
+        <listitem>
+          <para>
+            Enables you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is to be blaced. The default option is a current working directory.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-f</option>, <option>--force</option></term>
+        <listitem>
+          <para>
+            Tells <command>blaze-init</command> to revert existing configuration, theme, and language files to their initial state. By default, these files are kept intact.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-q</option>, <option>--quiet</option></term>
+        <listitem>
+          <para>
+            Disables displaying of unnecessary messages.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-V</option>, <option>--verbose</option></term>
+        <listitem>
+          <para>
+            Enables displaying of all messages, including a list of created files.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-h</option>, <option>--help</option></term>
         <listitem>
           <para>
             Displays usage information and exits.
@@ -35,7 +71,7 @@
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><command>-v</command>, <command>--version</command></term>
+        <term><option>-v</option>, <option>--version</option></term>
         <listitem>
           <para>
             Displays version information and exits.
@@ -46,14 +82,58 @@
   </section>
   <section id="sect-User_Guide-Reference-init-Example">
     <title>Example Usage</title>
-    <para>
-      Hic sunt leones.
-    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          Create a new blog in a current directory:
+        </para>
+        <screen>~]$ <command>blaze-init</command>
+Created a BlazeBlogger repository in .blaze.</screen>
+      </listitem>
+      <listitem>
+        <para>
+          Create a new blog in <filename class="directory">~/public_html</filename>:
+        </para>
+        <screen>~]$ <command>blaze-init -b ~/public_html</command>
+Created a BlazeBlogger repository in /home/jhradilek/public_html/.blaze.</screen>
+      </listitem>
+      <listitem>
+        <para>
+          Revert a configuration file and default templates to their initial state:
+        </para>
+        <screen>~]$ <command>blaze-init -f</command>
+Recovered a BlazeBlogger repository in .blaze.</screen>
+        <para>
+          Or if you want to see what files have been reverted:
+        </para>
+        <screen>~]$ <command>blaze-init -fV</command>
+Created .blaze/config
+Created .blaze/theme/default.html
+Created .blaze/style/default.css
+Created .blaze/lang/en_US
+Recovered a BlazeBlogger repository in .blaze.</screen>
+      </listitem>
+    </itemizedlist>
   </section>
   <section id="sect-User_Guide-Reference-init-See">
     <title>See Also</title>
-    <para>
-      Hic sunt leones.
-    </para>
+    <variablelist>
+      <varlistentry>
+        <term><xref linkend="sect-User_Guide-Reference-config" /></term>
+        <listitem>
+          <para>
+            <command>blaze-config</command> displays or sets &PRODUCT; configuration options.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-User_Guide-Reference-add" /></term>
+        <listitem>
+          <para>
+            <command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
   </section>
 </section>
