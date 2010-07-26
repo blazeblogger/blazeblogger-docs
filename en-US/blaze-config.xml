@@ -26,7 +26,7 @@
   <section id="sect-User_Guide-Reference-config-Description">
     <title>Description</title>
     <para>
-      <command>blaze-config</command> either sets &PRODUCT; configuration options, or displays their current value. Additionally, it can also open a configuration file in a an external text editor.
+      <command>blaze-config</command> either sets &PRODUCT; configuration options, or displays their current value. Additionally, it can also open a configuration file in an external text editor.
     </para>
   </section>
   <section id="sect-User_Guide-Reference-config-Options">
@@ -382,7 +382,7 @@ The option has been successfully saved.</screen>
         <term><xref linkend="sect-User_Guide-Reference-init" /></term>
         <listitem>
           <para>
-            <command>blaze-init</command> creates a &PRODUCT; repostory, or recovers a previously corrupted one.
+            <command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one.
           </para>
         </listitem>
       </varlistentry>

@@ -198,7 +198,7 @@ Done.</screen>
         <term><xref linkend="sect-User_Guide-Reference-init" /></term>
         <listitem>
           <para>
-            <command>blaze-init</command> creates a &PRODUCT; repostory, or recovers a previously corrupted one.
+            <command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one.
           </para>
         </listitem>
       </varlistentry>
