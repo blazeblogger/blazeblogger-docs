@@ -5,29 +5,97 @@
 ]>
 <section id="sect-User_Guide-Reference-log">
   <title><command>blaze-log</command></title>
+  <indexterm significance="preferred">
+    <primary><command>blaze-log</command></primary>
+  </indexterm>
   <indexterm>
-    <primary>commands</primary>
-    <secondary>core utilities</secondary>
-    <tertiary><command>blaze-log</command></tertiary>
+    <primary><command>log</command></primary>
+    <see><command>blaze-log</command></see>
   </indexterm>
   <para>
-    <command>blaze-log</command>.
+    <command>blaze-log</command> displays the &PRODUCT; repository log.
   </para>
   <section id="sect-User_Guide-Reference-log-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-log</command></screen>
+    <screen><command>blaze-log</command> [<option>-cqrsCV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-n</option> <replaceable>number</replaceable>]
+
+<command>blaze-log</command> <option>-h</option>|<option>-v</option></screen>
   </section>
   <section id="sect-User_Guide-Reference-log-Description">
     <title>Description</title>
     <para>
-      Hic sunt leones.
+      <command>blaze-log</command> displays the content of the &PRODUCT; repository log.
     </para>
   </section>
   <section id="sect-User_Guide-Reference-log-Options">
     <title>Options</title>
     <variablelist>
       <varlistentry>
-        <term><command>-h</command>, <command>--help</command></term>
+        <term><option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable></term>
+        <listitem>
+          <para>
+            Enables you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-n</option> <replaceable>number</replaceable>, <option>--number</option> <replaceable>number</replaceable></term>
+        <listitem>
+          <para>
+            Enables you to specify a <replaceable>number</replaceable> of log entries to be listed.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-s</option>, <option>--short</option></term>
+        <listitem>
+          <para>
+            Tells <command>blaze-log</command> to display each log entry on a single line.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-r</option>, <option>--reverse</option></term>
+        <listitem>
+          <para>
+            Tells <command>blaze-log</command> to display log entries in reverse order.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-c</option>, <option>--color</option></term>
+        <listitem>
+          <para>
+            Enables colored output. When supplied, this option overrides the relevant configuration option.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-C</option>, <option>--no-color</option></term>
+        <listitem>
+          <para>
+            Disables colored output. When supplied, this option overrides the relevant configuration option.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-q</option>, <option>--quiet</option></term>
+        <listitem>
+          <para>
+            Disables displaying of unnecessary messages.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-V</option>, <option>--verbose</option></term>
+        <listitem>
+          <para>
+            Enables displaying of all messages. This is the default option.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-h</option>, <option>--help</option></term>
         <listitem>
           <para>
             Displays usage information and exits.
@@ -35,7 +103,7 @@
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><command>-v</command>, <command>--version</command></term>
+        <term><option>-v</option>, <option>--version</option></term>
         <listitem>
           <para>
             Displays version information and exits.
@@ -44,16 +112,80 @@
       </varlistentry>
     </variablelist>
   </section>
+  <section id="sect-User_Guide-Reference-log-Files">
+    <title>Files</title>
+    <variablelist>
+      <varlistentry>
+        <term><filename>.blaze/log</filename></term>
+        <listitem>
+          <para>
+            A file containing the repository log.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </section>
   <section id="sect-User_Guide-Reference-log-Example">
     <title>Example Usage</title>
-    <para>
-      Hic sunt leones.
-    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          List the whole repository history:
+        </para>
+        <screen>~]$ <command>blaze-log</command>
+Date: Sun Jul 25 16:48:22 2010
+
+    Edited the page with ID 5.
+
+Date: Tue Jul  6 18:54:59 2010
+
+    Edited the page with ID 5.
+
+<emphasis>etc.</emphasis></screen>
+      </listitem>
+      <listitem>
+        <para>
+          List the whole repository history in reverse order:
+        </para>
+        <screen>~]$ <command>blaze-log -r</command>
+Date: Tue Feb 10 00:40:16 2009
+
+    Created/recovered a BlazeBlogger repository.
+
+Date: Tue Feb 10 01:06:44 2009
+
+    Added the page with ID 1.
+
+<emphasis>etc.</emphasis></screen>
+      </listitem>
+      <listitem>
+        <para>
+          Display the very first log entry on a single line:
+        </para>
+        <screen>~]$ <command>blaze-log -rs -n 1</command>
+Tue Feb 10 00:40:16 2009 - Created/recovered a BlazeBlogger repository.</screen>
+      </listitem>
+    </itemizedlist>
   </section>
   <section id="sect-User_Guide-Reference-log-See">
     <title>See Also</title>
-    <para>
-      Hic sunt leones.
-    </para>
+    <variablelist>
+      <varlistentry>
+        <term><xref linkend="sect-User_Guide-Reference-init" /></term>
+        <listitem>
+          <para>
+            <command>blaze-init</command> creates a &PRODUCT; repostory, or recovers a previously corrupted one.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-User_Guide-Reference-config" /></term>
+        <listitem>
+          <para>
+            <command>blaze-config</command> displays or sets &PRODUCT; configuration options.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
   </section>
 </section>
