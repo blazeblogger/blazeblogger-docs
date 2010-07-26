@@ -5,29 +5,89 @@
 ]>
 <section id="sect-User_Guide-Reference-remove">
   <title><command>blaze-remove</command></title>
+  <indexterm significance="preferred">
+    <primary><command>blaze-remove</command></primary>
+  </indexterm>
   <indexterm>
-    <primary>commands</primary>
-    <secondary>core utilities</secondary>
-    <tertiary><command>blaze-remove</command></tertiary>
+    <primary><command>remove</command></primary>
+    <see><command>blaze-remove</command></see>
   </indexterm>
   <para>
-    <command>blaze-remove</command>.
+    <command>blaze-remove</command> removes a blog post or a page from the &PRODUCT; repository.
   </para>
   <section id="sect-User_Guide-Reference-remove-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-remove</command></screen>
+    <screen><command>blaze-remove</command> [<option>-fipqPV</option>] [<option>-b</option> <replaceable>directory</replaceable>] <replaceable>id...</replaceable>
+
+<command>blaze-remove</command> <option>-h</option>|<option>-v</option></screen>
   </section>
   <section id="sect-User_Guide-Reference-remove-Description">
     <title>Description</title>
     <para>
-      Hic sunt leones.
+      <command>blaze-remove</command> removes a blog post or a page with the specified <replaceable>id</replaceable> from the &PRODUCT; repository.
     </para>
   </section>
   <section id="sect-User_Guide-Reference-remove-Options">
     <title>Options</title>
     <variablelist>
       <varlistentry>
-        <term><command>-h</command>, <command>--help</command></term>
+        <term><option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable></term>
+        <listitem>
+          <para>
+            Enables you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-p</option>, <option>--page</option>, <option>--pages</option></term>
+        <listitem>
+          <para>
+            Tells <command>blaze-remove</command> to remove a page or pages.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-P</option>, <option>--post</option>, <option>--posts</option></term>
+        <listitem>
+          <para>
+            Tells <command>blaze-remove</command> to remove a blog post or blog posts. This is the default option.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-f</option>, <option>--force</option></term>
+        <listitem>
+          <para>
+            Disables requiring manual confirmation of each blog post or page removal. This is the default option.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-i</option>, <option>--interactive</option></term>
+        <listitem>
+          <para>
+            Enables requiring manual confirmation of each blog post or page removal.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-q</option>, <option>--quiet</option></term>
+        <listitem>
+          <para>
+            Disables displaying of unnecessary messages.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-V</option>, <option>--verbose</option></term>
+        <listitem>
+          <para>
+            Enables displaying of all messages. This is the default option.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-h</option>, <option>--help</option></term>
         <listitem>
           <para>
             Displays usage information and exits.
@@ -35,7 +95,7 @@
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><command>-v</command>, <command>--version</command></term>
+        <term><option>-v</option>, <option>--version</option></term>
         <listitem>
           <para>
             Displays version information and exits.
@@ -46,14 +106,67 @@
   </section>
   <section id="sect-User_Guide-Reference-remove-Example">
     <title>Example Usage</title>
-    <para>
-      Hic sunt leones.
-    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          Remove a blog post:
+        </para>
+        <screen>~]$ <command>blaze-remove 10</command>
+Successfully removed the post with ID 10.</screen>
+      </listitem>
+      <listitem>
+        <para>
+          Remove a page:
+        </para>
+        <screen>~]$ <command>blaze-remove -p 4</command>
+Successfully removed the page with ID 4.</screen>
+      </listitem>
+      <listitem>
+        <para>
+          Remove multiple blog posts:
+        </para>
+        <screen>~]$ <command>blaze-remove 10 4 6</command>
+Successfully removed the post with ID 10, 4 and 6.</screen>
+      </listitem>
+      <listitem>
+        <para>
+          Remove multiple blog posts safely:
+        </para>
+        <screen>~]$ <command>blaze-remove -i 10 4 6</command>
+Remove the post with ID 10 titled `Debian and Fedora Packages'? <userinput>y</userinput>
+Remove the post with ID 4 titled `BlazeBlogger 0.8.0 RC2'? <userinput>y</userinput>
+Remove the post with ID 6 titled `BlazeBlogger 0.8.1'? <userinput>y</userinput>
+Successfully removed the post with ID 10, 4 and 6.</screen>
+      </listitem>
+    </itemizedlist>
   </section>
   <section id="sect-User_Guide-Reference-remove-See">
     <title>See Also</title>
-    <para>
-      Hic sunt leones.
-    </para>
+    <variablelist>
+      <varlistentry>
+        <term><xref linkend="sect-User_Guide-Reference-config" /></term>
+        <listitem>
+          <para>
+            <command>blaze-config</command> displays or sets &PRODUCT; configuration options.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-User_Guide-Reference-add" /></term>
+        <listitem>
+          <para>
+            <command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-User_Guide-Reference-list" /></term>
+        <listitem>
+          <para>
+            <command>blaze-list</command> lists blog posts or pages in the &PRODUCT; repository.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
   </section>
 </section>
