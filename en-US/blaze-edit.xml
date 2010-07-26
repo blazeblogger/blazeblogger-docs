@@ -5,29 +5,155 @@
 ]>
 <section id="sect-User_Guide-Reference-edit">
   <title><command>blaze-edit</command></title>
+  <indexterm significance="preferred">
+    <primary><command>blaze-edit</command></primary>
+  </indexterm>
   <indexterm>
-    <primary>commands</primary>
-    <secondary>core utilities</secondary>
-    <tertiary><command>blaze-edit</command></tertiary>
+    <primary><command>edit</command></primary>
+    <see><command>blaze-edit</command></see>
   </indexterm>
   <para>
-    <command>blaze-edit</command>.
+    <command>blaze-edit</command> edits a blog post or a page in the &PRODUCT; repository.
   </para>
   <section id="sect-User_Guide-Reference-edit-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-edit</command></screen>
+    <screen><command>blaze-edit</command> [<option>-fpqCPV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-E</option> <replaceable>editor</replaceable>] <replaceable>id</replaceable>
+
+<command>blaze-edit</command> <option>-h</option>|<option>-v</option></screen>
   </section>
   <section id="sect-User_Guide-Reference-edit-Description">
     <title>Description</title>
     <para>
-      Hic sunt leones.
+      <command>blaze-edit</command> opens an existing blog post or a page with the specified <replaceable>id</replaceable> in an external text editor. Note that there are several special forms and placeholders that can be used in the text, and that will be replaced with a proper data when the blog is generated.
     </para>
+    <section id="sect-User_Guide-Reference-edit-Description-Special_Forms">
+      <title>Special Forms</title>
+      <variablelist>
+        <varlistentry>
+          <term><command>&lt;!-- break --&gt;</command></term>
+          <listitem>
+            <para>
+              A mark to delimit a blog post synopsis.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
+    <section id="sect-User_Guide-Reference-edit-Description-Placeholders">
+      <title>Placeholders</title>
+      <variablelist>
+        <varlistentry>
+          <term><command>%root%</command></term>
+          <listitem>
+            <para>
+              A relative path to the root directory of the blog.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><command>%home%</command></term>
+          <listitem>
+            <para>
+              A relative path to the index page of the blog.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><command>%page[<replaceable>id</replaceable>]%</command></term>
+          <listitem>
+            <para>
+              A relative path to a page with the supplied <replaceable>id</replaceable>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><command>%post[<replaceable>id</replaceable>]%</command></term>
+          <listitem>
+            <para>
+              A relative path to a blog post with the supplied <replaceable>id</replaceable>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><command>%tag[<replaceable>name</replaceable>]%</command></term>
+          <listitem>
+            <para>
+              A relative path to a tag with the supplied <replaceable>name</replaceable>.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
   </section>
   <section id="sect-User_Guide-Reference-edit-Options">
     <title>Options</title>
     <variablelist>
       <varlistentry>
-        <term><command>-h</command>, <command>--help</command></term>
+        <term><option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable></term>
+        <listitem>
+          <para>
+            Enables you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-E</option> <replaceable>editor</replaceable>, <option>--editor</option> <replaceable>editor</replaceable></term>
+        <listitem>
+          <para>
+            Enables you to specify an external text <replaceable>editor</replaceable>. When supplied, this option overrides the relevant configuration option.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-p</option>, <option>--page</option></term>
+        <listitem>
+          <para>
+            Tells <command>blaze-edit</command> to edit a page or pages.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-P</option>, <option>--post</option></term>
+        <listitem>
+          <para>
+            Tells <command>blaze-edit</command> to edit a blog post or blog posts. This is the default option.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-f</option>, <option>--force</option></term>
+        <listitem>
+          <para>
+            Tells <command>blaze-edit</command> to create an empty source file in case it does not already exist. If the <option>core.processor</option> option is enabled, this file is used as the input to be processed by the selected application.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-C</option>, <option>--no-processor</option></term>
+        <listitem>
+          <para>
+            Disables processing a blog post or page with an external application.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-q</option>, <option>--quiet</option></term>
+        <listitem>
+          <para>
+            Disables displaying of unnecessary messages.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-V</option>, <option>--verbose</option></term>
+        <listitem>
+          <para>
+            Enables displaying of all messages. This is the default option.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-h</option>, <option>--help</option></term>
         <listitem>
           <para>
             Displays usage information and exits.
@@ -35,7 +161,7 @@
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><command>-v</command>, <command>--version</command></term>
+        <term><option>-v</option>, <option>--version</option></term>
         <listitem>
           <para>
             Displays version information and exits.
@@ -44,16 +170,69 @@
       </varlistentry>
     </variablelist>
   </section>
+  <section id="sect-User_Guide-Reference-edit-Environment">
+    <title>Environment Variables</title>
+    <variablelist>
+      <varlistentry>
+        <term><varname>EDITOR</varname></term>
+        <listitem>
+          <para>
+            Unless the <option>core.editor</option> option is set, &PRODUCT; tries to use system-wide settings to decide which editor to use.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </section>
   <section id="sect-User_Guide-Reference-edit-Example">
     <title>Example Usage</title>
-    <para>
-      Hic sunt leones.
-    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          Edit a blog post in an external text editor:
+        </para>
+        <screen>~]$ <command>blaze-edit 10</command></screen>
+      </listitem>
+      <listitem>
+        <para>
+          Edit a page in an external text editor:
+        </para>
+        <screen>~]$ <command>blaze-edit -p 4</command></screen>
+      </listitem>
+      <listitem>
+        <para>
+          Edit a page in <application>nano</application>:
+        </para>
+        <screen>~]$ <command>blaze-edit -p 2 -E nano</command></screen>
+      </listitem>
+    </itemizedlist>
   </section>
   <section id="sect-User_Guide-Reference-edit-See">
     <title>See Also</title>
-    <para>
-      Hic sunt leones.
-    </para>
+    <variablelist>
+      <varlistentry>
+        <term><xref linkend="sect-User_Guide-Reference-config" /></term>
+        <listitem>
+          <para>
+            <command>blaze-config</command> displays or sets &PRODUCT; configuration options.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-User_Guide-Reference-add" /></term>
+        <listitem>
+          <para>
+            <command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-User_Guide-Reference-list" /></term>
+        <listitem>
+          <para>
+            <command>blaze-list</command> lists blog posts or pages in the &PRODUCT; repository.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
   </section>
 </section>
