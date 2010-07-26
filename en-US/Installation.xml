@@ -5,14 +5,16 @@
 ]>
 <chapter id="chap-User_Guide-Installation">
   <title>Installation</title>
+  <indexterm>
+    <primary>installation</primary>
+  </indexterm>
   <para>
     This chapter covers the installation of &PRODUCT; on various operating systems, including <acronym>GNU</acronym>/<trademark class="registered">Linux</trademark>, and <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark>.
   </para>
   <section id="sect-User_Guide-Installation-Requirements">
     <title>System Requirements</title>
     <indexterm>
-      <primary>installation</primary>
-      <secondary>system requirements</secondary>
+      <primary>system requirements</primary>
     </indexterm>
     <para>
       A working installation of <ulink url="http://www.perl.org">Perl</ulink> is required, version <literal>5.8.8</literal> or higher.
@@ -20,6 +22,18 @@
   </section>
   <section id="sect-User_Guide-Installation-Linux">
     <title>Installing on GNU/Linux</title>
+    <indexterm>
+      <primary>GNU/Linux</primary>
+    </indexterm>
+    <indexterm>
+      <primary>Linux</primary>
+      <see>GNU/Linux</see>
+    </indexterm>
+    <indexterm>
+      <primary>installation</primary>
+      <secondary>GNU/Linux</secondary>
+      <see>GNU/Linux</see>
+    </indexterm>
     <para>
       Note that with the exception of Ubuntu, you have to be logged in as superuser in order to run commands described in this section. To do so, type the following at a shell prompt:
     </para>
@@ -28,9 +42,12 @@ Password:</screen>
     <section id="sect-User_Guide-Installation-Debian">
       <title>Installing on Debian</title>
       <indexterm>
-        <primary>installation</primary>
-        <secondary>operating systems</secondary>
-        <tertiary>Debian</tertiary>
+        <primary><systemitem class="osname">Debian</systemitem></primary>
+      </indexterm>
+      <indexterm>
+        <primary>GNU/Linux</primary>
+        <secondary><systemitem class="osname">Debian</systemitem></secondary>
+        <see><systemitem class="osname">Debian</systemitem></see>
       </indexterm>
       <para>
         &PRODUCT; is currently available in both testing (<quote>Squeeze</quote>) and unstable (<quote>Sid</quote>) version of Debian. To install it, open a terminal, and run the following command:
@@ -40,9 +57,12 @@ Password:</screen>
     <section id="sect-User_Guide-Installation-Fedora">
       <title>Installing on Fedora</title>
       <indexterm>
-        <primary>installation</primary>
-        <secondary>operating systems</secondary>
-        <tertiary>Fedora</tertiary>
+        <primary><systemitem class="osname">Fedora</systemitem></primary>
+      </indexterm>
+      <indexterm>
+        <primary>GNU/Linux</primary>
+        <secondary><systemitem class="osname">Fedora</systemitem></secondary>
+        <see><systemitem class="osname">Fedora</systemitem></see>
       </indexterm>
       <para>
         &PRODUCT; is currently available in both Fedora 12 (<quote>Constantine</quote>) and 13 (<quote>Goddard</quote>). To install it, open a terminal, and run the following command:
@@ -52,9 +72,12 @@ Password:</screen>
     <section id="sect-User_Guide-Installation-Ubuntu">
       <title>Installing on Ubuntu</title>
       <indexterm>
-        <primary>installation</primary>
-        <secondary>operating systems</secondary>
-        <tertiary>Ubuntu</tertiary>
+        <primary><systemitem class="osname">Ubuntu</systemitem></primary>
+      </indexterm>
+      <indexterm>
+        <primary>GNU/Linux</primary>
+        <secondary><systemitem class="osname">Ubuntu</systemitem></secondary>
+        <see><systemitem class="osname">Ubuntu</systemitem></see>
       </indexterm>
       <para>
         &PRODUCT; is currently available in Ubuntu 10.04 LTS (<quote>Lucid Lynx</quote>). To install it, open a terminal, and run the following command:
@@ -65,9 +88,12 @@ Password:</screen>
   <section id="sect-User_Guide-Installation-Windows">
     <title>Installing on Windows</title>
     <indexterm>
+      <primary><systemitem class="osname">Windows</systemitem></primary>
+    </indexterm>
+    <indexterm>
       <primary>installation</primary>
-      <secondary>operating systems</secondary>
-      <tertiary>Windows</tertiary>
+      <secondary><systemitem class="osname">Windows</systemitem></secondary>
+      <see><systemitem class="osname">Windows</systemitem></see>
     </indexterm>
     <para>
       Currently, there is no installer for <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark>. To use &PRODUCT; there, download the latest version from the <ulink url="http://blaze.blackened.cz/downloads/">official homepage</ulink>, unpack it, and use the batch files that are located in <filename class="directory">blazeblogger-&VERSION;/windows/</filename>. For example:
@@ -76,16 +102,27 @@ Password:</screen>
       <title>Creating a new blog on Windows XP</title>
       <screen>C:\blazeblogger-&VERSION;\windows> <command>blaze init</command></screen>
     </example>
+    <indexterm>
+      <primary><application>Cygwin</application></primary>
+    </indexterm>
+    <indexterm>
+      <primary><systemitem class="osname">Windows</systemitem></primary>
+      <secondary><application>Cygwin</application></secondary>
+      <see><application>Cygwin</application></see>
+    </indexterm>
     <para>
-      Alternatively, you can use &PRODUCT; with <ulink url="http://www.cygwin.com/">Cygwin</ulink>. In that case, see <xref linkend="sect-User_Guide-Installation-Source" /> for detailed installation instructions.
+      Alternatively, you can use &PRODUCT; with <ulink url="http://www.cygwin.com/"><application>Cygwin</application></ulink>. In that case, see <xref linkend="sect-User_Guide-Installation-Source" /> for detailed installation instructions.
     </para>
   </section>
   <section id="sect-User_Guide-Installation-Source">
     <title>Installing from the Source Code</title>
     <indexterm>
+      <primary>source code</primary>
+    </indexterm>
+    <indexterm>
       <primary>installation</primary>
-      <secondary>operating systems</secondary>
-      <tertiary>other</tertiary>
+      <secondary>source code</secondary>
+      <see>source code</see>
     </indexterm>
     <para>
       To install &PRODUCT; from the source code, download the latest source package from the <ulink url="http://blaze.blackened.cz/downloads/">official homepage</ulink>, and unpack it.
