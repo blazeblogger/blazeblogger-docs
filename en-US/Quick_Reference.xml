@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<appendix id="appe-Quick_Reference">
+  <title>&PRODUCT; Quick Reference</title>
+  <section id="sect-User_Guide-Quick_Reference-Creating">
+    <title>Creating a New Blog</title>
+    <table id="tabl-User_Guide-Quick_Reference-Creating-New">
+      <title>Creating a New Blog Repository</title> 
+      <tgroup cols="2">
+        <colspec colname="command" />
+        <colspec colname="description" />
+        <thead>
+          <row>
+            <entry>
+              Command
+            </entry>
+            <entry>
+              Description
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              <command>blaze-init</command>
+            </entry>
+            <entry>
+              Creates a new blog repository in a current directory.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <command>blaze-init --blogdir ~/public_html</command>
+            </entry>
+            <entry>
+              Creates a new blog repository in <filename class="directory">~/public_html/</filename>.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <command>blaze-init --verbose</command>
+            </entry>
+            <entry>
+              Creates a new blog repository while displaying a list of created files.
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table id="sect-User_Guide-Quick_Reference-Recovering">
+      <title>Recovering a Corrupted Blog Repository</title>
+      <tgroup cols="2">
+        <colspec colname="command" />
+        <colspec colname="description" />
+        <thead>
+          <row>
+            <entry>
+              Command
+            </entry>
+            <entry>
+              Description
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              <command>blaze-init</command>
+            </entry>
+            <entry>
+              Recovers a corrupted blog repository while keeping existing files intact.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <command>blaze-init --force</command>
+            </entry>
+            <entry>
+              Recovers a corrupted blog repository while reverting existing files to their initial state.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <command>blaze-init --verbose</command>
+            </entry>
+            <entry>
+              Recovers a corrupted blog repository while displaying a list of created files.
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </section>
+</appendix>

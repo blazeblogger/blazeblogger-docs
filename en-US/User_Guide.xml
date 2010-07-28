@@ -8,6 +8,7 @@
   <xi:include href="Preface.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="Installation.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="Reference.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="Quick_Reference.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="GNU_Free_Documentation_License.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <index />
