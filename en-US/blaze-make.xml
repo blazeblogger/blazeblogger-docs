@@ -17,7 +17,7 @@
   </para>
   <section id="sect-User_Guide-Reference-make-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-make</command> [<option>-cpqrtIFPV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-d</option> <replaceable>directory</replaceable>]
+    <screen><command>blaze-make</command> [<option>-cpqrIFPTV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-d</option> <replaceable>directory</replaceable>]
 
 <command>blaze-make</command> <option>-h</option>|<option>-v</option></screen>
   </section>
@@ -79,7 +79,7 @@
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><option>-t</option>, <option>--no-tags</option></term>
+        <term><option>-T</option>, <option>--no-tags</option></term>
         <listitem>
           <para>
             Disables creating tags.
