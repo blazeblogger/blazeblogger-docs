@@ -3,10 +3,10 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<chapter id="chap-User_Guide-Reference">
-  <title>Reference</title>
+<chapter id="chap-User_Guide-Core_Utilities">
+  <title>Core Utilities</title>
   <para>
-    This chapter covers all available &PRODUCT; commands and their respective command line options.
+    This chapter provides a thorough description of core &PRODUCT; utilities and their respective command line options.
   </para>
   <xi:include href="blaze-init.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="blaze-config.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
