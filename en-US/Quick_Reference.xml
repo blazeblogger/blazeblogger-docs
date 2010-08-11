@@ -131,6 +131,14 @@
         </row>
         <row>
           <entry>
+            <command>blaze-add --editor nano</command>
+          </entry>
+          <entry>
+            Opens the <application>nano</application> text editor for you to write the blog post in.
+          </entry>
+        </row>
+        <row>
+          <entry>
             <command>blaze-add --no-processor</command>
           </entry>
           <entry>
@@ -170,6 +178,14 @@
           </entry>
           <entry>
             Creates pages from the <filename>about.txt</filename> and <filename>downloads.txt</filename> files.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-add --page --editor nano</command>
+          </entry>
+          <entry>
+            Opens the <application>nano</application> text editor for you to write the page in.
           </entry>
         </row>
         <row>
