@@ -142,7 +142,7 @@
             <command>blaze-add --no-processor</command>
           </entry>
           <entry>
-            Opens an external text editor for you to write the blog post in, while disabling processing it by an external application afterwards.
+            Opens an external text editor for you to write the blog post in while disabling processing it by an external application afterwards.
           </entry>
         </row>
       </tbody>
@@ -193,7 +193,112 @@
             <command>blaze-add --page --no-processor</command>
           </entry>
           <entry>
-            Opens an external text editor for you to write the page in, while disabling processing it by an external application afterwards.
+            Opens an external text editor for you to write the page in while disabling processing it by an external application afterwards.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <bridgehead id="brid-User_Guide-Quick_Reference-Editing">
+    Editing a Blog Post or a Page
+  </bridgehead>
+  <table id="tabl-User_Guide-Quick_Reference-Editing-Post">
+    <title>Editing a Blog Post</title>
+    <tgroup cols="2">
+      <colspec colname="command" />
+      <colspec colname="description" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-edit 10</command>
+          </entry>
+          <entry>
+            Opens an external text editor for you to edit the blog post with ID <literal>10</literal> in.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-edit --editor nano 10</command>
+          </entry>
+          <entry>
+            Opens the <application>nano</application> text editor for you to edit the blog post with ID <literal>10</literal> in.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-edit --no-processor 10</command>
+          </entry>
+          <entry>
+            Opens an external text editor for you to edit the blog post with ID <literal>10</literal> in while disabling processing it by an external application afterwards.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-edit --force 10</command>
+          </entry>
+          <entry>
+            Opens an external text editor for you to edit the blog post with ID <literal>10</literal> in, creating an empty source file in case it does not already exist.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <table id="tabl-User_Guide-Quick_Reference-Editing-Page">
+    <title>Editing a Page</title>
+    <tgroup cols="2">
+      <colspec colname="command" />
+      <colspec colname="description" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-edit --page 4</command>
+          </entry>
+          <entry>
+            Opens an external text editor for you to edit the page with ID <literal>4</literal> in.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-edit --page --editor nano 4</command>
+          </entry>
+          <entry>
+            Opens the <application>nano</application> text editor for you to edit the page with ID <literal>4</literal> in.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-edit --page --no-processor 4</command>
+          </entry>
+          <entry>
+            Opens an external text editor for you to edit the page with ID <literal>4</literal> in while disabling processing it by an external application afterwards.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-edit --page --force 4</command>
+          </entry>
+          <entry>
+            Opens an external text editor for you to edit the page with ID <literal>4</literal> in, creating an empty source file in case it does not already exist.
           </entry>
         </row>
       </tbody>
