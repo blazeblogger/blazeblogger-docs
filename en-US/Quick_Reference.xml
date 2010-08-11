@@ -51,7 +51,7 @@
       </tbody>
     </tgroup>
   </table>
-  <table id="sect-User_Guide-Quick_Reference-Recovering">
+  <table id="tabl-User_Guide-Quick_Reference-Recovering">
     <title>Recovering a Corrupted Blog Repository</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -299,6 +299,79 @@
           </entry>
           <entry>
             Opens an external text editor for you to edit the page with ID <literal>4</literal> in, creating an empty source file in case it does not already exist.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <bridgehead id="brid-User_Guide-Quick_Reference-Removing">
+    Removing a Blog Post or a Page
+  </bridgehead>
+  <table id="tabl-User_Guide-Quick_Reference-Removing-Post">
+    <title>Removing a Blog Post</title>
+    <tgroup cols="2">
+      <colspec colname="command" />
+      <colspec colname="description" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-remove 3 4 11</command>
+          </entry>
+          <entry>
+            Removes the blog posts with ID <literal>3</literal>, <literal>4</literal>, and <literal>11</literal>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-remove --interactive 3 4 11</command>
+          </entry>
+          <entry>
+            Removes the blog posts with ID <literal>3</literal>, <literal>4</literal>, and <literal>11</literal> while requiring manual confirmation of each removal.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <table id="tabl-User_Guide-Quick_Reference-Removing-Page">
+    <title>Removing a Page</title>
+    <tgroup cols="2">
+      <colspec colname="command" />
+      <colspec colname="description" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-remove 2 3 4</command>
+          </entry>
+          <entry>
+            Removes the pages with ID <literal>2</literal>, <literal>3</literal>, and <literal>4</literal>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-remove --interactive 2 3 4</command>
+          </entry>
+          <entry>
+            Removes the pages with ID <literal>2</literal>, <literal>3</literal>, and <literal>4</literal> while requiring manual confirmation of each removal.
           </entry>
         </row>
       </tbody>
