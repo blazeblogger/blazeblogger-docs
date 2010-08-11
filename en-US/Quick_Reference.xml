@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<appendix id="appe-Quick_Reference">
+<appendix id="appe-User_Guide-Quick_Reference">
   <title>&PRODUCT; Quick Reference</title>
   <bridgehead id="brid-User_Guide-Quick_Reference-Creating">
     Creating a New Blog
