@@ -360,7 +360,7 @@
       <tbody>
         <row>
           <entry>
-            <command>blaze-remove 2 3 4</command>
+            <command>blaze-remove --page 2 3 4</command>
           </entry>
           <entry>
             Removes the pages with ID <literal>2</literal>, <literal>3</literal>, and <literal>4</literal>.
@@ -368,7 +368,7 @@
         </row>
         <row>
           <entry>
-            <command>blaze-remove --interactive 2 3 4</command>
+            <command>blaze-remove --page --interactive 2 3 4</command>
           </entry>
           <entry>
             Removes the pages with ID <literal>2</literal>, <literal>3</literal>, and <literal>4</literal> while requiring manual confirmation of each removal.
