@@ -164,7 +164,7 @@
         <term><option>-C</option>, <option>--no-processor</option></term>
         <listitem>
           <para>
-            Disables processing a blog post or page with an external application.
+            Disables processing a blog post or page with an external application. For example, if you use <application>Markdown</application> to convert the lightweight markup language to the valid HTML output, this will enable you to write this particular post in plain HTML directly.
           </para>
         </listitem>
       </varlistentry>
