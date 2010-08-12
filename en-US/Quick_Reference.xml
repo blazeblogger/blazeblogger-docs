@@ -377,4 +377,149 @@
       </tbody>
     </tgroup>
   </table>
+  <bridgehead id="brid-User_Guide-Quick_Reference-Listing">
+    Listing Blog Posts or Pages
+  </bridgehead>
+  <table id="tabl-User_Guide-Quick_Reference-Listing-Post">
+    <title>Listing Blog Posts</title>
+    <tgroup cols="2">
+      <colspec colname="command" />
+      <colspec colname="description" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-list</command>
+          </entry>
+          <entry>
+            Lists all blog posts.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --reverse</command>
+          </entry>
+          <entry>
+            Lists all blog posts in reverse order.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --short</command>
+          </entry>
+          <entry>
+            Lists all blog posts, displaying each entry on a single line.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --number 7</command>
+          </entry>
+          <entry>
+            Lists the latest seven blog posts.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --author "Jaromir Hradilek"</command>
+          </entry>
+          <entry>
+            Lists blog posts written by Jaromir Hradilek.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --year 2009 --month 02</command>
+          </entry>
+          <entry>
+            Lists blog posts written in February 2009.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --tag release</command>
+          </entry>
+          <entry>
+            Lists blog posts tagged as <literal>release</literal>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --id 11</command>
+          </entry>
+          <entry>
+            Displays the blog post with ID <literal>11</literal>.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <table id="tabl-User_Guide-Quick_Reference-Listing-Page">
+    <title>Listing Pages</title>
+    <tgroup cols="2">
+      <colspec colname="command" />
+      <colspec colname="description" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-list --pages</command>
+          </entry>
+          <entry>
+            Lists all pages.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --pages --reverse</command>
+          </entry>
+          <entry>
+            Lists all pages in reverse order.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --pages --short</command>
+          </entry>
+          <entry>
+            Lists all pages, displaying each entry on a single line.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --pages --number 3</command>
+          </entry>
+          <entry>
+            Lists the latest three pages.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --pages --id 4</command>
+          </entry>
+          <entry>
+            Displays the page with ID <literal>4</literal>.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
 </appendix>
