@@ -560,4 +560,66 @@
       </tbody>
     </tgroup>
   </table>
+  <bridgehead id="brid-User_Guide-Quick_Reference-Generating">
+    Generating a Blog
+  </bridgehead>
+  <table id="tabl-User_Guide-Quick_Reference-Generating">
+    <title>Generating a Blog</title>
+    <tgroup cols="2">
+      <colspec colname="command" />
+      <colspec colname="description" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-make</command>
+          </entry>
+          <entry>
+            Generates a complete directory tree of static pages, including blog posts, single pages, monthly and yearly archives, tags, and an RSS feed.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-make --destdir ~/public_html</command>
+          </entry>
+          <entry>
+            Generates a complete directory tree of static pages in the <filename class="directory">~/public_html/</filename> directory.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-make --verbose</command>
+          </entry>
+          <entry>
+            Generates a complete directory tree of static pages while displaying a list of created files.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-make --full-paths</command>
+          </entry>
+          <entry>
+            Generates a complete directory tree of static pages while including page names in generated links.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-make --no-rss</command>
+          </entry>
+          <entry>
+            Generates a complete directory tree of static pages while omitting the creation of the RSS feed.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
 </appendix>
