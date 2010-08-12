@@ -622,4 +622,58 @@
       </tbody>
     </tgroup>
   </table>
+  <bridgehead id="brid-User_Guide-Quick_Reference-Log">
+    Displaying a Log
+  </bridgehead>
+  <table id="tabl-User_Guide-Quick_Reference-Log">
+    <title>Displaying a Log</title>
+    <tgroup cols="2">
+      <colspec colname="command" />
+      <colspec colname="description" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-log</command>
+          </entry>
+          <entry>
+            Lists all log entries.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-log --reverse</command>
+          </entry>
+          <entry>
+            Lists all log entries in reverse order.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-log --short</command>
+          </entry>
+          <entry>
+            Lists all log entries, displaying each record on a single line.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-log --number 5</command>
+          </entry>
+          <entry>
+            Lists the latest five log entries.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
 </appendix>
