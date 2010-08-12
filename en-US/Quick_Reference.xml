@@ -522,4 +522,42 @@
       </tbody>
     </tgroup>
   </table>
+  <bridgehead id="brid-User_Guide-Quick_Reference-Statistics">
+    Displaying Blog Statistics
+  </bridgehead>
+  <table id="tabl-User_Guide-Quick_Reference-Statistics">
+    <title>Displaying Blog Statistics</title>
+    <tgroup cols="2">
+      <colspec colname="command" />
+      <colspec colname="description" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-list --stats</command>
+          </entry>
+          <entry>
+            Displays blog statistics.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --stats --short</command>
+          </entry>
+          <entry>
+            Displays blog statistics on a single line.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
 </appendix>
