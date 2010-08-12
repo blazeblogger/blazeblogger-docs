@@ -24,7 +24,7 @@
   <section id="sect-User_Guide-Reference-make-Description">
     <title>Description</title>
     <para>
-      <command>blaze-make</command> reads the &PRODUCT; repository, and generates a complete directory tree of static pages, including blog posts, single pages, monthly and yearly archives, tags, and even a RSS feed.
+      <command>blaze-make</command> reads the &PRODUCT; repository, and generates a complete directory tree of static pages, including blog posts, single pages, monthly and yearly archives, tags, and even an RSS feed.
     </para>
   </section>
   <section id="sect-User_Guide-Reference-make-Options">
