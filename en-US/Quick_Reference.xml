@@ -94,6 +94,299 @@
       </tbody>
     </tgroup>
   </table>
+  <bridgehead id="brid-User_Guide-Quick_Reference-Configuring">
+    Configuring a Blog
+  </bridgehead>
+  <table id="tabl-User_Guide-Quick_Reference-Configuring-General">
+    <title>General Blog Settings</title>
+    <tgroup cols="2">
+      <colspec colname="command" colwidth="60*" />
+      <colspec colname="description" colwidth="40*" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-config blog.title BlazeBlogger</command>
+          </entry>
+          <entry>
+            Changes the blog title to <quote>BlazeBlogger</quote>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config blog.subtitle CMS without boundaries</command>
+          </entry>
+          <entry>
+            Changes the blog subtitle to <quote>CMS without boundaries</quote>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config blog.theme default.html</command>
+          </entry>
+          <entry>
+            Changes the blog theme to <literal>default.html</literal>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config blog.style default.css</command>
+          </entry>
+          <entry>
+            Changes the style sheet to <literal>default.css</literal>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config blog.lang en_US</command>
+          </entry>
+          <entry>
+            Changes the blog translation to <literal>en_US</literal>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config blog.posts 10</command>
+          </entry>
+          <entry>
+            Changes the number of blog posts to be listed on a single page to 10.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <table id="tabl-User_Guide-Quick_Reference-Configuring-User">
+    <title>User Settings</title>
+    <tgroup cols="2">
+      <colspec colname="command" colwidth="60*" />
+      <colspec colname="description" colwidth="40*" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-config user.name Jaromír Hradílek</command>
+          </entry>
+          <entry>
+            Changes the default blog post author to Jaromír Hradílek.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config user.nickname Blackened</command>
+          </entry>
+          <entry>
+            Changes the default blog post author's nickname to Blackened.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config user.email jhradilek@gmail.com</command>
+          </entry>
+          <entry>
+            Changes the email address to <email>jhradilek@gmail.com</email>.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <table id="tabl-User_Guide-Quick_Reference-Configuring-RSS">
+    <title>RSS Feed Settings</title>
+    <tgroup cols="2">
+      <colspec colname="command" colwidth="60*" />
+      <colspec colname="description" colwidth="40*" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-config feed.baseurl http://blaze.blackened.cz</command>
+          </entry>
+          <entry>
+            Changes the URL of the blog to <ulink url="http://blaze.blackened.cz" />.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config feed.posts 10</command>
+          </entry>
+          <entry>
+            Changes the number of blog posts to be listed in the feed to 10.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config feed.fullposts true</command>
+          </entry>
+          <entry>
+            Enables inclusion of the whole content of a blog post to the feed.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <table id="tabl-User_Guide-Quick_Reference-Configuring-Color">
+    <title>Color Settings</title>
+    <tgroup cols="2">
+      <colspec colname="command" colwidth="60*" />
+      <colspec colname="description" colwidth="40*" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-config color.list true</command>
+          </entry>
+          <entry>
+            Enables colors in the <command>blaze-list</command> utility output.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config color.log true</command>
+          </entry>
+          <entry>
+            Enables colors in the <command>blaze-log</command> utility output.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <table id="id-User_Guide-Quick_Reference-Configuring-Post">
+    <title>Advanced Blog Post Settings</title>
+    <tgroup cols="2">
+      <colspec colname="command" colwidth="60*" />
+      <colspec colname="description" colwidth="40*" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-config post.author top</command>
+          </entry>
+          <entry>
+            Places the blog post author above the post.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config post.date top</command>
+          </entry>
+          <entry>
+            Places the date of publishing above the post.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config post.tags bottom</command>
+          </entry>
+          <entry>
+            Places the blog post tags below the post.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <table id="tabl-User_Guide-Quick_Reference-Configuring-Advanced">
+    <title>Advanced &PRODUCT; Settings</title>
+    <tgroup cols="2">
+      <colspec colname="command" colwidth="60*" />
+      <colspec colname="description" colwidth="40*" />
+      <thead>
+        <row>
+          <entry>
+            Command
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>blaze-config core.doctype html</command>
+          </entry>
+          <entry>
+            Changes the document type to HTML.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config core.extension html</command>
+          </entry>
+          <entry>
+            Changes the file extension to <filename class="extension">html</filename>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config core.encoding UTF-8</command>
+          </entry>
+          <entry>
+            Changes the character encoding to <literal>UTF-8</literal>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config core.editor 'gvim -f'</command>
+          </entry>
+          <entry>
+            Changes the external text editor to <application>GVim</application>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config core.processor 'markdown %in% &gt; %out%'</command>
+          </entry>
+          <entry>
+            Configures <application>Markdown</application> to process each blog post or a page.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
   <bridgehead id="brid-User_Guide-Quick_Reference-Adding">
     Adding a Blog Post or a Page
   </bridgehead>
