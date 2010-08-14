@@ -28,7 +28,7 @@
   <para>
     Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Preamble">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Preamble">
     Preamble
   </bridgehead>
   <para>
@@ -40,7 +40,7 @@
   <para>
     We have designed this License in order to use it for manuals for free software, because free software needs free documentation: a free program should come with manuals providing the same freedoms that the software does. But this License is not limited to software manuals; it can be used for any textual work, regardless of subject matter or whether it is published as a printed book. We recommend this License principally for works whose purpose is instruction or reference.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Applicability_and_Definitions">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Applicability_and_Definitions">
     1. Applicability and Definitions
   </bridgehead>
   <para>
@@ -76,7 +76,7 @@
   <para>
     The Document may include Warranty Disclaimers next to the notice which states that this License applies to the Document. These Warranty Disclaimers are considered to be included by reference in this License, but only as regards disclaiming warranties: any other implication that these Warranty Disclaimers may have is void and has no effect on the meaning of this License.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Verbatim_Copying">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Verbatim_Copying">
     2. Verbatim Copying
   </bridgehead>
   <para>
@@ -85,7 +85,7 @@
   <para>
     You may also lend copies, under the same conditions stated above, and you may publicly display copies.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Copying_in_Quantity">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Copying_in_Quantity">
     3. Copying in Quantity
   </bridgehead>
   <para>
@@ -100,7 +100,7 @@
   <para>
     It is requested, but not required, that you contact the authors of the Document well before redistributing any large number of copies, to give them a chance to provide you with an updated version of the Document.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Modifications">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Modifications">
     4. Modifications
   </bridgehead>
   <para>
@@ -195,7 +195,7 @@
   <para>
     The author(s) and publisher(s) of the Document do not by this License give permission to use their names for publicity for or to assert or imply endorsement of any Modified Version.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Combining_Documents">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Combining_Documents">
     5. Combining Documents
   </bridgehead>
   <para>
@@ -207,7 +207,7 @@
   <para>
 In the combination, you must combine any sections Entitled &ldquo;History&rdquo; in the various original documents, forming one section Entitled &ldquo;History&rdquo;; likewise combine any sections Entitled &ldquo;Acknowledgements&rdquo;, and any sections Entitled &ldquo;Dedications&rdquo;. You must delete all sections Entitled &ldquo;Endorsements&rdquo;.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Collections_of_Documents">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Collections_of_Documents">
     6. Collections of Documents
   </bridgehead>
   <para>
@@ -216,7 +216,7 @@ In the combination, you must combine any sections Entitled &ldquo;History&rdquo;
   <para>
     You may extract a single document from such a collection, and distribute it individually under this License, provided you insert a copy of this License into the extracted document, and follow this License in all other respects regarding verbatim copying of that document.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Aggregation_with_Independent_Works">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Aggregation_with_Independent_Works">
     7. Aggregation with Independent Works
   </bridgehead>
   <para>
@@ -225,7 +225,7 @@ In the combination, you must combine any sections Entitled &ldquo;History&rdquo;
   <para>
     If the Cover Text requirement of section 3 is applicable to these copies of the Document, then if the Document is less than one half of the entire aggregate, the Document's Cover Texts may be placed on covers that bracket the Document within the aggregate, or the electronic equivalent of covers if the Document is in electronic form. Otherwise they must appear on printed covers that bracket the whole aggregate.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Translation">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Translation">
     8. Translation
   </bridgehead>
   <para>
@@ -234,7 +234,7 @@ In the combination, you must combine any sections Entitled &ldquo;History&rdquo;
   <para>
 If a section in the Document is Entitled &ldquo;Acknowledgements&rdquo;, &ldquo;Dedications&rdquo;, or &ldquo;History&rdquo;, the requirement (section 4) to Preserve its Title (section 1) will typically require changing the actual title.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Termination">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Termination">
     9. Termination
   </bridgehead>
   <para>
@@ -249,7 +249,7 @@ If a section in the Document is Entitled &ldquo;Acknowledgements&rdquo;, &ldquo;
   <para>
     Termination of your rights under this section does not terminate the licenses of parties who have received copies or rights from you under this License. If your rights have been terminated and not permanently reinstated, receipt of a copy of some or all of the same material does not give you any rights to use it.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Future_Revisions">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Future_Revisions">
     10. Future Revisions of This License
   </bridgehead>
   <para>
@@ -258,7 +258,7 @@ If a section in the Document is Entitled &ldquo;Acknowledgements&rdquo;, &ldquo;
   <para>
     Each version of the License is given a distinguishing version number. If the Document specifies that a particular numbered version of this License &ldquo;or any later version&rdquo; applies to it, you have the option of following the terms and conditions either of that specified version or of any later version that has been published (not as a draft) by the Free Software Foundation. If the Document does not specify a version number of this License, you may choose any version ever published (not as a draft) by the Free Software Foundation. If the Document specifies that a proxy can decide which future versions of this License can be used, that proxy's public statement of acceptance of a version permanently authorizes you to choose that version for the Document.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Relicensing">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Relicensing">
     11. Relicensing
   </bridgehead>
   <para>
@@ -276,7 +276,7 @@ If a section in the Document is Entitled &ldquo;Acknowledgements&rdquo;, &ldquo;
   <para>
     The operator of an MMC Site may republish an MMC contained in the site under CC-BY-SA on the same site at any time before August 1, 2009, provided the MMC is eligible for relicensing.
   </para>
-  <bridgehead id="brid-Users_Guide-License-Addendum">
+  <bridgehead id="brid-GNU_Free_Documentation_License-Addendum">
     ADDENDUM: How to Use This License for Your Documents
   </bridgehead>
   <para>
