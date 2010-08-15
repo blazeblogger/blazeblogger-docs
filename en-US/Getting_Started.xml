@@ -15,4 +15,17 @@
     </para>
     <screen>~]$ <command>blaze help</command></screen>
   </note>
+  <section id="sect-User_Guide-Getting_Started-Creating">
+    <title>Creating a New Blog</title>
+    <para>
+      To create a new blog, move into the directory you want to keep the blog in, and use the following command:
+    </para>
+    <screen>~]$ <command>blaze-init</command>
+Created a BlazeBlogger repository in .blaze.</screen>
+    <para>
+      This will create a hidden directory, <filename class="directory">.blaze/</filename>, in which the blog data will be kept. Note that the actual content of this directory is not important, and it is recommended that you never touch the files in it directly. To recover its content should it ever be damaged, use the same command again:
+    </para>
+    <screen>~]$ <command>blaze-init</command>
+Recovered a BlazeBlogger repository in .blaze.</screen>
+  </section>
 </chapter>
