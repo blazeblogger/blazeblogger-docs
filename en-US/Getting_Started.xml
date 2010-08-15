@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-User_Guide-Getting_Started">
+  <title>Getting Started</title>
+  <para>
+    This chapter provides a brief introduction to &PRODUCT;. It covers how to create, configure, manage, and build a full-featured blog, as well as how to change the theme or translate the blog to your language.
+  </para>
+  <note>
+    <title>Tip</title>
+    <para>
+      On UNIX-like systems such as GNU/Linux, you can use <command>blaze-<replaceable>command</replaceable></command> and more convenient <command>blaze <replaceable>command</replaceable></command> interchangeably. For a list of available commands, type the following at a shell prompt:
+    </para>
+    <screen>~]$ <command>blaze help</command></screen>
+  </note>
+</chapter>
