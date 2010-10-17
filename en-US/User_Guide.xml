@@ -16,6 +16,7 @@
   <part id="part-Reference">
     <title>Reference</title>
     <xi:include href="Core_Utilities.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="UNIX_Utilities.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   </part>
   <!-- Back Matter: -->
   <xi:include href="Quick_Reference.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

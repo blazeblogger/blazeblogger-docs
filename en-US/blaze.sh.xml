@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<section id="sect-UNIX_Utilities-blaze">
+  <title><command>blaze.sh</command></title>
+  <indexterm significance="preferred">
+    <primary><command>blaze.sh</command></primary>
+  </indexterm>
+  <para>
+    <command>blaze</command> allows you to run all &PRODUCT; utilities with a single command.
+  </para>
+  <section id="sect-UNIX_Utilities-blaze-Synopsis">
+    <title>Synopsis</title>
+    <screen><command>blaze</command> <replaceable>command</replaceable> <optional><replaceable>option</replaceable>&#8230;</optional>
+
+<command>blaze</command> <option>help</option>|<option>man</option> <optional><replaceable>command</replaceable></optional>
+
+<command>blaze</command> <option>-h</option>|<option>-v</option></screen>
+  </section>
+  <section id="sect-UNIX_Utilities-blaze-Description">
+    <title>Description</title>
+    <para>
+      <command>blaze</command> provides a common way to run &PRODUCT; utilities with a single command.
+    </para>
+  </section>
+  <section id="sect-UNIX_Utilities-blaze-Options">
+    <title>Options</title>
+    <section id="sect-UNIX_Utilities-blaze-Options-Command_Line">
+      <title>Command Line Options</title>
+      <variablelist>
+        <varlistentry>
+          <term><option>-h</option>, <option>--help</option></term>
+          <listitem>
+            <para>
+              Displays usage information and exits.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>-v</option>, <option>--version</option></term>
+          <listitem>
+            <para>
+              Displays version information and exits.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
+    <section id="sect-UNIX_Utilities-blaze-Options-Commands">
+      <title>Available Commands</title>
+      <variablelist>
+        <varlistentry>
+          <term><option>init</option></term>
+          <listitem>
+            <para>
+              Runs <command>blaze-init</command>, a utility that either creates a &PRODUCT; repository, or recovers a previously corrupted one. Refer to <xref linkend="sect-Core_Utilities-init" /> for a full description of the command usage.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>config</option></term>
+          <listitem>
+            <para>
+              Runs <command>blaze-config</command>, a utility that either displays, or sets &PRODUCT; configuration options. Refer to <xref linkend="sect-Core_Utilities-config" /> for a full description of the command usage.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>add</option></term>
+          <listitem>
+            <para>
+              Runs <command>blaze-add</command>, a utility that adds a blog post or a page to the &PRODUCT; repository. Refer to <xref linkend="sect-Core_Utilities-add" /> for a full description of the command usage.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>edit</option></term>
+          <listitem>
+            <para>
+              Runs <command>blaze-edit</command>, a utility that edits a blog post or a page in the &PRODUCT; repository. Refer to <xref linkend="sect-Core_Utilities-edit" /> for a full description of the command usage.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>remove</option></term>
+          <listitem>
+            <para>
+              Runs <command>blaze-remove</command>, a utility that removes a blog post or a page from the &PRODUCT; repository. Refer to <xref linkend="sect-Core_Utilities-remove" /> for a full description of the command usage.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>list</option></term>
+          <listitem>
+            <para>
+              Runs <command>blaze-list</command>, a utility that lists blog posts or pages in the &PRODUCT; repository. Refer to <xref linkend="sect-Core_Utilities-list" /> for a full description of the command usage.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>make</option></term>
+          <listitem>
+            <para>
+              Runs <command>blaze-make</command>, a utility that generates a blog from the &PRODUCT; repository. Refer to <xref linkend="sect-Core_Utilities-make" /> for a full description of the command usage.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>log</option></term>
+          <listitem>
+            <para>
+              Runs <command>blaze-log</command>, a utility that displays the &PRODUCT; repository log. Refer to <xref linkend="sect-Core_Utilities-log" /> for a full description of the command usage.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>help</option></term>
+          <listitem>
+            <para>
+              Displays usage information, either for the utility itself, or for the selected <replaceable>command</replaceable>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>man</option></term>
+          <listitem>
+            <para>
+              Displays a manual page, either for the utility itself, or for the selected <replaceable>command</replaceable>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>version</option></term>
+          <listitem>
+            <para>
+              Displays version information.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
+  </section>
+  <section id="sect-UNIX_Utilities-blaze-Environment">
+    <title>Environment Variables</title>
+    <variablelist>
+      <varlistentry>
+        <term><varname>EDITOR</varname></term>
+        <listitem>
+          <para>
+            Unless the <option>core.editor</option> option is set, <command>blaze</command> tries to use system-wide settings to decide which editor to use.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </section>
+  <section id="sect-UNIX_Utilities-blaze-Example">
+    <title>Example Usage</title>
+    <itemizedlist>
+      <listitem>
+        <para>
+          Run the <command>blaze-remove</command> command:
+        </para>
+        <screen>~]$ <command>blaze remove -p 4</command>
+Successfully removed the page with ID 4.</screen>
+      </listitem>
+      <listitem>
+        <para>
+          Display usage of the <command>blaze-config</command> command:
+        </para>
+        <screen>~]$ <command>blaze help config</command>
+Usage: blaze-config [-qV] [-b DIRECTORY] [-E EDITOR] OPTION [VALUE...]
+       blaze-config -e [-b DIRECTORY]
+       blaze-config -h|-v
+
+  -b, --blogdir DIRECTORY     specify a directory in which the BlazeBlogger
+                              repository is placed
+  -E, --editor EDITOR         specify an external text editor
+  -e, --edit                  edit the configuration in a text editor
+  -q, --quiet                 do not display unnecessary messages
+  -V, --verbose               display all messages
+  -h, --help                  display this help and exit
+  -v, --version               display version information and exit</screen>
+      </listitem>
+      <listitem>
+        <para>
+          Display the manual page for the <command>blaze-init</command> command:
+        </para>
+        <screen>~]$ <command>blaze man init</command></screen>
+      </listitem>
+    </itemizedlist>
+  </section>
+  <section id="sect-UNIX_Utilities-blaze-See">
+    <title>See Also</title>
+    <variablelist>
+      <varlistentry>
+        <term><xref linkend="sect-Core_Utilities-init" /></term>
+        <listitem>
+          <para>
+            <command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-Core_Utilities-config" /></term>
+        <listitem>
+          <para>
+            <command>blaze-config</command> displays or sets &PRODUCT; configuration options.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-Core_Utilities-add" /></term>
+        <listitem>
+          <para>
+            <command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-Core_Utilities-edit" /></term>
+        <listitem>
+          <para>
+            <command>blaze-edit</command> edits a blog post or a page in the &PRODUCT; repository.
+
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-Core_Utilities-remove" /></term>
+        <listitem>
+          <para>
+            <command>blaze-remove</command> removes a blog post or a page from the &PRODUCT; repository.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-Core_Utilities-list" /></term>
+        <listitem>
+          <para>
+            <command>blaze-list</command> lists blog posts or pages in the &PRODUCT; repository.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-Core_Utilities-make" /></term>
+        <listitem>
+          <para>
+            <command>blaze-make</command> generates a blog from the &PRODUCT; repository.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><xref linkend="sect-Core_Utilities-log" /></term>
+        <listitem>
+          <para>
+            <command>blaze-log</command> displays the &PRODUCT; repository log.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </section>
+</section>
