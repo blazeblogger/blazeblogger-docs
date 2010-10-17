@@ -17,14 +17,14 @@
   </para>
   <section id="sect-Core_Utilities-init-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-init</command> [<option>-fqV</option>] [<option>-b</option> <replaceable>directory</replaceable>]
+    <screen><command>blaze-init</command> <optional><option>-fqV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional>
 
 <command>blaze-init</command> <option>-h</option>|<option>-v</option></screen>
   </section>
   <section id="sect-Core_Utilities-init-Description">
     <title>Description</title>
     <para>
-      <command>blaze-init</command> either creates a fresh new &PRODUCT; repository, or recovers an existing one in case it is corrupted. Optionally, it can also revert a configuration and default templates to their original state, leaving all user data (that is, both blog posts and pages) intact. 
+      <command>blaze-init</command> either creates a fresh new &PRODUCT; repository, or recovers an existing one in case it is corrupted. Optionally, it can also revert a configuration and default templates to their original state, leaving all user data (that is, both blog posts and pages) intact.
     </para>
   </section>
   <section id="sect-Core_Utilities-init-Options">
@@ -34,7 +34,7 @@
         <term><option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable></term>
         <listitem>
           <para>
-            Enables you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is to be blaced. The default option is a current working directory.
+            Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is to be blaced. The default option is a current working directory.
           </para>
         </listitem>
       </varlistentry>
@@ -42,7 +42,7 @@
         <term><option>-f</option>, <option>--force</option></term>
         <listitem>
           <para>
-            Tells <command>blaze-init</command> to revert existing configuration, theme, and language files to their initial state. By default, these files are kept intact.
+            Reverts existing configuration, theme, and language files to their initial state. By default, these files are kept intact.
           </para>
         </listitem>
       </varlistentry>
@@ -119,7 +119,7 @@ Recovered a BlazeBlogger repository in .blaze.</screen>
     <title>See Also</title>
     <variablelist>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-config" /></term>
+        <term><xref linkend="sect-Core_Utilities-config" /></term>
         <listitem>
           <para>
             <command>blaze-config</command> displays or sets &PRODUCT; configuration options.
@@ -127,7 +127,7 @@ Recovered a BlazeBlogger repository in .blaze.</screen>
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-add" /></term>
+        <term><xref linkend="sect-Core_Utilities-add" /></term>
         <listitem>
           <para>
             <command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository.

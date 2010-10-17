@@ -17,7 +17,7 @@
   </para>
   <section id="sect-Core_Utilities-edit-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-edit</command> [<option>-fpqCPV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-E</option> <replaceable>editor</replaceable>] <replaceable>id</replaceable>
+    <screen><command>blaze-edit</command> <optional><option>-fpqCPV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-E</option> <replaceable>editor</replaceable></optional> <replaceable>id</replaceable>
 
 <command>blaze-edit</command> <option>-h</option>|<option>-v</option></screen>
   </section>
@@ -92,7 +92,7 @@
         <term><option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable></term>
         <listitem>
           <para>
-            Enables you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
+            Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
           </para>
         </listitem>
       </varlistentry>
@@ -100,7 +100,7 @@
         <term><option>-E</option> <replaceable>editor</replaceable>, <option>--editor</option> <replaceable>editor</replaceable></term>
         <listitem>
           <para>
-            Enables you to specify an external text <replaceable>editor</replaceable>. When supplied, this option overrides the relevant configuration option.
+            Allows you to specify an external text <replaceable>editor</replaceable>. When supplied, this option overrides the relevant configuration option.
           </para>
         </listitem>
       </varlistentry>
@@ -177,7 +177,7 @@
         <term><varname>EDITOR</varname></term>
         <listitem>
           <para>
-            Unless the <option>core.editor</option> option is set, &PRODUCT; tries to use system-wide settings to decide which editor to use.
+            Unless the <option>core.editor</option> option is set, <command>blaze-edit</command> tries to use system-wide settings to decide which editor to use.
           </para>
         </listitem>
       </varlistentry>
@@ -210,7 +210,7 @@
     <title>See Also</title>
     <variablelist>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-config" /></term>
+        <term><xref linkend="sect-Core_Utilities-config" /></term>
         <listitem>
           <para>
             <command>blaze-config</command> displays or sets &PRODUCT; configuration options.
@@ -218,7 +218,7 @@
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-add" /></term>
+        <term><xref linkend="sect-Core_Utilities-add" /></term>
         <listitem>
           <para>
             <command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository.
@@ -226,7 +226,7 @@
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-list" /></term>
+        <term><xref linkend="sect-Core_Utilities-list" /></term>
         <listitem>
           <para>
             <command>blaze-list</command> lists blog posts or pages in the &PRODUCT; repository.

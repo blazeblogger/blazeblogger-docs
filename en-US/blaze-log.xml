@@ -17,7 +17,7 @@
   </para>
   <section id="sect-Core_Utilities-log-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-log</command> [<option>-cqrsCV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-n</option> <replaceable>number</replaceable>]
+    <screen><command>blaze-log</command> <optional><option>-cqrsCV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-n</option> <replaceable>number</replaceable></optional>
 
 <command>blaze-log</command> <option>-h</option>|<option>-v</option></screen>
   </section>
@@ -34,7 +34,7 @@
         <term><option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable></term>
         <listitem>
           <para>
-            Enables you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
+            Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
           </para>
         </listitem>
       </varlistentry>
@@ -42,7 +42,7 @@
         <term><option>-n</option> <replaceable>number</replaceable>, <option>--number</option> <replaceable>number</replaceable></term>
         <listitem>
           <para>
-            Enables you to specify a <replaceable>number</replaceable> of log entries to be listed.
+            Allows you to specify a <replaceable>number</replaceable> of log entries to be listed.
           </para>
         </listitem>
       </varlistentry>
@@ -171,7 +171,7 @@ Tue Feb 10 00:40:16 2009 - Created/recovered a BlazeBlogger repository.</screen>
     <title>See Also</title>
     <variablelist>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-init" /></term>
+        <term><xref linkend="sect-Core_Utilities-init" /></term>
         <listitem>
           <para>
             <command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one.
@@ -179,7 +179,7 @@ Tue Feb 10 00:40:16 2009 - Created/recovered a BlazeBlogger repository.</screen>
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-config" /></term>
+        <term><xref linkend="sect-Core_Utilities-config" /></term>
         <listitem>
           <para>
             <command>blaze-config</command> displays or sets &PRODUCT; configuration options.

@@ -17,7 +17,7 @@
   </para>
   <section id="sect-Core_Utilities-add-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-add</command> [<option>-pqCPV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-E</option> <replaceable>editor</replaceable>] [<option>-a</option> <replaceable>author</replaceable>] [<option>-d</option> <replaceable>date</replaceable>] [<option>-t</option> <replaceable>title</replaceable>] [<option>-T</option> <replaceable>tags</replaceable>] [<option>-u</option> <replaceable>url</replaceable>] [<replaceable>file...</replaceable>]
+    <screen><command>blaze-add</command> <optional><option>-pqCPV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-E</option> <replaceable>editor</replaceable></optional> <optional><option>-a</option> <replaceable>author</replaceable></optional> <optional><option>-d</option> <replaceable>date</replaceable></optional> <optional><option>-t</option> <replaceable>title</replaceable></optional> <optional><option>-T</option> <replaceable>tags</replaceable></optional> <optional><option>-u</option> <replaceable>url</replaceable></optional> <optional><replaceable>file</replaceable>&#8230;</optional>
 
 <command>blaze-add</command> <option>-h</option>|<option>-v</option></screen>
   </section>
@@ -92,7 +92,7 @@
         <term><option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable></term>
         <listitem>
           <para>
-            Enables you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
+            Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
           </para>
         </listitem>
       </varlistentry>
@@ -100,7 +100,7 @@
         <term><option>-E</option> <replaceable>editor</replaceable>, <option>--editor</option> <replaceable>editor</replaceable></term>
         <listitem>
           <para>
-            Enables you to specify an external text <replaceable>editor</replaceable>. When supplied, this option overrides the relevant configuration option.
+            Allows you to specify an external text <replaceable>editor</replaceable>. When supplied, this option overrides the relevant configuration option.
           </para>
         </listitem>
       </varlistentry>
@@ -108,7 +108,7 @@
         <term><option>-t</option> <replaceable>title</replaceable>, <option>--title</option> <replaceable>title</replaceable></term>
         <listitem>
           <para>
-            Enables you to specify a <replaceable>title</replaceable> of a blog post or page.
+            Allows you to specify the <replaceable>title</replaceable> of a blog post or page.
           </para>
         </listitem>
       </varlistentry>
@@ -116,7 +116,7 @@
         <term><option>-a</option> <replaceable>author</replaceable>, <option>--author</option> <replaceable>author</replaceable></term>
         <listitem>
           <para>
-            Enables you to specify an <replaceable>author</replaceable> of a blog post or page.
+            Allows you to specify the <replaceable>author</replaceable> of a blog post or page.
           </para>
         </listitem>
       </varlistentry>
@@ -124,7 +124,7 @@
         <term><option>-d</option> <replaceable>date</replaceable>, <option>--date</option> <replaceable>date</replaceable></term>
         <listitem>
           <para>
-            Enables you to specify a <replaceable>date</replaceable> of publishing of a blog post or page.
+            Allows you to specify the <replaceable>date</replaceable> of publishing of a blog post or page.
           </para>
         </listitem>
       </varlistentry>
@@ -132,7 +132,7 @@
         <term><option>-T</option> <replaceable>tags</replaceable>, <option>--tags</option> <replaceable>tags</replaceable></term>
         <listitem>
           <para>
-            Enables you to supply a comma-separated list of <replaceable>tags</replaceable> attached to a blog post.
+            Allows you to supply a comma-separated list of <replaceable>tags</replaceable> attached to a blog post.
           </para>
         </listitem>
       </varlistentry>
@@ -140,7 +140,7 @@
         <term><option>-u</option> <replaceable>url</replaceable>, <option>--url</option> <replaceable>url</replaceable></term>
         <listitem>
           <para>
-            Enables you to specify a <replaceable>url</replaceable> of a blog post or page. Allowed characters are letters, numbers, hyphens, and underscores.
+            Allows you to specify the <replaceable>url</replaceable> of a blog post or page. Allowed characters are letters, numbers, hyphens, and underscores.
           </para>
         </listitem>
       </varlistentry>
@@ -209,7 +209,7 @@
         <term><varname>EDITOR</varname></term>
         <listitem>
           <para>
-            Unless the <option>core.editor</option> option is set, &PRODUCT; tries to use system-wide settings to decide which editor to use.
+            Unless the <option>core.editor</option> option is set, <command>blaze-add</command> tries to use system-wide settings to decide which editor to use.
           </para>
         </listitem>
       </varlistentry>
@@ -249,7 +249,7 @@ Successfully added the post with ID 10.</screen>
     <title>See Also</title>
     <variablelist>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-init" /></term>
+        <term><xref linkend="sect-Core_Utilities-init" /></term>
         <listitem>
           <para>
             <command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one.
@@ -257,7 +257,7 @@ Successfully added the post with ID 10.</screen>
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-config" /></term>
+        <term><xref linkend="sect-Core_Utilities-config" /></term>
         <listitem>
           <para>
             <command>blaze-config</command> displays or sets &PRODUCT; configuration options.
@@ -265,7 +265,7 @@ Successfully added the post with ID 10.</screen>
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-edit" /></term>
+        <term><xref linkend="sect-Core_Utilities-edit" /></term>
         <listitem>
           <para>
             <command>blaze-edit</command> edits a blog post or a page in the &PRODUCT; repository.
@@ -274,7 +274,7 @@ Successfully added the post with ID 10.</screen>
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-remove" /></term>
+        <term><xref linkend="sect-Core_Utilities-remove" /></term>
         <listitem>
           <para>
             <command>blaze-remove</command> removes a blog post or a page from the &PRODUCT; repository.
@@ -282,7 +282,7 @@ Successfully added the post with ID 10.</screen>
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-make" /></term>
+        <term><xref linkend="sect-Core_Utilities-make" /></term>
         <listitem>
           <para>
             <command>blaze-make</command> generates a blog from the &PRODUCT; repository.

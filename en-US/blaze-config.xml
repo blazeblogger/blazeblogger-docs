@@ -17,9 +17,9 @@
   </para>
   <section id="sect-Core_Utilities-config-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-config</command> [<option>-qV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-E</option> <replaceable>editor</replaceable>] <replaceable>option</replaceable> [<replaceable>value...</replaceable>]
+    <screen><command>blaze-config</command> <optional><option>-qV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-E</option> <replaceable>editor</replaceable></optional> <replaceable>option</replaceable> <optional><replaceable>value</replaceable>&#8230;</optional>
 
-<command>blaze-config</command> <option>-e</option> [<option>-b</option> <replaceable>directory</replaceable>]
+<command>blaze-config</command> <option>-e</option> <optional><option>-b</option> <replaceable>directory</replaceable></optional>
 
 <command>blaze-config</command> <option>-h</option>|<option>-v</option></screen>
   </section>
@@ -38,7 +38,7 @@
           <term><option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable></term>
           <listitem>
             <para>
-              Enables you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
+              Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory.
             </para>
           </listitem>
         </varlistentry>
@@ -46,7 +46,7 @@
           <term><option>-E</option> <replaceable>editor</replaceable>, <option>--editor</option> <replaceable>editor</replaceable></term>
           <listitem>
             <para>
-              Enables you to specify an external text <replaceable>editor</replaceable>. When supplied, this option overrides the relevant configuration option.
+              Allows you to specify an external text <replaceable>editor</replaceable>. When supplied, this option overrides the relevant configuration option.
             </para>
           </listitem>
         </varlistentry>
@@ -54,7 +54,7 @@
           <term><option>-e</option>, <option>--edit</option></term>
           <listitem>
             <para>
-              Enables you to edit the configuration in a text editor.
+              Allows you to edit the configuration in a text editor.
             </para>
           </listitem>
         </varlistentry>
@@ -227,7 +227,7 @@
           <term><option>post.author=<replaceable>string</replaceable></option></term>
           <listitem>
             <para>
-              A location of a blog post author name, as it can either be placed above the post (<literal>top</literal>), below it (<literal>bottom</literal>), or nowhere on the page (<literal>none</literal>). The default option is <literal>top</literal>.
+              A location of a blog post author name. It can be placed above the post (<literal>top</literal>), below it (<literal>bottom</literal>), or nowhere on the page (<literal>none</literal>). The default option is <literal>top</literal>.
             </para>
           </listitem>
         </varlistentry>
@@ -259,7 +259,7 @@
           <term><option>user.nickname=<replaceable>string</replaceable></option></term>
           <listitem>
             <para>
-              Your nickname to be used as the default value in the author field of a new post. When supplied, this option overrides the <option>user.name</option> setting. This option is disabled by default.
+              Your nickname to be used as the default post author. When supplied, it overrides the <option>user.name</option> setting. This option is disabled by default.
             </para>
           </listitem>
         </varlistentry>
@@ -281,7 +281,7 @@
         <term><varname>EDITOR</varname></term>
         <listitem>
           <para>
-            Unless the <option>core.editor</option> option is set, &PRODUCT; tries to use system-wide settings to decide which editor to use.
+            Unless the <option>core.editor</option> option is set, <command>blaze-config</command> tries to use system-wide settings to decide which editor to use.
           </para>
         </listitem>
       </varlistentry>
@@ -379,7 +379,7 @@ The option has been successfully saved.</screen>
     <title>See Also</title>
     <variablelist>
       <varlistentry>
-        <term><xref linkend="sect-User_Guide-Reference-init" /></term>
+        <term><xref linkend="sect-Core_Utilities-init" /></term>
         <listitem>
           <para>
             <command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one.
