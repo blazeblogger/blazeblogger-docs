@@ -8,12 +8,12 @@
   <xi:include href="Book_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="Preface.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <!-- Main Matter: -->
-  <part id="part-User_Guide-Introduction">
+  <part id="part-Introduction">
     <title>Introduction</title>
     <xi:include href="Installation.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="Getting_Started.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   </part>
-  <part id="part-User_Guide-Reference">
+  <part id="part-Reference">
     <title>Reference</title>
     <xi:include href="Core_Utilities.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   </part>

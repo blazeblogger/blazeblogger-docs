@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<chapter id="chap-User_Guide-Getting_Started">
+<chapter id="chap-Getting_Started">
   <title>Getting Started</title>
   <para>
     This chapter provides a brief introduction to &PRODUCT;. It covers how to create, configure, manage, and build a full-featured blog, as well as how to change the theme or translate the blog to your language.
@@ -15,7 +15,7 @@
     </para>
     <screen>~]$ <command>blaze help</command></screen>
   </note>
-  <section id="sect-User_Guide-Getting_Started-Creating">
+  <section id="sect-Getting_Started-Creating">
     <title>Creating a New Blog</title>
     <para>
       To create a new blog, move into the directory you want to keep the blog in, and use the following command:

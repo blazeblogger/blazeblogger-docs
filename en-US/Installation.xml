@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<chapter id="chap-User_Guide-Installation">
+<chapter id="chap-Installation">
   <title>Installation</title>
   <indexterm>
     <primary>installation</primary>
@@ -11,7 +11,7 @@
   <para>
     This chapter covers the installation of &PRODUCT; on various operating systems, including <acronym>GNU</acronym>/<trademark class="registered">Linux</trademark>, and <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark>.
   </para>
-  <section id="sect-User_Guide-Installation-Requirements">
+  <section id="sect-Installation-Requirements">
     <title>System Requirements</title>
     <indexterm>
       <primary>system requirements</primary>
@@ -20,7 +20,7 @@
       A working installation of <ulink url="http://www.perl.org">Perl</ulink> is required, version <literal>5.8.8</literal> or higher.
     </para>
   </section>
-  <section id="sect-User_Guide-Installation-Linux">
+  <section id="sect-Installation-Linux">
     <title>Installing on GNU/Linux</title>
     <indexterm>
       <primary>GNU/Linux</primary>
@@ -39,7 +39,7 @@
     </para>
     <screen>~]$ <command>su -</command>
 Password:</screen>
-    <section id="sect-User_Guide-Installation-Debian">
+    <section id="sect-Installation-Debian">
       <title>Installing on Debian</title>
       <indexterm>
         <primary><systemitem class="osname">Debian</systemitem></primary>
@@ -54,7 +54,7 @@ Password:</screen>
       </para>
       <screen>~]# <command>apt-get install blazeblogger</command></screen>
     </section>
-    <section id="sect-User_Guide-Installation-Fedora">
+    <section id="sect-Installation-Fedora">
       <title>Installing on Fedora</title>
       <indexterm>
         <primary><systemitem class="osname">Fedora</systemitem></primary>
@@ -69,7 +69,7 @@ Password:</screen>
       </para>
       <screen>~]# <command>yum install blazeblogger</command></screen>
     </section>
-    <section id="sect-User_Guide-Installation-Ubuntu">
+    <section id="sect-Installation-Ubuntu">
       <title>Installing on Ubuntu</title>
       <indexterm>
         <primary><systemitem class="osname">Ubuntu</systemitem></primary>
@@ -85,7 +85,7 @@ Password:</screen>
       <screen>~]# <command>sudo apt-get install blazeblogger</command></screen>
     </section>
   </section>
-  <section id="sect-User_Guide-Installation-Windows">
+  <section id="sect-Installation-Windows">
     <title>Installing on Windows</title>
     <indexterm>
       <primary><systemitem class="osname">Windows</systemitem></primary>

@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-User_Guide-Reference-log">
+<section id="sect-Core_Utilities-log">
   <title><command>blaze-log</command></title>
   <indexterm significance="preferred">
     <primary><command>blaze-log</command></primary>
@@ -15,19 +15,19 @@
   <para>
     <command>blaze-log</command> displays the &PRODUCT; repository log.
   </para>
-  <section id="sect-User_Guide-Reference-log-Synopsis">
+  <section id="sect-Core_Utilities-log-Synopsis">
     <title>Synopsis</title>
     <screen><command>blaze-log</command> [<option>-cqrsCV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-n</option> <replaceable>number</replaceable>]
 
 <command>blaze-log</command> <option>-h</option>|<option>-v</option></screen>
   </section>
-  <section id="sect-User_Guide-Reference-log-Description">
+  <section id="sect-Core_Utilities-log-Description">
     <title>Description</title>
     <para>
       <command>blaze-log</command> displays the content of the &PRODUCT; repository log.
     </para>
   </section>
-  <section id="sect-User_Guide-Reference-log-Options">
+  <section id="sect-Core_Utilities-log-Options">
     <title>Options</title>
     <variablelist>
       <varlistentry>
@@ -112,7 +112,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-log-Files">
+  <section id="sect-Core_Utilities-log-Files">
     <title>Files</title>
     <variablelist>
       <varlistentry>
@@ -125,7 +125,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-log-Example">
+  <section id="sect-Core_Utilities-log-Example">
     <title>Example Usage</title>
     <itemizedlist>
       <listitem>
@@ -167,7 +167,7 @@ Tue Feb 10 00:40:16 2009 - Created/recovered a BlazeBlogger repository.</screen>
       </listitem>
     </itemizedlist>
   </section>
-  <section id="sect-User_Guide-Reference-log-See">
+  <section id="sect-Core_Utilities-log-See">
     <title>See Also</title>
     <variablelist>
       <varlistentry>

@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-User_Guide-Reference-edit">
+<section id="sect-Core_Utilities-edit">
   <title><command>blaze-edit</command></title>
   <indexterm significance="preferred">
     <primary><command>blaze-edit</command></primary>
@@ -15,18 +15,18 @@
   <para>
     <command>blaze-edit</command> edits a blog post or a page in the &PRODUCT; repository.
   </para>
-  <section id="sect-User_Guide-Reference-edit-Synopsis">
+  <section id="sect-Core_Utilities-edit-Synopsis">
     <title>Synopsis</title>
     <screen><command>blaze-edit</command> [<option>-fpqCPV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-E</option> <replaceable>editor</replaceable>] <replaceable>id</replaceable>
 
 <command>blaze-edit</command> <option>-h</option>|<option>-v</option></screen>
   </section>
-  <section id="sect-User_Guide-Reference-edit-Description">
+  <section id="sect-Core_Utilities-edit-Description">
     <title>Description</title>
     <para>
       <command>blaze-edit</command> opens an existing blog post or a page with the specified <replaceable>id</replaceable> in an external text editor. Note that there are several special forms and placeholders that can be used in the text, and that will be replaced with a proper data when the blog is generated.
     </para>
-    <section id="sect-User_Guide-Reference-edit-Description-Special_Forms">
+    <section id="sect-Core_Utilities-edit-Description-Special_Forms">
       <title>Special Forms</title>
       <variablelist>
         <varlistentry>
@@ -39,7 +39,7 @@
         </varlistentry>
       </variablelist>
     </section>
-    <section id="sect-User_Guide-Reference-edit-Description-Placeholders">
+    <section id="sect-Core_Utilities-edit-Description-Placeholders">
       <title>Placeholders</title>
       <variablelist>
         <varlistentry>
@@ -85,7 +85,7 @@
       </variablelist>
     </section>
   </section>
-  <section id="sect-User_Guide-Reference-edit-Options">
+  <section id="sect-Core_Utilities-edit-Options">
     <title>Options</title>
     <variablelist>
       <varlistentry>
@@ -170,7 +170,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-edit-Environment">
+  <section id="sect-Core_Utilities-edit-Environment">
     <title>Environment Variables</title>
     <variablelist>
       <varlistentry>
@@ -183,7 +183,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-edit-Example">
+  <section id="sect-Core_Utilities-edit-Example">
     <title>Example Usage</title>
     <itemizedlist>
       <listitem>
@@ -206,7 +206,7 @@
       </listitem>
     </itemizedlist>
   </section>
-  <section id="sect-User_Guide-Reference-edit-See">
+  <section id="sect-Core_Utilities-edit-See">
     <title>See Also</title>
     <variablelist>
       <varlistentry>

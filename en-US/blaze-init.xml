@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-User_Guide-Reference-init">
+<section id="sect-Core_Utilities-init">
   <title><command>blaze-init</command></title>
   <indexterm significance="preferred">
     <primary><command>blaze-init</command></primary>
@@ -15,19 +15,19 @@
   <para>
     <command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one.
   </para>
-  <section id="sect-User_Guide-Reference-init-Synopsis">
+  <section id="sect-Core_Utilities-init-Synopsis">
     <title>Synopsis</title>
     <screen><command>blaze-init</command> [<option>-fqV</option>] [<option>-b</option> <replaceable>directory</replaceable>]
 
 <command>blaze-init</command> <option>-h</option>|<option>-v</option></screen>
   </section>
-  <section id="sect-User_Guide-Reference-init-Description">
+  <section id="sect-Core_Utilities-init-Description">
     <title>Description</title>
     <para>
       <command>blaze-init</command> either creates a fresh new &PRODUCT; repository, or recovers an existing one in case it is corrupted. Optionally, it can also revert a configuration and default templates to their original state, leaving all user data (that is, both blog posts and pages) intact. 
     </para>
   </section>
-  <section id="sect-User_Guide-Reference-init-Options">
+  <section id="sect-Core_Utilities-init-Options">
     <title>Options</title>
     <variablelist>
       <varlistentry>
@@ -80,7 +80,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-init-Example">
+  <section id="sect-Core_Utilities-init-Example">
     <title>Example Usage</title>
     <itemizedlist>
       <listitem>
@@ -115,7 +115,7 @@ Recovered a BlazeBlogger repository in .blaze.</screen>
       </listitem>
     </itemizedlist>
   </section>
-  <section id="sect-User_Guide-Reference-init-See">
+  <section id="sect-Core_Utilities-init-See">
     <title>See Also</title>
     <variablelist>
       <varlistentry>

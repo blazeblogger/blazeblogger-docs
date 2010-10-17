@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-User_Guide-Reference-add">
+<section id="sect-Core_Utilities-add">
   <title><command>blaze-add</command></title>
   <indexterm significance="preferred">
     <primary><command>blaze-add</command></primary>
@@ -15,18 +15,18 @@
   <para>
     <command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository.
   </para>
-  <section id="sect-User_Guide-Reference-add-Synopsis">
+  <section id="sect-Core_Utilities-add-Synopsis">
     <title>Synopsis</title>
     <screen><command>blaze-add</command> [<option>-pqCPV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-E</option> <replaceable>editor</replaceable>] [<option>-a</option> <replaceable>author</replaceable>] [<option>-d</option> <replaceable>date</replaceable>] [<option>-t</option> <replaceable>title</replaceable>] [<option>-T</option> <replaceable>tags</replaceable>] [<option>-u</option> <replaceable>url</replaceable>] [<replaceable>file...</replaceable>]
 
 <command>blaze-add</command> <option>-h</option>|<option>-v</option></screen>
   </section>
-  <section id="sect-User_Guide-Reference-add-Description">
+  <section id="sect-Core_Utilities-add-Description">
     <title>Description</title>
     <para>
       <command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository. If a <replaceable>file</replaceable> is supplied, it adds the content of that file, otherwise an external text editor is opened for you. Note that there are several special forms and placeholders that can be used in the text, and that will be replaced with a proper data when the blog is generated.
     </para>
-    <section id="sect-User_Guide-Reference-add-Description-Special_Forms">
+    <section id="sect-Core_Utilities-add-Description-Special_Forms">
       <title>Special Forms</title>
       <variablelist>
         <varlistentry>
@@ -39,7 +39,7 @@
         </varlistentry>
       </variablelist>
     </section>
-    <section id="sect-User_Guide-Reference-add-Description-Placeholders">
+    <section id="sect-Core_Utilities-add-Description-Placeholders">
       <title>Placeholders</title>
       <variablelist>
         <varlistentry>
@@ -85,7 +85,7 @@
       </variablelist>
     </section>
   </section>
-  <section id="sect-User_Guide-Reference-add-Options">
+  <section id="sect-Core_Utilities-add-Options">
     <title>Options</title>
     <variablelist>
       <varlistentry>
@@ -202,7 +202,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-add-Environment">
+  <section id="sect-Core_Utilities-add-Environment">
     <title>Environment Variables</title>
     <variablelist>
       <varlistentry>
@@ -215,7 +215,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-add-Example">
+  <section id="sect-Core_Utilities-add-Example">
     <title>Example Usage</title>
     <itemizedlist>
       <listitem>
@@ -245,7 +245,7 @@ Successfully added the post with ID 10.</screen>
       </listitem>
     </itemizedlist>
   </section>
-  <section id="sect-User_Guide-Reference-add-See">
+  <section id="sect-Core_Utilities-add-See">
     <title>See Also</title>
     <variablelist>
       <varlistentry>

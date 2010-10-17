@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<bookinfo id="book-User_Guide-User_Guide">
+<bookinfo id="book-User_Guide">
   <title>User Guide</title>
   <subtitle>Creating and managing websites with &PRODUCT;</subtitle>
   <productname>&PRODUCT;</productname>

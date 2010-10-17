@@ -3,12 +3,12 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<appendix id="appe-User_Guide-Quick_Reference">
+<appendix id="appe-Quick_Reference">
   <title>&PRODUCT; Quick Reference</title>
-  <bridgehead id="brid-User_Guide-Quick_Reference-Creating">
+  <bridgehead id="brid-Quick_Reference-Creating">
     Creating a New Blog
   </bridgehead>
-  <table id="tabl-User_Guide-Quick_Reference-Creating-New">
+  <table id="tabl-Quick_Reference-Creating-New">
     <title>Creating a New Blog Repository</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -51,7 +51,7 @@
       </tbody>
     </tgroup>
   </table>
-  <table id="tabl-User_Guide-Quick_Reference-Recovering">
+  <table id="tabl-Quick_Reference-Recovering">
     <title>Recovering a Corrupted Blog Repository</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -94,10 +94,10 @@
       </tbody>
     </tgroup>
   </table>
-  <bridgehead id="brid-User_Guide-Quick_Reference-Configuring">
+  <bridgehead id="brid-Quick_Reference-Configuring">
     Configuring a Blog
   </bridgehead>
-  <table id="tabl-User_Guide-Quick_Reference-Configuring-General">
+  <table id="tabl-Quick_Reference-Configuring-General">
     <title>General Blog Settings</title>
     <tgroup cols="2">
       <colspec colname="command" colwidth="60*" />
@@ -164,7 +164,7 @@
       </tbody>
     </tgroup>
   </table>
-  <table id="tabl-User_Guide-Quick_Reference-Configuring-User">
+  <table id="tabl-Quick_Reference-Configuring-User">
     <title>User Settings</title>
     <tgroup cols="2">
       <colspec colname="command" colwidth="60*" />
@@ -207,7 +207,7 @@
       </tbody>
     </tgroup>
   </table>
-  <table id="tabl-User_Guide-Quick_Reference-Configuring-RSS">
+  <table id="tabl-Quick_Reference-Configuring-RSS">
     <title>RSS Feed Settings</title>
     <tgroup cols="2">
       <colspec colname="command" colwidth="60*" />
@@ -250,7 +250,7 @@
       </tbody>
     </tgroup>
   </table>
-  <table id="tabl-User_Guide-Quick_Reference-Configuring-Color">
+  <table id="tabl-Quick_Reference-Configuring-Color">
     <title>Color Settings</title>
     <tgroup cols="2">
       <colspec colname="command" colwidth="60*" />
@@ -285,7 +285,7 @@
       </tbody>
     </tgroup>
   </table>
-  <table id="id-User_Guide-Quick_Reference-Configuring-Post">
+  <table id="id-Quick_Reference-Configuring-Post">
     <title>Advanced Blog Post Settings</title>
     <tgroup cols="2">
       <colspec colname="command" colwidth="60*" />
@@ -328,7 +328,7 @@
       </tbody>
     </tgroup>
   </table>
-  <table id="tabl-User_Guide-Quick_Reference-Configuring-Advanced">
+  <table id="tabl-Quick_Reference-Configuring-Advanced">
     <title>Advanced &PRODUCT; Settings</title>
     <tgroup cols="2">
       <colspec colname="command" colwidth="60*" />
@@ -387,10 +387,10 @@
       </tbody>
     </tgroup>
   </table>
-  <bridgehead id="brid-User_Guide-Quick_Reference-Adding">
+  <bridgehead id="brid-Quick_Reference-Adding">
     Adding a Blog Post or a Page
   </bridgehead>
-  <table id="tabl-User_Guide-Quick_Reference-Adding-Post">
+  <table id="tabl-Quick_Reference-Adding-Post">
     <title>Adding a Blog Post</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -441,7 +441,7 @@
       </tbody>
     </tgroup>
   </table>
-  <table id="tabl-User_Guide-Quick_Reference-Adding-Page">
+  <table id="tabl-Quick_Reference-Adding-Page">
     <title>Adding a Page</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -492,10 +492,10 @@
       </tbody>
     </tgroup>
   </table>
-  <bridgehead id="brid-User_Guide-Quick_Reference-Editing">
+  <bridgehead id="brid-Quick_Reference-Editing">
     Editing a Blog Post or a Page
   </bridgehead>
-  <table id="tabl-User_Guide-Quick_Reference-Editing-Post">
+  <table id="tabl-Quick_Reference-Editing-Post">
     <title>Editing a Blog Post</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -546,7 +546,7 @@
       </tbody>
     </tgroup>
   </table>
-  <table id="tabl-User_Guide-Quick_Reference-Editing-Page">
+  <table id="tabl-Quick_Reference-Editing-Page">
     <title>Editing a Page</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -597,10 +597,10 @@
       </tbody>
     </tgroup>
   </table>
-  <bridgehead id="brid-User_Guide-Quick_Reference-Removing">
+  <bridgehead id="brid-Quick_Reference-Removing">
     Removing a Blog Post or a Page
   </bridgehead>
-  <table id="tabl-User_Guide-Quick_Reference-Removing-Post">
+  <table id="tabl-Quick_Reference-Removing-Post">
     <title>Removing a Blog Post</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -635,7 +635,7 @@
       </tbody>
     </tgroup>
   </table>
-  <table id="tabl-User_Guide-Quick_Reference-Removing-Page">
+  <table id="tabl-Quick_Reference-Removing-Page">
     <title>Removing a Page</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -670,10 +670,10 @@
       </tbody>
     </tgroup>
   </table>
-  <bridgehead id="brid-User_Guide-Quick_Reference-Listing">
+  <bridgehead id="brid-Quick_Reference-Listing">
     Listing Blog Posts or Pages
   </bridgehead>
-  <table id="tabl-User_Guide-Quick_Reference-Listing-Post">
+  <table id="tabl-Quick_Reference-Listing-Post">
     <title>Listing Blog Posts</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -756,7 +756,7 @@
       </tbody>
     </tgroup>
   </table>
-  <table id="tabl-User_Guide-Quick_Reference-Listing-Page">
+  <table id="tabl-Quick_Reference-Listing-Page">
     <title>Listing Pages</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -815,10 +815,10 @@
       </tbody>
     </tgroup>
   </table>
-  <bridgehead id="brid-User_Guide-Quick_Reference-Statistics">
+  <bridgehead id="brid-Quick_Reference-Statistics">
     Displaying Blog Statistics
   </bridgehead>
-  <table id="tabl-User_Guide-Quick_Reference-Statistics">
+  <table id="tabl-Quick_Reference-Statistics">
     <title>Displaying Blog Statistics</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -853,10 +853,10 @@
       </tbody>
     </tgroup>
   </table>
-  <bridgehead id="brid-User_Guide-Quick_Reference-Generating">
+  <bridgehead id="brid-Quick_Reference-Generating">
     Generating a Blog
   </bridgehead>
-  <table id="tabl-User_Guide-Quick_Reference-Generating">
+  <table id="tabl-Quick_Reference-Generating">
     <title>Generating a Blog</title>
     <tgroup cols="2">
       <colspec colname="command" />
@@ -915,10 +915,10 @@
       </tbody>
     </tgroup>
   </table>
-  <bridgehead id="brid-User_Guide-Quick_Reference-Log">
+  <bridgehead id="brid-Quick_Reference-Log">
     Displaying a Log
   </bridgehead>
-  <table id="tabl-User_Guide-Quick_Reference-Log">
+  <table id="tabl-Quick_Reference-Log">
     <title>Displaying a Log</title>
     <tgroup cols="2">
       <colspec colname="command" />

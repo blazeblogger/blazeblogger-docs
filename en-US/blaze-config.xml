@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-User_Guide-Reference-config">
+<section id="sect-Core_Utilities-config">
   <title><command>blaze-config</command></title>
   <indexterm significance="preferred">
     <primary><command>blaze-config</command></primary>
@@ -15,7 +15,7 @@
   <para>
     <command>blaze-config</command> displays or sets &PRODUCT; configuration options.
   </para>
-  <section id="sect-User_Guide-Reference-config-Synopsis">
+  <section id="sect-Core_Utilities-config-Synopsis">
     <title>Synopsis</title>
     <screen><command>blaze-config</command> [<option>-qV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-E</option> <replaceable>editor</replaceable>] <replaceable>option</replaceable> [<replaceable>value...</replaceable>]
 
@@ -23,15 +23,15 @@
 
 <command>blaze-config</command> <option>-h</option>|<option>-v</option></screen>
   </section>
-  <section id="sect-User_Guide-Reference-config-Description">
+  <section id="sect-Core_Utilities-config-Description">
     <title>Description</title>
     <para>
       <command>blaze-config</command> either sets &PRODUCT; configuration options, or displays their current value. Additionally, it can also open a configuration file in an external text editor.
     </para>
   </section>
-  <section id="sect-User_Guide-Reference-config-Options">
+  <section id="sect-Core_Utilities-config-Options">
     <title>Options</title>
-    <section id="sect-User_Guide-Reference-config-Options-Command_Line">
+    <section id="sect-Core_Utilities-config-Options-Command_Line">
       <title>Command Line Options</title>
       <variablelist>
         <varlistentry>
@@ -92,7 +92,7 @@
         </varlistentry>
       </variablelist>
     </section>
-    <section id="sect-User_Guide-Reference-config-Options-Configuration">
+    <section id="sect-Core_Utilities-config-Options-Configuration">
       <title>Configuration Options</title>
       <variablelist>
         <varlistentry>
@@ -274,7 +274,7 @@
       </variablelist>
     </section>
   </section>
-  <section id="sect-User_Guide-Reference-config-Environment">
+  <section id="sect-Core_Utilities-config-Environment">
     <title>Environment Variables</title>
     <variablelist>
       <varlistentry>
@@ -287,7 +287,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-config-Files">
+  <section id="sect-Core_Utilities-config-Files">
     <title>Files</title>
     <variablelist>
       <varlistentry>
@@ -324,7 +324,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-config-Example">
+  <section id="sect-Core_Utilities-config-Example">
     <title>Example Usage</title>
     <itemizedlist>
       <listitem>
@@ -375,7 +375,7 @@ The option has been successfully saved.</screen>
       </listitem>
     </itemizedlist>
   </section>
-  <section id="sect-User_Guide-Reference-config-See">
+  <section id="sect-Core_Utilities-config-See">
     <title>See Also</title>
     <variablelist>
       <varlistentry>

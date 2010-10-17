@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-User_Guide-Reference-remove">
+<section id="sect-Core_Utilities-remove">
   <title><command>blaze-remove</command></title>
   <indexterm significance="preferred">
     <primary><command>blaze-remove</command></primary>
@@ -15,19 +15,19 @@
   <para>
     <command>blaze-remove</command> removes a blog post or a page from the &PRODUCT; repository.
   </para>
-  <section id="sect-User_Guide-Reference-remove-Synopsis">
+  <section id="sect-Core_Utilities-remove-Synopsis">
     <title>Synopsis</title>
     <screen><command>blaze-remove</command> [<option>-fipqPV</option>] [<option>-b</option> <replaceable>directory</replaceable>] <replaceable>id...</replaceable>
 
 <command>blaze-remove</command> <option>-h</option>|<option>-v</option></screen>
   </section>
-  <section id="sect-User_Guide-Reference-remove-Description">
+  <section id="sect-Core_Utilities-remove-Description">
     <title>Description</title>
     <para>
       <command>blaze-remove</command> removes a blog post or a page with the specified <replaceable>id</replaceable> from the &PRODUCT; repository.
     </para>
   </section>
-  <section id="sect-User_Guide-Reference-remove-Options">
+  <section id="sect-Core_Utilities-remove-Options">
     <title>Options</title>
     <variablelist>
       <varlistentry>
@@ -104,7 +104,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-remove-Example">
+  <section id="sect-Core_Utilities-remove-Example">
     <title>Example Usage</title>
     <itemizedlist>
       <listitem>
@@ -140,7 +140,7 @@ Successfully removed the post with ID 10, 4 and 6.</screen>
       </listitem>
     </itemizedlist>
   </section>
-  <section id="sect-User_Guide-Reference-remove-See">
+  <section id="sect-Core_Utilities-remove-See">
     <title>See Also</title>
     <variablelist>
       <varlistentry>

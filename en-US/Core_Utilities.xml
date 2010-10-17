@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<chapter id="chap-User_Guide-Core_Utilities">
+<chapter id="chap-Core_Utilities">
   <title>Core Utilities</title>
   <para>
     This chapter provides a thorough description of core &PRODUCT; utilities and their respective command line options.

@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-User_Guide-Reference-make">
+<section id="sect-Core_Utilities-make">
   <title><command>blaze-make</command></title>
   <indexterm significance="preferred">
     <primary><command>blaze-make</command></primary>
@@ -15,19 +15,19 @@
   <para>
     <command>blaze-make</command> generates a blog from the &PRODUCT; repository.
   </para>
-  <section id="sect-User_Guide-Reference-make-Synopsis">
+  <section id="sect-Core_Utilities-make-Synopsis">
     <title>Synopsis</title>
     <screen><command>blaze-make</command> [<option>-cpqrIFPTV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-d</option> <replaceable>directory</replaceable>]
 
 <command>blaze-make</command> <option>-h</option>|<option>-v</option></screen>
   </section>
-  <section id="sect-User_Guide-Reference-make-Description">
+  <section id="sect-Core_Utilities-make-Description">
     <title>Description</title>
     <para>
       <command>blaze-make</command> reads the &PRODUCT; repository, and generates a complete directory tree of static pages, including blog posts, single pages, monthly and yearly archives, tags, and even an RSS feed.
     </para>
   </section>
-  <section id="sect-User_Guide-Reference-make-Options">
+  <section id="sect-Core_Utilities-make-Options">
     <title>Options</title>
     <variablelist>
       <varlistentry>
@@ -136,7 +136,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-make-Files">
+  <section id="sect-Core_Utilities-make-Files">
     <title>Files</title>
     <variablelist>
       <varlistentry>
@@ -165,7 +165,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-make-Example">
+  <section id="sect-Core_Utilities-make-Example">
     <title>Example Usage</title>
     <itemizedlist>
       <listitem>
@@ -191,7 +191,7 @@ Done.</screen>
       </listitem>
     </itemizedlist>
   </section>
-  <section id="sect-User_Guide-Reference-make-See">
+  <section id="sect-Core_Utilities-make-See">
     <title>See Also</title>
     <variablelist>
       <varlistentry>

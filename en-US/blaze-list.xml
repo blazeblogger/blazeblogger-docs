@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-User_Guide-Reference-list">
+<section id="sect-Core_Utilities-list">
   <title><command>blaze-list</command></title>
   <indexterm significance="preferred">
     <primary><command>blaze-list</command></primary>
@@ -15,19 +15,19 @@
   <para>
     <command>blaze-list</command> lists blog posts or pages in the &PRODUCT; repository.
   </para>
-  <section id="sect-User_Guide-Reference-list-Synopsis">
+  <section id="sect-Core_Utilities-list-Synopsis">
     <title>Synopsis</title>
     <screen><command>blaze-list</command> [<option>-cpqrsCPSV</option>] [<option>-b</option> <replaceable>directory</replaceable>] [<option>-I</option> <replaceable>id</replaceable>] [<option>-a</option> <replaceable>author</replaceable>] [<option>-t</option> <replaceable>title</replaceable>] [<option>-T</option> <replaceable>tag</replaceable>] [<option>-d</option> <replaceable>day</replaceable>] [<option>-m</option> <replaceable>month</replaceable>] [<option>-y</option> <replaceable>year</replaceable>] [<option>-n</option> <replaceable>number</replaceable>]
 
 <command>blaze-list</command> <option>-h</option>|<option>-v</option></screen>
   </section>
-  <section id="sect-User_Guide-Reference-list-Description">
+  <section id="sect-Core_Utilities-list-Description">
     <title>Description</title>
     <para>
       <command>blaze-list</command> lists existing blog posts or pages in the &PRODUCT; repository. Additionally, it can also display basic repository statistics.
     </para>
   </section>
-  <section id="sect-User_Guide-Reference-list-Options">
+  <section id="sect-Core_Utilities-list-Options">
     <title>Options</title>
     <variablelist>
       <varlistentry>
@@ -192,7 +192,7 @@
       </varlistentry>
     </variablelist>
   </section>
-  <section id="sect-User_Guide-Reference-list-Example">
+  <section id="sect-Core_Utilities-list-Example">
     <title>Example Usage</title>
     <itemizedlist>
       <listitem>
@@ -262,7 +262,7 @@ There is a total number of 11 blog posts and 5 pages in the repository.</screen>
       </listitem>
     </itemizedlist>
   </section>
-  <section id="sect-User_Guide-Reference-list-See">
+  <section id="sect-Core_Utilities-list-See">
     <title>See Also</title>
     <variablelist>
       <varlistentry>
