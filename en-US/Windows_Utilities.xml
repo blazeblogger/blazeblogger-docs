@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-Windows_Utilities">
+  <title>Windows Utilities</title>
+  <para>
+    This chapter provides a thorough description of <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> utilities that are shipped with &PRODUCT;.
+  </para>
+  <xi:include href="blaze.bat.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+</chapter>
