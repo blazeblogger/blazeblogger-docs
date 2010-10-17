@@ -98,10 +98,7 @@ Password:</screen>
     <para>
       Currently, there is no installer for <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark>. To use &PRODUCT; there, download the latest version from the <ulink url="http://blaze.blackened.cz/downloads/">official homepage</ulink>, unpack it, and use the batch files that are located in <filename class="directory">blazeblogger-&VERSION;/windows/</filename>. For example:
     </para>
-    <example>
-      <title>Creating a new blog on Windows XP</title>
-      <screen>C:\blazeblogger-&VERSION;\windows> <command>blaze init</command></screen>
-    </example>
+    <screen>C:\blazeblogger-&VERSION;\windows> <command>blaze init</command></screen>
     <indexterm>
       <primary><application>Cygwin</application></primary>
     </indexterm>
@@ -111,10 +108,10 @@ Password:</screen>
       <see><application>Cygwin</application></see>
     </indexterm>
     <para>
-      Alternatively, you can use &PRODUCT; with <ulink url="http://www.cygwin.com/"><application>Cygwin</application></ulink>. In that case, see <xref linkend="sect-User_Guide-Installation-Source" /> for detailed installation instructions.
+      Alternatively, you can use &PRODUCT; with <ulink url="http://www.cygwin.com/"><application>Cygwin</application></ulink>. In that case, see <xref linkend="sect-Installation-Source" /> for detailed installation instructions.
     </para>
   </section>
-  <section id="sect-User_Guide-Installation-Source">
+  <section id="sect-Installation-Source">
     <title>Installing from the Source Code</title>
     <indexterm>
       <primary>source code</primary>
@@ -125,38 +122,22 @@ Password:</screen>
       <see>source code</see>
     </indexterm>
     <para>
-      To install &PRODUCT; from the source code, download the latest source package from the <ulink url="http://blaze.blackened.cz/downloads/">official homepage</ulink>, and unpack it.
+      To install &PRODUCT; from the source code, download the latest source package from the <ulink url="http://blaze.blackened.cz/downloads/">official homepage</ulink>, and unpack it:
     </para>
-    <example>
-      <title>Unpacking the package on GNU/Linux</title>
-      <screen>~]# <command>tar xfz blazeblogger-&VERSION;.tar.gz</command></screen>
-    </example>
+    <screen>~]# <command>tar xfz blazeblogger-&VERSION;.tar.gz</command></screen>
     <para>
-      A directory called <filename class="directory">blazeblogger-&VERSION;</filename> will appear in the current working directory. Get into it, and type <command>make install</command> at a shell prompt.
+      A directory called <filename class="directory">blazeblogger-&VERSION;</filename> will appear in the current working directory. Get into it, and type <command>make install</command> at a shell prompt:
     </para>
-    <example>
-      <title>Installing &PRODUCT; on GNU/Linux</title>
-      <screen>~]# <command>cd blazeblogger-&VERSION;</command>
+    <screen>~]# <command>cd blazeblogger-&VERSION;</command>
 blazeblogger-&VERSION;]# <command>make install</command></screen>
-    </example>
     <para>
-      This will install runnable scripts and their corresponding manual pages to the predefined <filename class="directory">/usr/local/bin/</filename> and <filename class="directory">/usr/local/share/man/</filename> directories respectively.
+      This will install executables, manual pages, documentation, and application data to the <filename class="directory">/usr/local/</filename> directory, and place Bash completion file to <filename class="directory">/etc/bash_completion.d/</filename>. To use a different installation directory, change the value of <option>prefix</option> on the command line. For example, if you want to install &PRODUCT; to <filename class="directory">/usr/</filename>, type the following command:
     </para>
-    <note>
-      <title>Note</title>
-      <para>
-        You can change the destination directory by changing the value of <varname>prefix</varname>. For example, to install scripts to <filename class="directory">~/local/bin/</filename>, and manual pages to <filename class="directory">~/local/share/man/</filename>, type the following command:
-      </para>
-      <screen>blazeblogger-&VERSION;]# <command>make prefix=$HOME/local install</command></screen>
-    </note>
+    <screen>blazeblogger-&VERSION;]# <command>make prefix=/usr install</command></screen>
     <para>
-      Additionally, on UNIX operating systems, you can also install the Bash completion support. To do so, get into the <filename class="directory">blazeblogger-&VERSION;/unix/bash_completion/</filename> directory, and run <command>make install</command>.
+      Alternatively, you can choose to install exacutables only. For instance, to install &PRODUCT; into your home directory, type:
     </para>
-    <example>
-      <title>Installing Bash completion support on GNU/Linux</title>
-      <screen>blazeblogger-&VERSION;]# <command>cd unix/bash_completion</command>
-bash_completion]# <command>make install</command></screen>
-    </example>
+    <screen>blazeblogger-&VERSION;]$ <command>make prefix=$HOME install_bin</command></screen>
   </section>
 </chapter>
 
