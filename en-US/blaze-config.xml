@@ -219,7 +219,7 @@
           <term><option>feed.fullposts=<replaceable>boolean</replaceable></option></term>
           <listitem>
             <para>
-              A boolean to enable (<literal>true</literal>) or disable (<literal>false</literal>) inclusion of the whole content of a blog post in the feed. The default option is <literal>false</literal>.
+              A boolean to enable (<literal>true</literal>) or disable (<literal>false</literal>) inclusion of the whole content of a blog post in the feed, even though the <command>&lt;!--&#160;break&#160;--&gt;</command> form is used. The default option is <literal>false</literal>.
             </para>
           </listitem>
         </varlistentry>
