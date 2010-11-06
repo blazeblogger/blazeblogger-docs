@@ -5,35 +5,17 @@
 ]>
 <chapter id="chap-Installation">
   <title>Installation</title>
-  <indexterm>
-    <primary>installation</primary>
-  </indexterm>
   <para>
     This chapter covers the installation of &PRODUCT; on various operating systems, including <acronym>GNU</acronym>/<trademark class="registered">Linux</trademark>, and <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark>.
   </para>
-  <section id="sect-Installation-Requirements">
-    <title>System Requirements</title>
-    <indexterm>
-      <primary>system requirements</primary>
-    </indexterm>
+  <important>
+    <title>Important</title>
     <para>
-      A working installation of <ulink url="http://www.perl.org">Perl</ulink> is required, version <literal>5.8.8</literal> or higher.
+      To run &PRODUCT; on your system, a working installation of <ulink url="http://www.perl.org">Perl</ulink> is required, version <literal>5.8.8</literal> or higher.
     </para>
-  </section>
+  </important>
   <section id="sect-Installation-Linux">
     <title>Installing on GNU/Linux</title>
-    <indexterm>
-      <primary>GNU/Linux</primary>
-    </indexterm>
-    <indexterm>
-      <primary>Linux</primary>
-      <see>GNU/Linux</see>
-    </indexterm>
-    <indexterm>
-      <primary>installation</primary>
-      <secondary>GNU/Linux</secondary>
-      <see>GNU/Linux</see>
-    </indexterm>
     <para>
       Note that with the exception of Ubuntu, you have to be logged in as superuser in order to run commands described in this section. To do so, type the following at a shell prompt:
     </para>
@@ -41,14 +23,6 @@
 Password:</screen>
     <section id="sect-Installation-Debian">
       <title>Installing on Debian</title>
-      <indexterm>
-        <primary><systemitem class="osname">Debian</systemitem></primary>
-      </indexterm>
-      <indexterm>
-        <primary>GNU/Linux</primary>
-        <secondary><systemitem class="osname">Debian</systemitem></secondary>
-        <see><systemitem class="osname">Debian</systemitem></see>
-      </indexterm>
       <para>
         &PRODUCT; is currently available in both testing (<quote>Squeeze</quote>) and unstable (<quote>Sid</quote>) version of Debian. To install it, open a terminal, and run the following command:
       </para>
@@ -56,29 +30,20 @@ Password:</screen>
     </section>
     <section id="sect-Installation-Fedora">
       <title>Installing on Fedora</title>
-      <indexterm>
-        <primary><systemitem class="osname">Fedora</systemitem></primary>
-      </indexterm>
-      <indexterm>
-        <primary>GNU/Linux</primary>
-        <secondary><systemitem class="osname">Fedora</systemitem></secondary>
-        <see><systemitem class="osname">Fedora</systemitem></see>
-      </indexterm>
       <para>
         &PRODUCT; is currently available in both Fedora 12 (<quote>Constantine</quote>) and 13 (<quote>Goddard</quote>). To install it, open a terminal, and run the following command:
       </para>
       <screen>~]# <command>yum install blazeblogger</command></screen>
     </section>
+    <section id="sect-Installation-Gentoo">
+      <title>Installing on Gentoo</title>
+      <para>
+        &PRODUCT; is currently available in Gentoo Portage. To install it, open a terminal, and run the following command:
+      </para>
+      <screen>~]# <command>emerge blazeblogger</command></screen>
+    </section>
     <section id="sect-Installation-Ubuntu">
       <title>Installing on Ubuntu</title>
-      <indexterm>
-        <primary><systemitem class="osname">Ubuntu</systemitem></primary>
-      </indexterm>
-      <indexterm>
-        <primary>GNU/Linux</primary>
-        <secondary><systemitem class="osname">Ubuntu</systemitem></secondary>
-        <see><systemitem class="osname">Ubuntu</systemitem></see>
-      </indexterm>
       <para>
         &PRODUCT; is currently available in Ubuntu 10.04 LTS (<quote>Lucid Lynx</quote>). To install it, open a terminal, and run the following command:
       </para>
@@ -87,40 +52,16 @@ Password:</screen>
   </section>
   <section id="sect-Installation-Windows">
     <title>Installing on Windows</title>
-    <indexterm>
-      <primary><systemitem class="osname">Windows</systemitem></primary>
-    </indexterm>
-    <indexterm>
-      <primary>installation</primary>
-      <secondary><systemitem class="osname">Windows</systemitem></secondary>
-      <see><systemitem class="osname">Windows</systemitem></see>
-    </indexterm>
     <para>
       Currently, there is no installer for <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark>. To use &PRODUCT; there, download the latest version from the <ulink url="http://blaze.blackened.cz/downloads/">official homepage</ulink>, unpack it, and use the batch files that are located in <filename class="directory">blazeblogger-&VERSION;/windows/</filename>. For example:
     </para>
     <screen>C:\blazeblogger-&VERSION;\windows> <command>blaze init</command></screen>
-    <indexterm>
-      <primary><application>Cygwin</application></primary>
-    </indexterm>
-    <indexterm>
-      <primary><systemitem class="osname">Windows</systemitem></primary>
-      <secondary><application>Cygwin</application></secondary>
-      <see><application>Cygwin</application></see>
-    </indexterm>
     <para>
       Alternatively, you can use &PRODUCT; with <ulink url="http://www.cygwin.com/"><application>Cygwin</application></ulink>. In that case, see <xref linkend="sect-Installation-Source" /> for detailed installation instructions.
     </para>
   </section>
   <section id="sect-Installation-Source">
     <title>Installing from the Source Code</title>
-    <indexterm>
-      <primary>source code</primary>
-    </indexterm>
-    <indexterm>
-      <primary>installation</primary>
-      <secondary>source code</secondary>
-      <see>source code</see>
-    </indexterm>
     <para>
       To install &PRODUCT; from the source code, download the latest source package from the <ulink url="http://blaze.blackened.cz/downloads/">official homepage</ulink>, and unpack it:
     </para>
