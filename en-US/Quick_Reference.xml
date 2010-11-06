@@ -969,4 +969,301 @@
       </tbody>
     </tgroup>
   </table>
+  <bridgehead id="brid-Quick_Reference-Theme">
+    Creating a New Theme
+  </bridgehead>
+  <table id="tabl-Quick_Reference-Placeholders">
+    <title>List of Available Theme File Placeholders</title>
+    <tgroup cols="2">
+      <colspec colname="form" colwidth="40*" />
+      <colspec colname="description" colwidth="60*" />
+      <thead>
+        <row>
+          <entry>
+            Form
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>&lt;!-- content-type --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the Content-Type META tag.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- generator --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the Generator META tag.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- date --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the Date META tag.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- stylesheet --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the Stylesheet LINK tag.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- rss --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the RSS feed LINK tag.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- page-title --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with a page title.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- title --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the blog title.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- subtitle --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the blog subtitle.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- name --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the author's name.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- nickname --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the author's nickname.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- e-mail --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the author's email.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- year --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the current year.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- tags --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the list of tags.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- archive --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the list of months.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- pages --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the list of pages.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- posts --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the list of recent blog posts.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- content --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the actual content.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>%root%</command>
+          </entry>
+          <entry>
+            Is replaced with a relative path to the root directory of the blog.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>%home%</command>
+          </entry>
+          <entry>
+            Is replaced with a relative path to the index page of the blog.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>%page[<replaceable>id</replaceable>]%</command>
+          </entry>
+          <entry>
+            Is replaced with a relative path to a page with the given <replaceable>id</replaceable>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>%post[<replaceable>id</replaceable>]%</command>
+          </entry>
+          <entry>
+            Is replaced with a relative path to a blog post with the given <replaceable>id</replaceable>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>%tag[<replaceable>name</replaceable>]%</command>
+          </entry>
+          <entry>
+            Is replaced with a relative path to a tag with the given <replaceable>name</replaceable>.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <table id="tabl-Quick_Reference-Classes">
+    <title>List of Available Style Sheet Classes</title>
+    <tgroup cols="2">
+      <colspec colname="form" colwidth="40*" />
+      <colspec colname="description" colwidth="60*" />
+      <thead>
+        <row>
+          <entry>
+            Form
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <command>post</command>
+          </entry>
+          <entry>
+            A H2 tag containing the title of a blog post or a page.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>section</command>
+          </entry>
+          <entry>
+            A DIV tag containing a section name.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>information</command>
+          </entry>
+          <entry>
+            A DIV tag containing blog post meta information that are displayed above the post.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>post-footer</command>
+          </entry>
+          <entry>
+            A DIV tag containing blog post meta information that are displayed below the post.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>date</command>
+          </entry>
+          <entry>
+            A SPAN tag containing a date of publishing.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>author</command>
+          </entry>
+          <entry>
+            A SPAN tag containing an author of a blog post.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>tags</command>
+          </entry>
+          <entry>
+            A SPAN tag containing a list of attached tags.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>previous</command>
+          </entry>
+          <entry>
+            A DIV tag containing a link to a page with older blog posts.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>next</command>
+          </entry>
+          <entry>
+            A DIV tag containing a link to a page with newer blog posts.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>more</command>
+          </entry>
+          <entry>
+            An A tag containing a <quote>Read more</quote> link.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
 </appendix>
