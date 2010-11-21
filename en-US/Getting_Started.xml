@@ -9,7 +9,6 @@
     This chapter provides a brief introduction to &PRODUCT; and its usage, and covers how to create, configure, manage, and build a full-featured blog.
   </para>
   <note>
-    <title>Tip</title>
     <para>
       On GNU/Linux, UNIX, and similar operating systems, you can use <command>blaze-<replaceable>command</replaceable></command> and more convenient <command>blaze <replaceable>command</replaceable></command> interchangeably. For a list of available commands, type the following at a shell prompt:
     </para>
@@ -18,7 +17,7 @@
   <section id="sect-Getting_Started-Creating">
     <title>Creating a New Blog</title>
     <para>
-      To create a new blog, move into the directory in which you want to keep its working copy, and type the following at a shell prompt:
+      To create a new blog, move into the directory in which you want to keep its working copy, and type:
     </para>
     <screen>~]$ <command>blaze-init</command>
 Created a BlazeBlogger repository in .blaze.</screen>

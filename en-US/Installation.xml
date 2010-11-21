@@ -9,7 +9,6 @@
     This chapter covers the installation of &PRODUCT; on various operating systems, including <acronym>GNU</acronym>/<trademark class="registered">Linux</trademark>, and <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark>.
   </para>
   <important>
-    <title>Important</title>
     <para>
       To run &PRODUCT; on your system, a working installation of <ulink url="http://www.perl.org">Perl</ulink> is required, version <literal>5.8.8</literal> or higher.
     </para>
