@@ -36,4 +36,54 @@ Recovered a BlazeBlogger repository in .blaze.</screen>
       For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-init" />.
     </para>
   </section>
+  <section id="sect-Getting_Started-Log">
+    <title>Displaying a Log</title>
+    <para>
+      For the possibility of a future review, &PRODUCT; keeps track of all significant changes to the blog, including its initialization and recovery, addition of new content, changes to existing blog posts and pages, and their removal.
+    </para>
+    <note>
+      <para>
+        Since version 0.9.0, &PRODUCT; allows you to enable a colored output for some of its utilites. To enable this feature for <command>blaze-log</command>, use the following command:
+      </para>
+      <screen>~]$ <command>blaze-config color.log true</command></screen>
+    </note>
+    <para>
+      To display the complete history of the blog, type the following at a shell prompt:
+    </para>
+    <screen>~]$ <command>blaze-log</command>
+Date: Sun Jul 25 16:48:22 2010
+
+    Edited the page with ID 5.
+
+Date: Tue Jul  6 18:54:59 2010
+
+    Edited the page with ID 5.
+
+<emphasis>etc.</emphasis></screen>
+    <para>
+      By default, log entries are sorted from the newest to oldest, so that the latest change is listed at the top. If you prefer the reverse order, use the <option>--reverse</option> (or <option>-r</option>) command line option:
+    </para>
+        <screen>~]$ <command>blaze-log -r</command>
+Date: Tue Feb 10 00:40:16 2009
+
+    Created/recovered a BlazeBlogger repository.
+
+Date: Tue Feb 10 01:06:44 2009
+
+    Added the page with ID 1.
+
+<emphasis>etc.</emphasis></screen>
+    <para>
+      Finally, to display only a limited number of log entries, use the <option>--number</option> (or <option>-n</option> for short) command line option. For example, to display the latest change to the blog, type:
+    </para>
+    <screen>~]$ <command>blaze-log -n 1</command>
+Date: Sun Jul 25 16:48:22 2010
+
+    Edited the page with ID 5.
+
+</screen>
+    <para>
+      For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-log" />.
+    </para>
+  </section>
 </chapter>
