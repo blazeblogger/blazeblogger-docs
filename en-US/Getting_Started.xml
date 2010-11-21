@@ -35,6 +35,22 @@ Recovered a BlazeBlogger repository in .blaze.</screen>
       For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-init" />.
     </para>
   </section>
+  <section id="sect-Getting_Started-Stats">
+    <title>Displaying Blog Statistics</title>
+    <para>
+      To display detailed information about the blog statistics, including the total number of blog posts and pages, the date of the very first blog post, and the date of the latest published post, use the <command>blaze-list</command> with the <option>--stats</option> (or shorter <option>-S</option>) option:
+    </para>
+    <screen>~]$ <command>blaze-list -S</command>
+Number of pages: 5
+Number of posts: 11
+Last post date:  2010-07-25
+First post date: 2009-02-10</screen>
+    <para>
+      You can also display the short version of the above output by supplying the <option>--short</option> (or <option>-s</option>) command line option as well:
+    </para>
+    <screen>~]$ <command>blaze-list -Ss</command>
+There is a total number of 11 blog posts and 5 pages in the repository.</screen>
+  </section>
   <section id="sect-Getting_Started-Log">
     <title>Displaying a Log</title>
     <para>
