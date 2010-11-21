@@ -5,13 +5,6 @@
 ]>
 <section id="sect-Core_Utilities-add">
   <title><command>blaze-add</command></title>
-  <indexterm significance="preferred">
-    <primary><command>blaze-add</command></primary>
-  </indexterm>
-  <indexterm>
-    <primary><command>add</command></primary>
-    <see><command>blaze-add</command></see>
-  </indexterm>
   <para>
     <command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository.
   </para>

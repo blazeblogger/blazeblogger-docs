@@ -3,22 +3,6 @@
 ]>
 <appendix id="appe-GNU_Free_Documentation_License">
   <title>GNU Free Documentation License</title>
-  <indexterm significance="preferred">
-    <primary>GNU Free Documentation License</primary>
-  </indexterm>
-  <indexterm>
-    <primary>GNU FDL</primary>
-    <see>GNU Free Documentation License</see>
-  </indexterm>
-  <indexterm>
-    <primary>FDL</primary>
-    <see>GNU Free Documentation License</see>
-  </indexterm>
-  <indexterm>
-    <primary>license</primary>
-    <secondary>GNU Free Documentation License</secondary>
-    <see>GNU Free Documentation License</see>
-  </indexterm>
   <para>
     Version 1.3, 3 November 2008
   </para>

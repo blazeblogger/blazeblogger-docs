@@ -5,13 +5,6 @@
 ]>
 <section id="sect-Core_Utilities-make">
   <title><command>blaze-make</command></title>
-  <indexterm significance="preferred">
-    <primary><command>blaze-make</command></primary>
-  </indexterm>
-  <indexterm>
-    <primary><command>make</command></primary>
-    <see><command>blaze-make</command></see>
-  </indexterm>
   <para>
     <command>blaze-make</command> generates a blog from the &PRODUCT; repository.
   </para>
