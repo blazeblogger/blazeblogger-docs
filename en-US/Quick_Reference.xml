@@ -975,8 +975,8 @@
   <table id="tabl-Quick_Reference-Placeholders">
     <title>List of Available Theme File Placeholders</title>
     <tgroup cols="2">
-      <colspec colname="form" colwidth="40*" />
-      <colspec colname="description" colwidth="60*" />
+      <colspec colname="form" />
+      <colspec colname="description" />
       <thead>
         <row>
           <entry>
@@ -1170,8 +1170,8 @@
   <table id="tabl-Quick_Reference-Classes">
     <title>List of Available Style Sheet Classes</title>
     <tgroup cols="2">
-      <colspec colname="form" colwidth="40*" />
-      <colspec colname="description" colwidth="60*" />
+      <colspec colname="form" />
+      <colspec colname="description" />
       <thead>
         <row>
           <entry>
