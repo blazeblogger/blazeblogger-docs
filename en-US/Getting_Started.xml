@@ -51,6 +51,48 @@ First post date: 2009-02-10</screen>
     <screen>~]$ <command>blaze-list -Ss</command>
 There is a total number of 11 blog posts and 5 pages in the repository.</screen>
   </section>
+  <section id="sect-Getting_Started-Generating">
+    <title>Generating a Blog</title>
+    <para>
+      To generate a complete directory tree of static pages with all blog posts, single pages, monthly and yearly archives, tags, and an RSS feed, run the following command:
+    </para>
+    <screen>~]$ <command>blaze-make</command>
+Done.</screen>
+    <para>
+      Unless told otherwise, &PRODUCT; generates the blog in the current working directory. To specify a different location, specify the <option>--destdir</option> (or <option>-d</option>) option. For example, to generate a blog in <filename class="directory">~/public_html/</filename>, type:
+    </para>
+    <screen>~]$ <command>blaze-make -d ~/public_html</command>
+Done.</screen>
+    <para>
+      To display the list of files as they are created, use <option>--verbose</option> (or its short version, <option>-V</option>). For example:
+    </para>
+    <screen>~]$ <command>blaze.make -V</command>
+Created index.rss
+Created index.html
+Created index1.html
+Created 2010/10/index.html
+Created 2010/07/11-join-blazeblogger-on-irc/index.html
+Created 2009/12/10-debian-and-fedora-packages/index.html
+Created 2009/index.html
+Created 2010/07/index.html
+<emphasis>etc.</emphasis>
+Done.</screen>
+    <para>
+      For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-make" />.
+    </para>
+    <note>
+      <para>
+        If you intend your blog to be accessed offline, for example, if you want to review it before you publish it on your website, use the <option>--full-paths</option> (or <option>-F</option>) option:
+      </para>
+      <screen>~]$ <command>blaze-make -F</command>
+Done.</screen>
+      <para>
+        This option ensures that all generated links point directly to index pages and not to their parent directories. Additionally, you can turn off the creation of the RSS feed as well. To do so, add the <option>--no-rss</option> (or <option>-r</option>) option:
+      </para>
+      <screen>~]$ <command>blaze-make -Fr</command>
+Done.</screen>
+    </note>
+  </section>
   <section id="sect-Getting_Started-Log">
     <title>Displaying a Log</title>
     <para>
