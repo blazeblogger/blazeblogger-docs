@@ -167,7 +167,7 @@
     <title>Environment Variables</title>
     <variablelist>
       <varlistentry>
-        <term><varname>EDITOR</varname></term>
+        <term><envar>EDITOR</envar></term>
         <listitem>
           <para>
             Unless the <option>core.editor</option> option is set, <command>blaze-edit</command> tries to use system-wide settings to decide which editor to use.
