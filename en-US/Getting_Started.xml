@@ -93,6 +93,74 @@ First post date: 2009-02-10</screen>
     <screen>~]$ <command>blaze-list -Ss</command>
 There is a total number of 11 blog posts and 5 pages in the repository.</screen>
   </section>
+  <section id="sect-Getting_Started-Listing">
+    <title>Listing Blog Posts or Pages</title>
+    <para>
+      To make the management of blog posts and pages easier, &PRODUCT; is shipped with the <command>blaze-list</command> utility that allows a user to display the content of the blog. This includes the important information such as the ID, date of publishing, title, and attached tags.
+    </para>
+    <note>
+      <para>
+        Since version 0.9.0, &PRODUCT; allows you to enable a colored output for some of its utilities. To enable this feature for <command>blaze-list</command>, use the following command:
+      </para>
+      <screen>~]$ <command>blaze-config color.list true</command></screen>
+    </note>
+    <para>
+      To display all featured blog posts, type the following at a shell prompt:
+    </para>
+    <screen>~]$ <command>blaze-list</command>
+ID: 11 | 2010-07-05 | Jaromír Hradílek
+
+    Title: Join #blazeblogger on IRC
+    Tags:  announcement
+
+ID: 10 | 2009-12-16 | Jaromír Hradílek
+
+    Title: Debian and Fedora Packages
+    Tags:  announcement, archlinux, debian, fedora, ubuntu
+
+<emphasis>etc.</emphasis></screen>
+    <para>
+      Similarly, to display the complete list of available pages, add the <option>--pages</option> (or <option>-p</option>) command line option:
+    </para>
+    <screen>~]$ <command>blaze-list -p</command>
+ID: 5 | 2009-02-10 | Jaromír Hradílek
+
+    Title: Downloads
+
+ID: 4 | 2009-02-10 | Jaromír Hradílek
+
+    Title: Themes
+
+<emphasis>etc.</emphasis></screen>
+    <para>
+      As shown in the examples above, latest entries are listed first by default, and in most cases, this is a reasonable behavior. However, to change the sorting order and display the latest entries last, you can use the <option>--reverse</option> (or <option>-r</option>) option:
+    </para>
+    <screen>~]$ <command>blaze-list -r</command>
+ID: 1 | 2009-02-10 | Jaromír Hradílek
+
+    Title: BlazeBlogger 0.7.0
+    Tags:  release
+
+ID: 2 | 2009-02-11 | Jaromír Hradílek
+
+    Title: BlazeBlogger 0.7.1
+    Tags:  release
+
+<emphasis>etc.</emphasis></screen>
+    <para>
+      You can also limit the number of listed entries by specifying the <option>--number</option> (or <option>-n</option>) option. For example, to display only the information about the first blog post, type:
+    </para>
+    <screen>~]$ <command>blaze-list -n 1 -r</command>
+ID: 1 | 2009-02-10 | Jaromír Hradílek
+
+    Title: BlazeBlogger 0.7.0
+    Tags:  release
+
+</screen>
+    <para>
+      Additionally, you can limit the output by specifying a blog post author (<option>--author</option> or <option>-a</option>), a tag (<option>--tag</option> or <option>-T</option>), a matching title (<option>--title</option> or <option>-T</option>), a date of publishing, and other criteria. For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-list" />.
+    </para>
+  </section>
   <section id="sect-Getting_Started-Generating">
     <title>Generating a Blog</title>
     <para>
