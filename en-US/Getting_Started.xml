@@ -35,10 +35,28 @@ Recovered a BlazeBlogger repository in .blaze.</screen>
       For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-init" />.
     </para>
   </section>
+  <section id="sect-Getting_Started-Editing">
+    <title>Editing a Blog Post or a Page</title>
+    <para>
+      To edit an existing blog post, run the <command>blaze-edit</command> command followed by its ID. For example, if you want to edit the blog post with ID 10, type:
+    </para>
+    <screen>~]$ <command>blaze-edit 10</command></screen>
+    <para>
+      To edit a page instead, add the <option>--page</option> (or <option>-p</option>) option:
+    </para>
+    <screen>~]$ <command>blaze-edit -p 5</command></screen>
+    <para>
+      By default, <command>blaze-edit</command> opens a blog post or a page in an external text editor that is specified in the configuration (that is, either in the configuration file, or via the <envar>EDITOR</envar> environment variable). To use a different text editor, add the <option>--editor</option> (or <option>-E</option>) command line option, for instance:
+    </para>
+    <screen>~]$ <command>blaze-edit -E "gvim -f" -p 5</command></screen>
+    <para>
+      For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-edit" />.
+    </para>
+  </section>
   <section id="sect-Getting_Started-Removing">
     <title>Removing a Blog Post or a Page</title>
     <para>
-      To delete a blog post from your blog, run the <command>blaze-remove</command> command followed an appropriate ID, for example:
+      To delete a blog post from your blog, run the <command>blaze-remove</command> command followed by an appropriate ID, for example:
     </para>
     <screen>~]$ <command>blaze-remove 10</command>
 Successfully removed the post with ID 10.</screen>
