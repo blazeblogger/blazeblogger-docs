@@ -35,6 +35,216 @@ Recovered a BlazeBlogger repository in .blaze.</screen>
       For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-init" />.
     </para>
   </section>
+  <section id="sect-Getting_Started-Adding">
+    <title>Adding a Blog Post or a Page</title>
+    <para>
+      To write a new blog post, run the following command:
+    </para>
+    <screen>~]$ <command>blaze-add</command></screen>
+    <para>
+      To write a new page instead, add the <option>--page</option> (or <option>-p</option>) command line option:
+    </para>
+    <screen>~]$ <command>blaze-add -p</command></screen>
+    <para>
+      This will open an external text editor with a pre-formatted header and brief instructions on how to compose a blog entry. By default, the editor specified by the <option>core.editor</option> configuration option or the <envar>EDITOR</envar> environment variable is used. To edit the entry in a different edditor, add the <option>--editor</option> (or <option>-E</option>) command line option. For example, to write a blog post in <application>GVim</application>, type:
+    </para>
+    <screen>~]$ <command>blaze-add -E "gvim -f"</command></screen>
+    <para>
+      The blog post or page header contains important meta data, such as the title, author, or date of publishing of the entry. For a detailed explanation of all available options, refer to <xref linkend="tabl-Getting_Started-Adding-Header" />.
+    </para>
+    <table id="tabl-Getting_Started-Adding-Header">
+      <title>A List of Available Header Options</title>
+      <tgroup cols="3">
+        <colspec colname="option" colnum="1" colwidth="20*" />
+        <colspec colname="type" colnum="2" colwidth="20*" />
+        <colspec colname="description" colnum="3" colwidth="60*" />
+        <thead>
+          <row>
+            <entry>
+              Option
+            </entry>
+            <entry>
+              Type
+            </entry>
+            <entry>
+              Description
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              <option>title</option>
+            </entry>
+            <entry>
+              Mandatory
+            </entry>
+            <entry>
+              Specifies the title of the blog post or page.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <option>author</option>
+            </entry>
+            <entry>
+              Mandatory
+            </entry>
+            <entry>
+              Specifies the author of the blog post or page. The value of the <option>user.name</option> (or <option>user.nickname</option> if supplied) configuration option is used by default.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <option>date</option>
+            </entry>
+            <entry>
+              Mandatory
+            </entry>
+            <entry>
+              Specifies the date of publishing of the blog post or page, and has to be in the <literal>YYYY-MM-DD</literal> format. The current date is used by default.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <option>tags</option>
+            </entry>
+            <entry>
+              Optional
+            </entry>
+            <entry>
+              Allows you to specify a comma-separated list of categories the blog post belongs to. This option is not relevant for pages.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <option>url</option>
+            </entry>
+            <entry>
+              Optional
+            </entry>
+            <entry>
+              Allows you to specify the string to be used in the URL. It must contain alphanumeric characters, hyphens, and underscores only.
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <para>
+      Besides ordinary elements defined by the HTML or XHTML standard, &PRODUCT; recognizes various special forms that can be used in the text itself. This includes various placeholders that ensure the cross-references within a particular blog are valid and always point to the expected target. For a complete list of these special forms, refer to <xref linkend="tabl-Getting_Started-Adding-Forms" />.
+    </para>
+    <table id="tabl-Getting_Started-Adding-Forms">
+      <title>A List of Special Forms and Placeholders</title>
+      <tgroup cols="2">
+        <colspec colname="form" colnum="1" colwidth="40*" />
+        <colspec colname="description" colnum="2" colwidth="60*" />
+        <thead>
+          <row>
+            <entry>
+              Form
+            </entry>
+            <entry>
+              Description
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              <command>&lt;!-- break --&gt;</command>
+            </entry>
+            <entry>
+              Delimits a blog post synopsis.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <command>%root%</command>
+            </entry>
+            <entry>
+              Is replaced with a relative path to the root directory of the blog.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <command>%home%</command>
+            </entry>
+            <entry>
+              Is replaced with a relative path to the index page of the blog.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <command>%page[<replaceable>id</replaceable>]%</command>
+            </entry>
+            <entry>
+              Is replaced with a relative path to a page with the given <replaceable>id</replaceable>.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <command>%post[<replaceable>id</replaceable>]%</command>
+            </entry>
+            <entry>
+              Is replaced with a relative path to a blog post with the given <replaceable>id</replaceable>.
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <command>%tag[<replaceable>name</replaceable>]%</command>
+            </entry>
+            <entry>
+              Is replaced with a relative path to a tag with the given <replaceable>name</replaceable>.
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <para>
+      <xref linkend="exam-Getting_Started-Adding-Example_Post" /> illustrates the way a typical blog post is written.
+    </para>
+    <example id="exam-Getting_Started-Adding-Example_Post">
+      <title>A Sample Blog Post</title>
+      <screen># This and following lines beginning with  '#' are the post header.  Please
+# take your time and replace these options with desired values. Just remem-
+# ber that the date has to be in an YYYY-MM-DD form, tags are a comma sepa-
+# rated list of categories the post (pages ignore these) belong to, and the
+# url, if provided, should consist of alphanumeric characters,  hyphens and
+# underscores only. Specifying your own url  is especially recommended when
+# you use non-ASCII characters in your post title.
+#
+#   title:  BlazeBlogger 1.1.1
+#   author: Jaromír Hradílek
+#   date:   2010-10-30
+#   tags:   release
+#   url:
+#
+# The header ends here. The rest is the content of your post.
+
+&lt;p&gt;BlazeBlogger 1.1.1 has been released! This release fixes four bugs that may have caused BlazeBlogger to sort entries in a wrong order, produce invalid RSS feed, or not to run properly when using an older version of Perl.&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    When the &lt;code&gt;feed.fullposts&lt;/code&gt; configuration option was disabled, all HTML/XHTML entities were removed. However, this may have led to an invalid output. With this update, such entities are no longer stripped out, and the RSS feed is now created as expected. (&lt;a href="http://code.google.com/p/blazeblogger/issues/detail?id=18"&gt;Issue 18&lt;/a&gt;, &lt;a href="http://code.google.com/p/blazeblogger/issues/detail?id=29"&gt;29&lt;/a&gt;)
+  &lt;/li&gt;
+  &lt;li&gt;
+    Due to incorrect use of the &lt;code&gt;cmp&lt;/code&gt; operator, both &lt;code&gt;blaze-list&lt;/code&gt; and &lt;code&gt;blaze-make&lt;/code&gt; utilities may have listed blog posts in a wrong order. With this update, the comparison subroutine has been corrected, so that all entries are now sorted in a correct order. (&lt;a href="http://code.google.com/p/blazeblogger/issues/detail?id=26"&gt;Issue 26&lt;/a&gt;)
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;When using an older version of Perl, attempting to run the &lt;code&gt;blaze-make&lt;/code&gt; utility may have failed with the following error message:&lt;/p&gt;
+    &lt;pre&gt;blaze-make: Creating `': mkdir : No such file or directory&lt;/pre&gt;
+    &lt;p&gt;This error no longer occurs, and &lt;code&gt;blaze-make&lt;/code&gt; now produces the expected output. (&lt;a href="http://code.google.com/p/blazeblogger/issues/detail?id=30"&gt;Issue 30&lt;/a&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</screen>
+    </example>
+    <para>
+      For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-add" />.
+    </para>
+  </section>
   <section id="sect-Getting_Started-Editing">
     <title>Editing a Blog Post or a Page</title>
     <para>
