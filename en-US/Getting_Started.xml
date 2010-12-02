@@ -57,6 +57,26 @@ The option has been successfully saved.</screen>
       </para>
       <screen>~]$ <command>blaze-config -e -E "gvim -f"</command></screen>
     </note>
+    <section id="sect-Getting_Started-Configuring-Theme">
+      <title>Changing the Blog Theme</title>
+      <para>
+        To change the theme of a blog, first extract the content of the theme archive to the directory with <filename class="directory">.blaze/</filename>, for example:
+      </para>
+      <screen>~]$ <command>tar xfz <replaceable>theme</replaceable>.tar.gz</command></screen>
+      <para>
+        Then move the template file and the corresponding style sheet to <filename class="directory">.blaze/theme/</filename> and <filename class="directory">.blaze/style/</filename> respectively:
+      </para>
+      <screen>~]$ <command>mv <replaceable>theme</replaceable>.html .blaze/theme/</command>
+~]$ <command>mv <replaceable>theme</replaceable>.css .blaze/style/</command></screen>
+      <para>
+        Finally, change the configuration to use this theme:
+      </para>
+      <screen>~]$ <command>blaze-config blog.theme <replaceable>theme</replaceable>.html</command>
+~]$ <command>blaze-config blog.style <replaceable>theme</replaceable>.css</command></screen>
+      <para>
+        The changes will take effect the next time you run the <command>blaze-make</command> command.
+      </para>
+    </section>
   </section>
   <section id="sect-Getting_Started-Adding">
     <title>Adding a Blog Post or a Page</title>
