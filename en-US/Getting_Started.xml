@@ -57,6 +57,20 @@ The option has been successfully saved.</screen>
       </para>
       <screen>~]$ <command>blaze-config -e -E "gvim -f"</command></screen>
     </note>
+    <section id="sect-Getting_Started-Configuring-Language">
+      <title>Changing the Blog Language</title>
+      <para>
+        To allow the use of a non-English translation of the blog, copy an appropriate language file to the <filename class="directory">.blaze/lang/</filename> directory. For example, in order to enable the Basque translation, type:
+      </para>
+      <screen>~]$ <command>cp /usr/local/share/blazeblogger/lang/eu_ES .blaze/lang/</command></screen>
+      <para>
+        To configure the blog to actually use this translation, set the <option>blog.lang</option> accordingly:
+      </para>
+      <screen>~]$ <command>blaze-config blog.lang eu_ES</command></screen>
+      <para>
+        The changes will take effect the next time you run the <command>blaze-make</command> command.
+      </para>
+    </section>
     <section id="sect-Getting_Started-Configuring-Theme">
       <title>Changing the Blog Theme</title>
       <para>
