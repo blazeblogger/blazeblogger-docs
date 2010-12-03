@@ -60,6 +60,27 @@ The option has been successfully saved.</screen>
       </para>
       <screen>~]$ <command>blaze-config -e -E "gvim -f"</command></screen>
     </note>
+    <section id="sect-Getting_Started-Configuring-General">
+      <title>General Blog Settings</title>
+      <para>
+        For compatibility reasons, the default option is to generate HTML pages, and in most cases, this is a sufficient choice. However, if you prefer to follow the XHTML standard instead, change the document type accordingly by using the following command:
+      </para>
+      <screen>~]$ <command>blaze-config core.doctype xhtml</command>
+The option has been successfully saved.</screen>
+      <para>
+        To change the extension of the generated pages, type:
+      </para>
+      <screen>~]$ <command>blaze-config core.extension php</command>
+The option has been successfully saved.</screen>
+      <para>
+        In order for web browsers to correctly determine the character encoding of a blog, each web page must include an appropriate information in its header. To set the encoding of a blog, supply a value in the form that is recognized by W3C standards:
+      </para>
+      <screen>~]$ <command>blaze-config core.encoding UTF-8</command>
+The option has been successfully saved.</screen>
+      <para>
+        Note that &PRODUCT; does not actually change the encoding of its content, nor does it check the encoding you provided. This option is used in the page headers only, and as such, it must match the character encoding you use to write the content. If you are not sure what character encoding you use, refer to the documentation of your text editor.
+      </para>
+    </section>
     <section id="sect-Getting_Started-Configuring-User">
       <title>Changing the Blog Author</title>
       <para>
