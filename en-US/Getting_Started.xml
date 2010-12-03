@@ -47,6 +47,9 @@ en_GB</screen>
     </para>
     <screen>~]$ <command>blaze-config blog.lang en_US</command>
 The option has been successfully saved.</screen>
+    <para>
+      The rest of this section tries to cover the most common configuration tasks, and by no means serves as a full reference. For a complete list of available configuration options, refer to <xref linkend="sect-Core_Utilities-config" />.
+    </para>
     <note>
       <para>
         In an attempt to make complex changes to the configuration as painless as possible, &PRODUCT; allows you to edit all available options at once in an external text editor. To do so, run the <command>blaze-config</command> command with the <option>--edit</option> (or <option>-e</option>) command line option:
