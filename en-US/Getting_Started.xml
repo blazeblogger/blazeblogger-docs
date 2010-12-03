@@ -57,6 +57,24 @@ The option has been successfully saved.</screen>
       </para>
       <screen>~]$ <command>blaze-config -e -E "gvim -f"</command></screen>
     </note>
+    <section id="sect-Getting_Started-Configuring-User">
+      <title>Changing the Blog Author</title>
+      <para>
+        To change the name of the blog author, type the following at a shell prompt:
+      </para>
+      <screen>~]$ <command>blaze-config user.name Jaromír Hradílek</command>
+The option has been successfully saved.</screen>
+      <para>
+        This name appears in the copyright notice, and is used as the default author for a new blog post or page. However, if you prefer to keep the full name in the copyright notice only, you can specify a nickname:
+      </para>
+      <screen>~]$ <command>blaze-config user.nickname Blackened</command>
+The option has been successfully saved.</screen>
+      <para>
+        Additionally, you can supply an email address to allow readers to contact the blog author directly:
+      </para>
+      <screen>~]$ <command>blaze-config user.email jhradilek@gmail.com</command>
+The option has been successfully saved.</screen>
+    </section>
     <section id="sect-Getting_Started-Configuring-Language">
       <title>Changing the Blog Language</title>
       <para>
