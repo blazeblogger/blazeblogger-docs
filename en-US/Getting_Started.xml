@@ -84,7 +84,8 @@ The option has been successfully saved.</screen>
       <para>
         To configure the blog to actually use this translation, set the <option>blog.lang</option> accordingly:
       </para>
-      <screen>~]$ <command>blaze-config blog.lang eu_ES</command></screen>
+      <screen>~]$ <command>blaze-config blog.lang eu_ES</command>
+The option has been successfully saved.</screen>
       <para>
         The changes will take effect the next time you run the <command>blaze-make</command> command.
       </para>
@@ -94,17 +95,19 @@ The option has been successfully saved.</screen>
       <para>
         To change the theme of a blog, first extract the content of the theme archive to the directory with <filename class="directory">.blaze/</filename>, for example:
       </para>
-      <screen>~]$ <command>tar xfz <replaceable>theme</replaceable>.tar.gz</command></screen>
+      <screen>~]$ <command>tar xfz vectorlover-1.0.1.tar.gz</command></screen>
       <para>
         Then move the template file and the corresponding style sheet to <filename class="directory">.blaze/theme/</filename> and <filename class="directory">.blaze/style/</filename> respectively:
       </para>
-      <screen>~]$ <command>mv <replaceable>theme</replaceable>.html .blaze/theme/</command>
-~]$ <command>mv <replaceable>theme</replaceable>.css .blaze/style/</command></screen>
+      <screen>~]$ <command>mv vectorlover.html .blaze/theme/</command>
+~]$ <command>mv vectorlover.css .blaze/style/</command></screen>
       <para>
         Finally, change the configuration to use this theme:
       </para>
-      <screen>~]$ <command>blaze-config blog.theme <replaceable>theme</replaceable>.html</command>
-~]$ <command>blaze-config blog.style <replaceable>theme</replaceable>.css</command></screen>
+      <screen>~]$ <command>blaze-config blog.theme vectorlover.html</command>
+The option has been successfully saved.
+~]$ <command>blaze-config blog.style vectorlover.css</command>
+The option has been successfully saved.</screen>
       <para>
         The changes will take effect the next time you run the <command>blaze-make</command> command.
       </para>
