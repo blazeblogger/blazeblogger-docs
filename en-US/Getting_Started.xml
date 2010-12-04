@@ -80,11 +80,30 @@ The option has been successfully saved.</screen>
       <para>
         Note that &PRODUCT; does not actually change the encoding of its content, nor does it check the encoding you provided. This option is used in the page headers only, and as such, it must match the character encoding you use to write the content. If you are not sure what character encoding you use, refer to the documentation of your text editor.
       </para>
+      <para>
+        The above changes will take effect the next time you build the blog with the <command>blaze-make</command> command.
+      </para>
+    </section>
+    <section id="sect-Getting_Started-Configuring-Title">
+      <title>Changing the Blog Title</title>
+      <para>
+        To change the title of the blog, use the following command:
+      </para>
+      <screen>~]$ <command>blaze-config blog.title BlazeBlogger</command>
+The option has been successfully saved.</screen>
+      <para>
+        Beside this option, &PRODUCT; also allows you to specify the subtitle, that is, typically a brief description of the blog, or a motto. To change the blog subtitle, type:
+      </para>
+      <screen>~]$ <command>blaze-config blog.subtitle s CMS without boundaries</command>
+The option has been successfully saved.</screen>
+      <para>
+        The changes will take effect the next time you run the <command>blaze-make</command> command.
+      </para>
     </section>
     <section id="sect-Getting_Started-Configuring-User">
       <title>Changing the Blog Author</title>
       <para>
-        To change the name of the blog author, type the following at a shell prompt:
+        To change the name of the blog author, set the <option>user.name</option> option. For example:
       </para>
       <screen>~]$ <command>blaze-config user.name Jaromír Hradílek</command>
 The option has been successfully saved.</screen>
