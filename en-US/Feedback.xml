@@ -1,0 +1,10 @@
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "User_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<section id="sect-Preface-Feedback">
+  <title>Feedback</title>
+  <para>
+    If you find an error in this book, or if you have a suggestion on how to improve it, please, let me know. To do so, either file a new bug in the <ulink url="http://code.google.com/p/blazeblogger/issues/list">official issue tracker</ulink>, or send an email to the <ulink url="http://groups.google.com/group/blazeblogger">discussion group</ulink>.
+  </para>
+</section>
