@@ -990,6 +990,22 @@
       <tbody>
         <row>
           <entry>
+            <command>&lt;!-- START-DOCUMENT --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the document header followed by the opening HTML tag.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- END-DOCUMENT --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the closing HTML tag.
+          </entry>
+        </row>
+        <row>
+          <entry>
             <command>&lt;!-- content-type --&gt;</command>
           </entry>
           <entry>
@@ -1022,7 +1038,7 @@
         </row>
         <row>
           <entry>
-            <command>&lt;!-- rss --&gt;</command>
+            <command>&lt;!-- feed --&gt;</command>
           </entry>
           <entry>
             Is replaced with the RSS feed LINK tag.
