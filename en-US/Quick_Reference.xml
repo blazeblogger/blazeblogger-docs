@@ -131,6 +131,22 @@
         </row>
         <row>
           <entry>
+            <command>blaze-config blog.description CMS without boundaries</command>
+          </entry>
+          <entry>
+            Changes the blog description to <quote>CMS without boundaries</quote>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config blog.keywords blazeblogger,cms,blog</command>
+          </entry>
+          <entry>
+            Changes the blog keywords to <quote>blazeblogger</quote>, <quote>cms</quote>, and <quote>blog</quote>.
+          </entry>
+        </row>
+        <row>
+          <entry>
             <command>blaze-config blog.theme default.html</command>
           </entry>
           <entry>
@@ -1022,10 +1038,34 @@
         </row>
         <row>
           <entry>
+            <command>&lt;!-- copyright --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the Copyright META tag.
+          </entry>
+        </row>
+        <row>
+          <entry>
             <command>&lt;!-- date --&gt;</command>
           </entry>
           <entry>
             Is replaced with the Date META tag.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- description --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the Description META tag.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>&lt;!-- keywords --&gt;</command>
+          </entry>
+          <entry>
+            Is replaced with the Keywords META tag.
           </entry>
         </row>
         <row>

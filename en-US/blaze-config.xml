@@ -105,6 +105,22 @@
           </listitem>
         </varlistentry>
         <varlistentry>
+          <term><option>blog.description=<replaceable>string</replaceable></option></term>
+          <listitem>
+            <para>
+              A brief description of your blog.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>blog.keywords=<replaceable>list</replaceable></option></term>
+          <listitem>
+            <para>
+              A comma-separated list of keywords.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
           <term><option>blog.theme=<replaceable>string</replaceable></option></term>
           <listitem>
             <para>
