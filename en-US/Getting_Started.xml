@@ -230,6 +230,17 @@ The option has been successfully saved.</screen>
           </row>
           <row>
             <entry>
+              <option>keywords</option>
+            </entry>
+            <entry>
+              Optional
+            </entry>
+            <entry>
+              Allows you to specify a comma-separated list of keywords that are specific for the blog post or page.
+            </entry>
+          </row>
+          <row>
+            <entry>
               <option>tags</option>
             </entry>
             <entry>
@@ -336,10 +347,11 @@ The option has been successfully saved.</screen>
 # underscores only. Specifying your own url  is especially recommended when
 # you use non-ASCII characters in your post title.
 #
-#   title:  BlazeBlogger 1.1.1
-#   author: Jaromír Hradílek
-#   date:   2010-10-30
-#   tags:   release
+#   title:    BlazeBlogger 1.1.1
+#   author:   Jaromír Hradílek
+#   date:     2010-10-30
+#   keywords: release, bug fix
+#   tags:     release
 #   url:
 #
 # The header ends here. The rest is the content of your post.
