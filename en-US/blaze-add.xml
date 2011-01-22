@@ -10,7 +10,7 @@
   </para>
   <section id="sect-Core_Utilities-add-Synopsis">
     <title>Synopsis</title>
-    <screen><command>blaze-add</command> <optional><option>-pqCPV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-E</option> <replaceable>editor</replaceable></optional> <optional><option>-a</option> <replaceable>author</replaceable></optional> <optional><option>-d</option> <replaceable>date</replaceable></optional> <optional><option>-t</option> <replaceable>title</replaceable></optional> <optional><option>-T</option> <replaceable>tags</replaceable></optional> <optional><option>-u</option> <replaceable>url</replaceable></optional> <optional><replaceable>file</replaceable>&#8230;</optional>
+    <screen><command>blaze-add</command> <optional><option>-pqCPV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-E</option> <replaceable>editor</replaceable></optional> <optional><option>-a</option> <replaceable>author</replaceable></optional> <optional><option>-d</option> <replaceable>date</replaceable></optional> <optional><option>-k</option> <replaceable>keywords</replaceable></optional> <optional><option>-t</option> <replaceable>title</replaceable></optional> <optional><option>-T</option> <replaceable>tags</replaceable></optional> <optional><option>-u</option> <replaceable>url</replaceable></optional> <optional><replaceable>file</replaceable>&#8230;</optional>
 
 <command>blaze-add</command> <option>-h</option>|<option>-v</option></screen>
   </section>
@@ -118,6 +118,14 @@
         <listitem>
           <para>
             Allows you to specify the <replaceable>date</replaceable> of publishing of a blog post or page.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-k</option> <replaceable>keywords</replaceable>, <option>--keywords</option> <replaceable>keywords</replaceable></term>
+        <listitem>
+          <para>
+            Allows you to specify a comma-separated list of <replaceable>keywords</replaceable> attached to a blog post or page.
           </para>
         </listitem>
       </varlistentry>
