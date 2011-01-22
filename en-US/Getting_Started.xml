@@ -102,6 +102,22 @@ The option has been successfully saved.</screen>
         The changes will take effect the next time you run the <command>blaze-make</command> command.
       </para>
     </section>
+    <section id="sect-Getting_Started-Configuring-Metadata">
+      <title>Changing the Blog Metadata</title>
+      <para>
+        To change the descrption of the blog, run the following command:
+      </para>
+      <screen>~]$ <command>blaze-config blog.description a CMS without boundaries</command>
+The option has been successfully saved.</screen>
+      <para>
+        To specify the keywords that characterize the blog, type:
+      </para>
+      <screen>~]$ <command>blaze-config blog.keywords blazeblogger, cms, blog</command>
+The option has been successfully saved.</screen>
+      <para>
+        The changes will take effect the next time you run the <command>blaze-make</command> command.
+      </para>
+    </section>
     <section id="sect-Getting_Started-Configuring-User">
       <title>Changing the Blog Author</title>
       <para>
@@ -119,6 +135,9 @@ The option has been successfully saved.</screen>
       </para>
       <screen>~]$ <command>blaze-config user.email jhradilek@gmail.com</command>
 The option has been successfully saved.</screen>
+      <para>
+        The changes will take effect the next time you run the <command>blaze-make</command> command.
+      </para>
     </section>
     <section id="sect-Getting_Started-Configuring-Language">
       <title>Changing the Blog Language</title>
