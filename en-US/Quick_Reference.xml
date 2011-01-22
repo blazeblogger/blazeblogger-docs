@@ -139,7 +139,7 @@
         </row>
         <row>
           <entry>
-            <command>blaze-config blog.keywords blazeblogger,cms,blog</command>
+            <command>blaze-config blog.keywords blazeblogger, cms, blog</command>
           </entry>
           <entry>
             Changes the blog keywords to <quote>blazeblogger</quote>, <quote>cms</quote>, and <quote>blog</quote>.
