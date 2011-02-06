@@ -102,16 +102,24 @@ The option has been successfully saved.</screen>
       <para>
         To change the title of the blog, use the following command:
       </para>
-      <screen>~]$ <command>blaze-config blog.title BlazeBlogger</command>
-The option has been successfully saved.</screen>
+      <screen><command>blaze-config</command> <option>blog.title</option> <replaceable>title</replaceable></screen>
       <para>
-        Beside this option, &PRODUCT; also allows you to specify the subtitle, that is, typically a brief description of the blog, or a motto. To change the blog subtitle, type:
+        Beside this option, &PRODUCT; also allows you to specify the subtitle. This is typically a brief description of the blog, or a motto. To change the blog subtitle, run:
       </para>
-      <screen>~]$ <command>blaze-config blog.subtitle s CMS without boundaries</command>
-The option has been successfully saved.</screen>
+      <screen><command>blaze-config</command> <option>blog.subtitle</option> <replaceable>subtitle</replaceable></screen>
       <para>
         The changes will take effect the next time you run the <command>blaze-make</command> command.
       </para>
+      <example id="exam-Getting_Started-Configuring-Title">
+        <title>Changing the Blog Title</title>
+        <para>
+          To change the blog title to <quote>BlazeBlogger</quote> and the corresponding subtitle to <quote>a CMS without boundaries</quote>, type the following commands at a shell prompt:
+        </para>
+        <screen>public_html]$ <command>blaze-config blog.title BlazeBlogger</command>
+The option has been successfully saved.
+public_html]$ <command>blaze-config blog.subtitle a CMS without boundaries</command>
+The option has been successfully saved.</screen>
+      </example>
     </section>
     <section id="sect-Getting_Started-Configuring-Metadata">
       <title>Changing the Blog Metadata</title>
