@@ -12,28 +12,32 @@
     <para>
       On GNU/Linux, UNIX, and similar operating systems, you can use <command>blaze-<replaceable>command</replaceable></command> and more convenient <command>blaze <replaceable>command</replaceable></command> interchangeably. For a list of available commands, type the following at a shell prompt:
     </para>
-    <screen>~]$ <command>blaze help</command></screen>
+    <screen><command>blaze help</command></screen>
   </note>
   <section id="sect-Getting_Started-Creating">
     <title>Creating a New Blog</title>
     <para>
-      To create a new blog, move into the directory in which you want to keep its working copy, and type:
+      To create a new blog, move into the directory in which you want to keep its working copy, and type the following at a shell prompt:
     </para>
-    <screen>~]$ <command>blaze-init</command>
-Created a BlazeBlogger repository in .blaze.</screen>
+    <screen><command>blaze-init</command></screen>
     <para>
-      This will create a hidden directory, <filename class="directory">.blaze/</filename>, in which the blog data will be stored. The actual content of this directory is not important, and it is recommended that you never touch the files in it directly. To recover its content should it ever be damaged, use the same command again:
+      This creates a hidden directory, <filename class="directory">.blaze/</filename>, in which the blog data are stored. The actual content of this directory is not important, and it is recommended that you never touch the files in it directly.
     </para>
-    <screen>~]$ <command>blaze-init</command>
-Recovered a BlazeBlogger repository in .blaze.</screen>
     <para>
-      You can also revert the existing configuration, theme, and language files to their initial state by supplying the <option>--force</option> (or <option>-f</option> for short) command line option:
+      To recover its content should it ever be damaged, use the same command again. You can also revert the existing configuration, theme, and language files to their initial state by supplying the <option>--force</option> (or <option>-f</option> for short) command line option:
     </para>
-    <screen>~]$ <command>blaze-init -f</command>
-Recovered a BlazeBlogger repository in .blaze.</screen>
+    <screen><command>blaze-init -f</command></screen>
     <para>
       For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-init" />.
     </para>
+    <example id="exam-Getting_Started-Creating">
+      <title>Creating a New Blog in the <filename class="directory">~/public_html/</filename> Directory</title>
+      <para>
+        Many web servers are able to serve content from a certain directory within user's home directory, typically <filename class="directory">~/public_html/</filename>. You can start a new blog in this directory by typing the following command:
+      </para>
+      <screen>public_html]$ <command>blaze-init</command>
+Created a BlazeBlogger repository in .blaze.</screen>
+    </example>
   </section>
   <section id="sect-Getting_Started-Configuring">
     <title>Configuring a Blog</title>
