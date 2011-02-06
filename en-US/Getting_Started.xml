@@ -26,7 +26,7 @@
     <para>
       To recover its content should it ever be damaged, use the same command again. You can also revert the existing configuration, theme, and language files to their initial state by supplying the <option>--force</option> (or <option>-f</option> for short) command line option:
     </para>
-    <screen><command>blaze-init -f</command></screen>
+    <screen><command>blaze-init</command> <option>-f</option></screen>
     <para>
       For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-init" />.
     </para>
@@ -42,28 +42,35 @@ Created a BlazeBlogger repository in .blaze.</screen>
   <section id="sect-Getting_Started-Configuring">
     <title>Configuring a Blog</title>
     <para>
-      To display the current value of a particular configuration option, use the <command>blaze-config</command> command followed by an option name. For example, to display the value of <option>blog.lang</option>, type the following at a shell prompt:
+      In an attempt to make complex changes to the configuration as painless as possible, &PRODUCT; is shipped with a utility to help you with this task. To display the current value of a particular configuration option, use the <command>blaze-config</command> command followed by an option name:
     </para>
-    <screen>~]$ <command>blaze-config blog.lang</command>
-en_GB</screen>
+    <screen><command>blaze-config</command> <replaceable>option</replaceable></screen>
     <para>
-      To change a configuration option, supply the new value on the command line:
+      To change a configuration option, supply the new value:
     </para>
-    <screen>~]$ <command>blaze-config blog.lang en_US</command>
-The option has been successfully saved.</screen>
+    <screen><command>blaze-config</command> <replaceable>option</replaceable> <replaceable>value</replaceable>&#8230;</screen>
+    <para>
+      &PRODUCT; also allows you to edit all available options at once in an external text editor. To do so, run the <command>blaze-config</command> command with the <option>--edit</option> (or <option>-e</option>) command line option:
+    </para>
+    <screen><command>blaze-config</command> <option>-e</option></screen>
+    <para>
+      Note that unless the <option>core.editor</option> configuration option is already set, you must also specify a text editor to use by adding the <option>--editor</option> (or <option>-E</option>) option:
+    </para>
+    <screen><command>blaze-config</command> <option>-e</option> <option>-E</option> <replaceable>editor</replaceable></screen>
     <para>
       The rest of this section tries to cover the most common configuration tasks, and by no means serves as a full reference. For a complete list of available configuration options, refer to <xref linkend="sect-Core_Utilities-config" />.
     </para>
-    <note>
+    <example id="exam-Getting_Started-Configuring">
+      <title>Configuring the Blog in <application>GVim</application></title>
       <para>
-        In an attempt to make complex changes to the configuration as painless as possible, &PRODUCT; allows you to edit all available options at once in an external text editor. To do so, run the <command>blaze-config</command> command with the <option>--edit</option> (or <option>-e</option>) command line option:
+        To edit the configuration in the <application>GVim</application> text editor, run:
       </para>
-      <screen>~]$ <command>blaze-config -e</command></screen>
+      <screen>public_html]$ <command>blaze-config -e -E "gvim -f"</command></screen>
       <para>
-        Note that unless the <option>core.editor</option> configuration option is already set, you must also specify a text editor to use by adding the <option>--editor</option> (or <option>-E</option>) option. For example:
+        You can set this editor as the default by typing the following command:
       </para>
-      <screen>~]$ <command>blaze-config -e -E "gvim -f"</command></screen>
-    </note>
+      <screen>public_html]$ <command>blaze-config core.editor "gvim -f"</command></screen>
+    </example>
     <section id="sect-Getting_Started-Configuring-General">
       <title>General Blog Settings</title>
       <para>
