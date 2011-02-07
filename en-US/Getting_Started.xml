@@ -172,23 +172,32 @@ The option has been successfully saved.</screen>
     <section id="sect-Getting_Started-Configuring-User">
       <title>Changing the Blog Author</title>
       <para>
-        To change the name of the blog author, set the <option>user.name</option> option. For example:
+        To change the name of the blog author, run:
       </para>
-      <screen>~]$ <command>blaze-config user.name Jaromír Hradílek</command>
-The option has been successfully saved.</screen>
+      <screen><command>blaze-config</command> <option>user.name</option> <replaceable>full_name</replaceable></screen>
       <para>
-        This name appears in the copyright notice, and is used as the default author for a new blog post or page. However, if you prefer to keep the full name in the copyright notice only, you can specify a nickname:
+        This name appears in the copyright notice, and is used as the default author for a new blog post or page. However, if you prefer to keep the full name in the copyright notice only, you can specify a nickname by using the following command:
       </para>
-      <screen>~]$ <command>blaze-config user.nickname Blackened</command>
-The option has been successfully saved.</screen>
+      <screen><command>blaze-config</command> <option>user.nickname</option> <replaceable>nickname</replaceable></screen>
       <para>
         Additionally, you can supply an email address to allow readers to contact the blog author directly:
       </para>
-      <screen>~]$ <command>blaze-config user.email jhradilek@gmail.com</command>
-The option has been successfully saved.</screen>
+      <screen><command>blaze-config</command> <option>user.email</option> <replaceable>email_address</replaceable></screen>
       <para>
         The changes will take effect the next time you run the <command>blaze-make</command> command.
       </para>
+      <example id="exam-Getting_Started-Configuring-User">
+        <title>Changing the Author Information</title>
+        <para>
+          To change the author's name to <quote>Jaromír Hradílek</quote>, author's nickname to <quote>Blackened</quote>, and the email address to <quote>jhradilek@gmail.com</quote>, type:
+        </para>
+        <screen>public_html]$ <command>blaze-config user.name Jaromír Hradílek</command>
+The option has been successfully saved.
+public_html]$ <command>blaze-config user.nickname Blackened</command>
+The option has been successfully saved.
+public_html]$ <command>blaze-config user.email jhradilek@gmail.com</command>
+The option has been successfully saved.</screen>
+      </example>
     </section>
     <section id="sect-Getting_Started-Configuring-Language">
       <title>Changing the Blog Language</title>
