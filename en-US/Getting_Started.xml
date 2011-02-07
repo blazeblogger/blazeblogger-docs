@@ -74,28 +74,41 @@ Created a BlazeBlogger repository in .blaze.</screen>
     <section id="sect-Getting_Started-Configuring-General">
       <title>General Blog Settings</title>
       <para>
-        In order for web browsers to correctly determine the character encoding of a blog, each web page must include an appropriate information in its header. To change this information, update the <option>core.encoding</option> option with a value in the form that is recognized by W3C standards. Keep in mind that &PRODUCT; does not actually change the encoding of its content, nor does it check the value you provided. This option is used in the page headers only, and as such, it must match the character encoding you use to write the content. For example, to enable the use of UTF-8, type:
+        In order for web browsers to correctly determine the character encoding of a blog, each web page must include an appropriate information in its header. To change this information, update the <option>core.encoding</option> option with a value in the form that is recognized by W3C standards:
       </para>
-      <screen>~]$ <command>blaze-config core.encoding UTF-8</command>
-The option has been successfully saved.</screen>
+      <screen><command>blaze-config</command> <option>core.encoding</option> <replaceable>encoding</replaceable></screen>
       <para>
-        For compatibility reasons, the default option is to generate HTML pages, and in most cases, this is a sufficient choice. However, if you prefer to follow the XHTML standard instead, change the document type accordingly by using the following command:
+        Keep in mind that this option must match the character encoding you use to write the content. &PRODUCT; does not change the encoding on its own, nor does it check the value you provided. The default option is <option>UTF-8</option>.
       </para>
-      <screen>~]$ <command>blaze-config core.doctype xhtml</command>
-The option has been successfully saved.</screen>
       <para>
-        To change the extension of the generated pages, type:
+        To select the document type of the generated pages, use the following command:
       </para>
-      <screen>~]$ <command>blaze-config core.extension php</command>
+      <screen><command>blaze-config</command> <option>core.doctype</option> <replaceable>type</replaceable></screen>
+      <para>
+        Allowed options are <option>html</option> for <acronym>HTML</acronym> and <option>xhtml</option> for the <acronym>XHTML</acronym> standard. For compatibility reasons, the default option is to generate HTML pages.
+      </para>
+      <para>
+        Finally, to change the file extension of the generated pages, run:
+      </para>
+      <screen><command>blaze-config</command> <option>core.extension</option> <replaceable>extension</replaceable></screen>
+      <para>
+        The changes will take effect the next time you build the blog with the <command>blaze-make</command> command.
+      </para>
+      <example id="exam-Getting_Started-Configuring-General">
+        <title>Changing the Blog Encoding</title>
+        <para>
+          In most cases, the use of UTF-8 is recommended. However, if you write your blog in other encoding such as ISO-8859-2 (that is, Latin-2), type:
+        </para>
+        <screen>public_html]$ <command>blaze-config core.encoding ISO-8859-2</command>
 The option has been successfully saved.</screen>
+      </example>
+      <!-- TODO: Create a new subsection for this.
       <para>
         Finally, to enable the creation of an RSS feed with the syndication of blog updates, supply a valid URL with the location of the blog, making sure that you include the <literal>http://</literal> (or <literal>https://</literal> if you use a secure protocol) prefix. For example, if the index page of the blog is located on <ulink url="http://blaze.blackened.cz/">blaze.blackened.cz</ulink>, type the following at a shell prompt:
       </para>
       <screen>~]$ <command>blaze-config feed.baseurl http://blaze.blackened.cz/</command>
 The option has been successfully saved.</screen>
-      <para>
-        The changes will take effect the next time you build the blog with the <command>blaze-make</command> command.
-      </para>
+      -->
     </section>
     <section id="sect-Getting_Started-Configuring-Title">
       <title>Changing the Blog Title</title>
@@ -111,7 +124,7 @@ The option has been successfully saved.</screen>
         The changes will take effect the next time you run the <command>blaze-make</command> command.
       </para>
       <example id="exam-Getting_Started-Configuring-Title">
-        <title>Changing the Blog Title</title>
+        <title>Changing the Blog Title and Subtitle</title>
         <para>
           To change the blog title to <quote>BlazeBlogger</quote> and the corresponding subtitle to <quote>a CMS without boundaries</quote>, type the following commands at a shell prompt:
         </para>
