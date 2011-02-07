@@ -102,13 +102,24 @@ Created a BlazeBlogger repository in .blaze.</screen>
         <screen>public_html]$ <command>blaze-config core.encoding ISO-8859-2</command>
 The option has been successfully saved.</screen>
       </example>
-      <!-- TODO: Create a new subsection for this.
+    </section>
+    <section id="sect-Getting_Started-Configuring-Feed">
+      <title>Configuring an RSS Feed</title>
       <para>
-        Finally, to enable the creation of an RSS feed with the syndication of blog updates, supply a valid URL with the location of the blog, making sure that you include the <literal>http://</literal> (or <literal>https://</literal> if you use a secure protocol) prefix. For example, if the index page of the blog is located on <ulink url="http://blaze.blackened.cz/">blaze.blackened.cz</ulink>, type the following at a shell prompt:
+        To enable the creation of an RSS feed with the syndication of blog updates, supply a valid URL with the location of the blog, making sure that you include the <literal>http://</literal> (or <literal>https://</literal> if you use a secure protocol) prefix:
       </para>
-      <screen>~]$ <command>blaze-config feed.baseurl http://blaze.blackened.cz/</command>
+      <screen><command>blaze-config</command> <option>feed.baseurl</option> <replaceable>url</replaceable></screen>
+      <para>
+        The feed will be created the next time you build the blog with the <command>blaze-make</command> command.
+      </para>
+      <example id="exam-Getting_Started-Configuring-Feed">
+        <title>Enabling the Creation of an RSS Feed</title>
+        <para>
+          To enable an RSS feed for a blog located at <ulink url="http://blaze.blackened.cz/">http://blaze.blackened.cz/</ulink>, type the following at a shell prompt:
+        </para>
+        <screen>public_html]$ <command>blaze-config feed.baseurl http://blaze.blackened.cz/</command>
 The option has been successfully saved.</screen>
-      -->
+      </example>
     </section>
     <section id="sect-Getting_Started-Configuring-Title">
       <title>Changing the Blog Title</title>
