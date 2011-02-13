@@ -49,7 +49,7 @@
       <title>Available Commands</title>
       <variablelist>
         <varlistentry>
-          <term><option>init</option></term>
+          <term><option>init</option>, <option>in</option></term>
           <listitem>
             <para>
               Runs <command>blaze-init</command>, a utility that either creates a &PRODUCT; repository, or recovers a previously corrupted one. Refer to <xref linkend="sect-Core_Utilities-init" /> for a full description of the command usage.
@@ -57,7 +57,7 @@
           </listitem>
         </varlistentry>
         <varlistentry>
-          <term><option>config</option></term>
+          <term><option>config</option>, <option>cf</option>, <option>cfg</option></term>
           <listitem>
             <para>
               Runs <command>blaze-config</command>, a utility that either displays, or sets &PRODUCT; configuration options. Refer to <xref linkend="sect-Core_Utilities-config" /> for a full description of the command usage.
@@ -73,7 +73,7 @@
           </listitem>
         </varlistentry>
         <varlistentry>
-          <term><option>edit</option></term>
+          <term><option>edit</option>, <option>ed</option></term>
           <listitem>
             <para>
               Runs <command>blaze-edit</command>, a utility that edits a blog post or a page in the &PRODUCT; repository. Refer to <xref linkend="sect-Core_Utilities-edit" /> for a full description of the command usage.
@@ -81,7 +81,7 @@
           </listitem>
         </varlistentry>
         <varlistentry>
-          <term><option>remove</option></term>
+          <term><option>remove</option>, <option>rm</option>, <option>del</option></term>
           <listitem>
             <para>
               Runs <command>blaze-remove</command>, a utility that removes a blog post or a page from the &PRODUCT; repository. Refer to <xref linkend="sect-Core_Utilities-remove" /> for a full description of the command usage.
@@ -89,7 +89,7 @@
           </listitem>
         </varlistentry>
         <varlistentry>
-          <term><option>list</option></term>
+          <term><option>list</option>, <option>ls</option></term>
           <listitem>
             <para>
               Runs <command>blaze-list</command>, a utility that lists blog posts or pages in the &PRODUCT; repository. Refer to <xref linkend="sect-Core_Utilities-list" /> for a full description of the command usage.
@@ -97,7 +97,7 @@
           </listitem>
         </varlistentry>
         <varlistentry>
-          <term><option>make</option></term>
+          <term><option>make</option>, <option>mk</option></term>
           <listitem>
             <para>
               Runs <command>blaze-make</command>, a utility that generates a blog from the &PRODUCT; repository. Refer to <xref linkend="sect-Core_Utilities-make" /> for a full description of the command usage.
@@ -129,7 +129,7 @@
           </listitem>
         </varlistentry>
         <varlistentry>
-          <term><option>version</option></term>
+          <term><option>version</option>, <option>vs</option>, <option>ver</option></term>
           <listitem>
             <para>
               Displays version information.
