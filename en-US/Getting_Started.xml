@@ -122,9 +122,9 @@ The option has been successfully saved.</screen>
       </example>
     </section>
     <section id="sect-Getting_Started-Configuring-Title">
-      <title>Changing the Blog Title</title>
+      <title>Changing a Blog Title</title>
       <para>
-        To change the title of the blog, use the following command:
+        To change the title of a blog, use the following command:
       </para>
       <screen><command>blaze-config</command> <option>blog.title</option> <replaceable>title</replaceable></screen>
       <para>
@@ -146,9 +146,9 @@ The option has been successfully saved.</screen>
       </example>
     </section>
     <section id="sect-Getting_Started-Configuring-Metadata">
-      <title>Changing the Blog Metadata</title>
+      <title>Changing a Blog Metadata</title>
       <para>
-        To change the descrption of the blog, run the following command:
+        To change the descrption of a blog, run the following command:
       </para>
       <screen><command>blaze-config</command> <option>blog.description</option> <replaceable>description</replaceable></screen>
       <para>
@@ -170,9 +170,9 @@ The option has been successfully saved.</screen>
       </example>
     </section>
     <section id="sect-Getting_Started-Configuring-User">
-      <title>Changing the Blog Author</title>
+      <title>Changing a Blog Author</title>
       <para>
-        To change the name of the blog author, run:
+        To change the name of the author of a blog, run:
       </para>
       <screen><command>blaze-config</command> <option>user.name</option> <replaceable>full_name</replaceable></screen>
       <para>
@@ -200,9 +200,9 @@ The option has been successfully saved.</screen>
       </example>
     </section>
     <section id="sect-Getting_Started-Configuring-Language">
-      <title>Changing the Blog Language</title>
+      <title>Changing a Blog Language</title>
       <para>
-        To a non-English translation of the blog, copy an appropriate language file to the <filename class="directory">.blaze/lang/</filename> directory, and configure the blog to use this translation:
+        To use a non-English translation of a blog, copy an appropriate language file to the <filename class="directory">.blaze/lang/</filename> directory, and configure the blog to use this translation:
       </para>
       <screen><command>blaze-config</command> <option>blog.lang</option> <replaceable>language_code</replaceable></screen>
       <para>
@@ -219,26 +219,46 @@ The option has been successfully saved.</screen>
       </example>
     </section>
     <section id="sect-Getting_Started-Configuring-Theme">
-      <title>Changing the Blog Theme</title>
+      <title>Changing a Blog Theme</title>
       <para>
-        To change the theme of a blog, first extract the content of the theme archive to the directory with <filename class="directory">.blaze/</filename>, for example:
+        To change the theme of a blog, copy the relevant files to the blog directory, and move the template and style sheet to <filename class="directory">.blaze/theme/</filename> and <filename class="directory">.blaze/style/</filename> respectively. Then change the configuration to use this theme by typing the following at a shell prompt:
       </para>
-      <screen>~]$ <command>tar xfz vectorlover-1.0.1.tar.gz</command></screen>
-      <para>
-        Then move the template file and the corresponding style sheet to <filename class="directory">.blaze/theme/</filename> and <filename class="directory">.blaze/style/</filename> respectively:
-      </para>
-      <screen>~]$ <command>mv vectorlover.html .blaze/theme/</command>
-~]$ <command>mv vectorlover.css .blaze/style/</command></screen>
-      <para>
-        Finally, change the configuration to use this theme:
-      </para>
-      <screen>~]$ <command>blaze-config blog.theme vectorlover.html</command>
-The option has been successfully saved.
-~]$ <command>blaze-config blog.style vectorlover.css</command>
-The option has been successfully saved.</screen>
+      <screen><command>blaze-config</command> <option>blog.theme</option> <replaceable>template_file</replaceable>
+<command>blaze-config</command> <option>blog.style</option> <replaceable>stylesheet_file</replaceable></screen>
       <para>
         The changes will take effect the next time you run the <command>blaze-make</command> command.
       </para>
+      <example id="exam-Getting_Started-Configuring-Theme">
+        <title>Installing the VectorLover Theme</title>
+        <para>
+          To install the VectorLover theme on Linux, UNIX, and similar operating systems, download the archive from the website and extract its content to the directory with <filename class="directory">.blaze/</filename>:
+        </para>
+        <screen>public_html]$ <command>wget http://blaze.blackened.cz/files/theme/vectorlover-1.0.2.tar.gz</command>
+--2011-02-14 00:53:07--  http://blaze.blackened.cz/files/theme/vectorlover-1.0.2.tar.gz
+Resolving blaze.blackened.cz... 87.236.199.95
+Connecting to blaze.blackened.cz|87.236.199.95|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 59972 (59K) [application/x-gzip]
+Saving to: "vectorlover-1.0.2.tar.gz"
+
+100%[======================================&gt;] 59,972      --.-K/s   in 0.1s    
+
+2011-02-14 00:53:08 (397 KB/s) - "vectorlover-1.0.2.tar.gz" saved [59972/59972]
+
+public_html]$ <command>tar xfz vectorlover-1.0.2.tar.gz</command></screen>
+        <para>
+          Then move the template file and the corresponding style sheet to <filename class="directory">.blaze/theme/</filename> and <filename class="directory">.blaze/style/</filename> respectively:
+        </para>
+        <screen>public_html]$ <command>mv vectorlover.html .blaze/theme/</command>
+public_html]$ <command>mv vectorlover.css .blaze/style/</command></screen>
+        <para>
+          Finally, change the configuration to use this theme:
+        </para>
+        <screen>public_html]$ <command>blaze-config blog.theme vectorlover.html</command>
+The option has been successfully saved.
+public_html]$ <command>blaze-config blog.style vectorlover.css</command>
+The option has been successfully saved.</screen>
+      </example>
     </section>
   </section>
   <section id="sect-Getting_Started-Adding">
