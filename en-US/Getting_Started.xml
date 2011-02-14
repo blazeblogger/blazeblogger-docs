@@ -266,17 +266,16 @@ The option has been successfully saved.</screen>
     <para>
       To write a new blog post, run the following command:
     </para>
-    <screen>~]$ <command>blaze-add</command></screen>
+    <screen><command>blaze-add</command></screen>
     <para>
-      To write a new page instead, add the <option>--page</option> (or <option>-p</option>) command line option:
+      To write a new page, add the <option>--page</option> (or <option>-p</option>) command line option:
     </para>
-    <screen>~]$ <command>blaze-add -p</command></screen>
+    <screen><command>blaze-add</command> <option>-p</option></screen>
     <para>
-      This will open an external text editor with a pre-formatted header and brief instructions on how to compose a blog entry. By default, the editor specified by the <option>core.editor</option> configuration option or the <envar>EDITOR</envar> environment variable is used. To edit the entry in a different edditor, add the <option>--editor</option> (or <option>-E</option>) command line option. For example, to write a blog post in <application>GVim</application>, type:
+      This opens an external text editor with a pre-formatted header and brief instructions on how to compose a blog entry.
     </para>
-    <screen>~]$ <command>blaze-add -E "gvim -f"</command></screen>
     <para>
-      The blog post or page header contains important meta data, such as the title, author, or date of publishing of the entry. For a detailed explanation of all available options, refer to <xref linkend="tabl-Getting_Started-Adding-Header" />.
+      The blog post or page header contains important metadata, such as the title, author, or date of publishing of the entry. For a detailed explanation of all available options, refer to <xref linkend="tabl-Getting_Started-Adding-Header" />.
     </para>
     <table id="tabl-Getting_Started-Adding-Header">
       <title>A List of Available Header Options</title>
@@ -368,7 +367,7 @@ The option has been successfully saved.</screen>
       </tgroup>
     </table>
     <para>
-      Besides ordinary elements defined by the HTML or XHTML standard, &PRODUCT; recognizes various special forms that can be used in the text itself. This includes various placeholders that ensure the cross-references within a particular blog are valid and always point to the expected target. For a complete list of these special forms, refer to <xref linkend="tabl-Getting_Started-Adding-Forms" />.
+      Besides ordinary elements defined by the HTML or XHTML standard, &PRODUCT; recognizes several special forms that can be used in the text itself. This includes various placeholders that ensure the cross-references within a particular blog are valid and always point to the expected target. For a complete list of these special forms, refer to <xref linkend="tabl-Getting_Started-Adding-Forms" />.
     </para>
     <table id="tabl-Getting_Started-Adding-Forms">
       <title>A List of Special Forms and Placeholders</title>
@@ -438,10 +437,13 @@ The option has been successfully saved.</screen>
       </tgroup>
     </table>
     <para>
-      <xref linkend="exam-Getting_Started-Adding-Example_Post" /> illustrates the way a typical blog post is written.
+      Refer to <xref linkend="sect-Core_Utilities-add" /> for a full description of the <command>blaze-add</command> utility and its usage.
     </para>
     <example id="exam-Getting_Started-Adding-Example_Post">
       <title>A Sample Blog Post</title>
+      <para>
+        The following is an example of a typical blog post:
+      </para>
       <screen># This and following lines beginning with  '#' are the post header.  Please
 # take your time and replace these options with desired values. Just remem-
 # ber that the date has to be in an YYYY-MM-DD form, tags are a comma sepa-
@@ -459,7 +461,9 @@ The option has been successfully saved.</screen>
 #
 # The header ends here. The rest is the content of your post.
 
-&lt;p&gt;BlazeBlogger 1.1.1 has been released! This release fixes four bugs that may have caused BlazeBlogger to sort entries in a wrong order, produce invalid RSS feed, or not to run properly when using an older version of Perl.&lt;/p&gt;
+&lt;p&gt;
+  BlazeBlogger 1.1.1 has been released! This release fixes four bugs that may have caused BlazeBlogger to sort entries in a wrong order, produce invalid RSS feed, or not to run properly when using an older version of Perl.
+&lt;/p&gt;
 
 &lt;!-- break --&gt;
 
@@ -479,9 +483,6 @@ The option has been successfully saved.</screen>
   &lt;/li&gt;
 &lt;/ul&gt;</screen>
     </example>
-    <para>
-      For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-add" />.
-    </para>
   </section>
   <section id="sect-Getting_Started-Editing">
     <title>Editing a Blog Post or a Page</title>
