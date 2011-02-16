@@ -491,20 +491,23 @@ The option has been successfully saved.</screen>
   <section id="sect-Getting_Started-Editing">
     <title>Editing a Blog Post or a Page</title>
     <para>
-      To edit an existing blog post, run the <command>blaze-edit</command> command followed by its identification number. For example, if you want to edit the blog post with identification number 10, type:
+      To edit an existing blog, run the <command>blaze-edit</command> command followed by an appropriate identification number:
     </para>
-    <screen>~]$ <command>blaze-edit 10</command></screen>
+    <screen><command>blaze-edit</command> <replaceable>id</replaceable></screen>
     <para>
-      To edit a page instead, add the <option>--page</option> (or <option>-p</option>) option:
+      To edit a page, add the <option>--page</option> (or <option>-p</option>) command line option:
     </para>
-    <screen>~]$ <command>blaze-edit -p 5</command></screen>
-    <para>
-      By default, <command>blaze-edit</command> opens a blog post or a page in an external text editor that is specified in the configuration (that is, either in the configuration file, or via the <envar>EDITOR</envar> environment variable). To use a different text editor, add the <option>--editor</option> (or <option>-E</option>) command line option, for instance:
-    </para>
-    <screen>~]$ <command>blaze-edit -E "gvim -f" -p 5</command></screen>
+    <screen><command>blaze-edit</command> <option>-p</option> <replaceable>id</replaceable></screen>
     <para>
       For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-edit" />.
     </para>
+    <example id="exam-Getting_Started-Editing">
+      <title>Editing a Blog Post</title>
+      <para>
+        To edit a blog post with id 10, type the following at a shell prompt:
+      </para>
+      <screen>public_html]$ <command>blaze-edit 10</command></screen>
+    </example>
   </section>
   <section id="sect-Getting_Started-Removing">
     <title>Removing a Blog Post or a Page</title>
