@@ -440,17 +440,21 @@ The option has been successfully saved.</screen>
       Refer to <xref linkend="sect-Core_Utilities-add" /> for a full description of the <command>blaze-add</command> utility and its usage.
     </para>
     <example id="exam-Getting_Started-Adding-Example_Post">
-      <title>A Sample Blog Post</title>
+      <title>Writing a Blog Post</title>
       <para>
-        The following is an example of a typical blog post:
+        To open an external editor in order to write a new blog post, type:
       </para>
-      <screen># This and following lines beginning with  '#' are the post header.  Please
-# take your time and replace these options with desired values. Just remem-
-# ber that the date has to be in an YYYY-MM-DD form, tags are a comma sepa-
-# rated list of categories the post (pages ignore these) belong to, and the
-# url, if provided, should consist of alphanumeric characters,  hyphens and
-# underscores only. Specifying your own url  is especially recommended when
-# you use non-ASCII characters in your post title.
+      <screen>public_html]$ <command>blaze-add</command></screen>
+      <para>
+        The blog post itself may look like the following:
+      </para>
+      <screen># This and the following lines beginning with '#' are the blog post header.
+# Please take your time and replace these options with desired values. Just
+# remember that the date has to be in the YYYY-MM-DD form, tags are a comma
+# separated list of categories the post (pages ignore these) belong to, and
+# the url,  if provided, should consist of alphanumeric characters, hyphens
+# and underscores only.  Specifying your own url  is especially recommended
+# in case you use non-ASCII characters in your blog post title.
 #
 #   title:    BlazeBlogger 1.1.1
 #   author:   Jaromír Hradílek
@@ -459,7 +463,7 @@ The option has been successfully saved.</screen>
 #   tags:     release
 #   url:
 #
-# The header ends here. The rest is the content of your post.
+# The header ends here. The rest is the content of your blog post.
 
 &lt;p&gt;
   BlazeBlogger 1.1.1 has been released! This release fixes four bugs that may have caused BlazeBlogger to sort entries in a wrong order, produce invalid RSS feed, or not to run properly when using an older version of Perl.
