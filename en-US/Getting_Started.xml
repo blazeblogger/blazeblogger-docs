@@ -514,13 +514,11 @@ The option has been successfully saved.</screen>
     <para>
       To delete a blog post from your blog, run the <command>blaze-remove</command> command followed by an appropriate identification number:
     </para>
-    <screen>~]$ <command>blaze-remove 10</command>
-Successfully removed the post with ID 10.</screen>
+    <screen><command>blaze-remove</command> <replaceable>id</replaceable></screen>
     <para>
       To delete a page, add the <option>--page</option> (or <option>-p</option>) command line option:
     </para>
-    <screen>~]$ <command>blaze-remove -p 4</command>
-Successfully removed the page with ID 4.</screen>
+    <screen><command>blaze-remove</command> <option>-p</option> <replaceable>id</replaceable></screen>
     <para>
       For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-remove" />.
     </para>
@@ -528,10 +526,17 @@ Successfully removed the page with ID 4.</screen>
       <para>
         Be careful when using this command, as there is no easy way to take this action back. To prevent an accidental loss of potentially valuable data, run the command in the interactive mode by supplying the <option>--interactive</option> (or <option>-i</option>) option:
       </para>
-      <screen>~]$ <command>blaze-remove -i 10</command>
+      <screen><command>blaze-remove</command> <option>-i</option> <replaceable>id</replaceable></screen>
+    </warning>
+    <example id="exam-Getting_Started-Removing">
+      <title>Removing a Blog Post Safely</title>
+      <para>
+        Interactive mode gives you one last chance to ensure you are deleting a correct blog entry. To initiate the removal of a blog post with id 10 and then abort it, type the following at a shell prompt:
+      </para>
+      <screen>public_html]$ <command>blaze-remove -i 10</command>
 Remove the post with ID 10 titled `Debian and Fedora Packages'? <userinput>n</userinput>
 Aborted.</screen>
-    </warning>
+    </example>
   </section>
   <section id="sect-Getting_Started-Stats">
     <title>Displaying Blog Statistics</title>
