@@ -627,17 +627,34 @@ ID: 1 | 2009-02-10 | Jaromír Hradílek
     <para>
       To generate a complete directory tree of static pages with all blog posts, single pages, monthly and yearly archives, tags, and an RSS feed, run the following command:
     </para>
-    <screen>~]$ <command>blaze-make</command>
-Done.</screen>
+    <screen><command>blaze-make</command></screen>
     <para>
-      Unless told otherwise, &PRODUCT; generates the blog in the current working directory. To specify a different location, specify the <option>--destdir</option> (or <option>-d</option>) option. For example, to generate a blog in <filename class="directory">~/public_html/</filename>, type:
+      Unless told otherwise, &PRODUCT; generates the blog in the current working directory. To use a different location, specify the <option>--destdir</option> (or <option>-d</option>) command line option:
     </para>
-    <screen>~]$ <command>blaze-make -d ~/public_html</command>
-Done.</screen>
+    <screen><command>blaze-make</command> <option>-d</option> <replaceable>directory</replaceable></screen>
     <para>
-      To display the list of files as they are created, use <option>--verbose</option> (or its short version, <option>-V</option>). For example:
+      To display the list of files as they are created, use <option>--verbose</option> (or <option>-V</option>) command line option:
     </para>
-    <screen>~]$ <command>blaze.make -V</command>
+    <screen><command>blaze-make</command> <option>-V</option></screen>
+    <para>
+      For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-make" />.
+    </para>
+    <note>
+      <para>
+        If you intend your blog to be accessed offline, for example, if you want to review it before you publish it on your website, use the <option>--full-paths</option> (or <option>-F</option>) option:
+      </para>
+      <screen><command>blaze-make</command> <option>-F</option></screen>
+      <para>
+        This option ensures that all generated links point directly to index pages, and not to their parent directories. Additionally, you can turn off the creation of the RSS feed as well. To do so, add the <option>--no-rss</option> (or <option>-r</option>) option:
+      </para>
+      <screen><command>blaze-make</command> <option>-Fr</option></screen>
+    </note>
+    <example id="exam-Getting_Started-Generating">
+      <title>Generating a Blog Preview</title>
+      <para>
+        To generate a preview of your blog with a list of created files written to standard output, type the following at a shell prompt:
+      </para>
+      <screen>public_html]$ <command>blaze-make -VF</command>
 Created index.rss
 Created index.html
 Created index1.html
@@ -648,21 +665,7 @@ Created 2009/index.html
 Created 2010/07/index.html
 <emphasis>etc.</emphasis>
 Done.</screen>
-    <para>
-      For a complete list of available command line options, refer to <xref linkend="sect-Core_Utilities-make" />.
-    </para>
-    <note>
-      <para>
-        If you intend your blog to be accessed offline, for example, if you want to review it before you publish it on your website, use the <option>--full-paths</option> (or <option>-F</option>) option:
-      </para>
-      <screen>~]$ <command>blaze-make -F</command>
-Done.</screen>
-      <para>
-        This option ensures that all generated links point directly to index pages and not to their parent directories. Additionally, you can turn off the creation of the RSS feed as well. To do so, add the <option>--no-rss</option> (or <option>-r</option>) option:
-      </para>
-      <screen>~]$ <command>blaze-make -Fr</command>
-Done.</screen>
-    </note>
+    </example>
   </section>
   <section id="sect-Getting_Started-Log">
     <title>Displaying a Log</title>
