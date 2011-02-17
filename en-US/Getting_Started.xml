@@ -603,7 +603,7 @@ There is a total number of 11 blog posts and 5 pages in the repository.</screen>
       <para>
         To display only the information about the first blog post, type the following at a shell prompt:
       </para>
-      <screen>~]$ <command>blaze-list -n 1 -r</command>
+      <screen>public_html]$ <command>blaze-list -n 1 -r</command>
 ID: 1 | 2009-02-10 | Jaromír Hradílek
 
     Title: BlazeBlogger 0.7.0
