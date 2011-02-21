@@ -20,28 +20,28 @@
       <para>
         &PRODUCT; is currently available in both testing (<quote>Squeeze</quote>) and unstable (<quote>Sid</quote>) version of <systemitem class="osname">Debian</systemitem>. To install it, open a terminal, and run the following command as <systemitem class="username">root</systemitem>:
       </para>
-      <screen>~]# <command>apt-get install blazeblogger</command></screen>
+      <screen><command>apt-get install blazeblogger</command></screen>
     </section>
     <section id="sect-Installation-Fedora">
       <title>Installing on Fedora</title>
       <para>
         &PRODUCT; is currently available in both <systemitem class="osname">Fedora 13</systemitem> (<quote>Goddard</quote>) and <systemitem class="osname">Fedora 14</systemitem> (<quote>Laughlin</quote>). To install it, open a terminal, and run the following command as <systemitem class="username">root</systemitem>:
       </para>
-      <screen>~]# <command>yum install blazeblogger</command></screen>
+      <screen><command>yum install blazeblogger</command></screen>
     </section>
     <section id="sect-Installation-Gentoo">
       <title>Installing on Gentoo</title>
       <para>
         &PRODUCT; is currently available in <systemitem class="osname">Gentoo</systemitem> Portage. To install it, open a terminal, and run the following command as <systemitem class="username">root</systemitem>:
       </para>
-      <screen>~]# <command>emerge blazeblogger</command></screen>
+      <screen><command>emerge blazeblogger</command></screen>
     </section>
     <section id="sect-Installation-Ubuntu">
       <title>Installing on Ubuntu</title>
       <para>
         &PRODUCT; is currently available in both <systemitem class="osname">Ubuntu 10.04 LTS</systemitem> (<quote>Lucid Lynx</quote>) and <systemitem class="osname">Ubuntu 10.10</systemitem> (<quote>Maverick Meerkat</quote>). To install it, open a terminal, and run the following command:
       </para>
-      <screen>~]$ <command>sudo apt-get install blazeblogger</command></screen>
+      <screen><command>sudo apt-get install blazeblogger</command></screen>
     </section>
   </section>
   <section id="sect-Installation-Windows">
@@ -59,24 +59,23 @@
     <para>
       To install &PRODUCT; from the source code, download the latest source package from the <ulink url="http://blaze.blackened.cz/downloads/">official homepage</ulink>, and unpack it:
     </para>
-    <screen>~]$ <command>tar xfz blazeblogger-&VERSION;.tar.gz</command></screen>
+    <screen><command>tar xfz blazeblogger-&VERSION;.tar.gz</command></screen>
     <para>
-      A directory called <filename class="directory">blazeblogger-&VERSION;</filename> will appear in the current working directory. Switch to superuser, get into the newly created directory, and type <command>make install</command> at a shell prompt:
+      A directory called <filename class="directory">blazeblogger-&VERSION;</filename> will appear in the current working directory. Switch to superuser, get into the newly created directory, and type the following at a shell prompt:
     </para>
-    <screen>~]# <command>cd blazeblogger-&VERSION;</command>
-blazeblogger-&VERSION;]# <command>make install</command></screen>
+    <screen><command>make install</command></screen>
     <para>
       This will install executables, manual pages, documentation, and application data to the <filename class="directory">/usr/local/</filename> directory, and place Bash completion file to <filename class="directory">/etc/bash_completion.d/</filename>. To use a different installation directory, change the value of <option>prefix</option> on the command line. For example, if you want to install &PRODUCT; to <filename class="directory">/usr/</filename>, type the following command:
     </para>
-    <screen>blazeblogger-&VERSION;]# <command>make prefix=/usr install</command></screen>
+    <screen><command>make prefix=/usr install</command></screen>
     <para>
       Alternatively, you can choose to install exacutables only. For instance, to install &PRODUCT; into your home directory, type:
     </para>
-    <screen>blazeblogger-&VERSION;]$ <command>make prefix=$HOME install_bin</command></screen>
+    <screen><command>make prefix=$HOME install_bin</command></screen>
     <para>
       Finally, if you prefer to install all available files, but you do not have superuser privileges, change the value of <option>compdir</option> to a directory you have access to. For example:
     </para>
-    <screen>blazeblogger-&VERSION;]$ <command>make prefix=$HOME compdir='$(prefix)/etc' install</command></screen>
+    <screen><command>make prefix=$HOME compdir='$(prefix)/etc' install</command></screen>
   </section>
 </chapter>
 
