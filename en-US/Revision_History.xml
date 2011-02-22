@@ -8,6 +8,20 @@
 	<simpara>
 		<revhistory>
       <revision>
+        <revnumber>1-1</revnumber>
+        <date>22 February 2011</date>
+        <author>
+          <firstname>Jaromír</firstname>
+          <surname>Hradílek</surname>
+          <email>jhradilek@gmail.com</email>
+        </author>
+        <revdescription>
+          <simplelist>
+            <member>Added installation instructions for Arch Linux.</member>
+          </simplelist>
+        </revdescription>
+      </revision>
+      <revision>
         <revnumber>1-0</revnumber>
         <date>18 February 2011</date>
         <author>
