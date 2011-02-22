@@ -15,6 +15,40 @@
   </important>
   <section id="sect-Installation-Linux">
     <title>Installing on GNU/Linux</title>
+    <section id="sect-Installation-Arch_Linux">
+      <title>Installing on Arch Linux</title>
+      <para>
+        &PRODUCT; is currently available in <firstterm>Arch User Repository</firstterm> (<acronym>AUR</acronym>). There are two ways to install it on <systemitem class="osname">Arch Linux</systemitem>: you can either build the package manually, or you can use the <ulink url="https://wiki.archlinux.org/index.php/Yaourt"><application>Yaourt</application></ulink> utility. In both cases, ensure that the <package>base-devel</package> is installed by running the following command as <systemitem class="username">root</systemitem>:
+      </para>
+      <screen><command>pacman -S base-devel</command></screen>
+      <para>
+        To build the &PRODUCT; package manually, take the following steps:
+      </para>
+      <procedure>
+        <step>
+          <para>
+            Download the relevant <filename>PKGBUILD</filename> file from AUR. For example:
+          </para>
+          <screen><command>wget -t 0 http://aur.archlinux.org/packages/blazeblogger/PKGBUILD</command></screen>
+        </step>
+        <step>
+          <para>
+            Build the package by typing the following command:
+          </para>
+          <screen><command>makepkg -s</command></screen>
+        </step>
+        <step>
+          <para>
+            As <systemitem class="username">root</systemitem>, install the newly built package by typing the following at a shell prompt:
+          </para>
+          <screen><command>pacman -U <replaceable>package_name</replaceable></command></screen>
+        </step>
+      </procedure>
+      <para>
+        To install the package by using the <application>Yaourt</application> utility, type:
+      </para>
+      <screen><command>yaourt -S blazeblogger</command></screen>
+    </section>
     <section id="sect-Installation-Debian">
       <title>Installing on Debian</title>
       <para>
