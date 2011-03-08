@@ -1,0 +1,24 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"PO-Revision-Date: 2011-03-08T22:51:53\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "UNIX Utilities"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This chapter provides a thorough description of <trademark class=\"registered\">UNIX</trademark> utilities that are shipped with &PRODUCT;."
+msgstr ""
+

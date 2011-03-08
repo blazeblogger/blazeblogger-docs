@@ -1,0 +1,1274 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"PO-Revision-Date: 2011-03-08T22:51:53\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "&PRODUCT; Quick Reference"
+msgstr ""
+
+#. Tag: bridgehead
+#, no-c-format
+msgid "Creating a New Blog"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Creating a New Blog Repository"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Command"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Description"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-init</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Creates a new blog repository in a current directory."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-init --blogdir ~/public_html</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Creates a new blog repository in <filename class=\"directory\">~/public_html/</filename>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-init --verbose</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Creates a new blog repository while displaying a list of created files."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Recovering a Corrupted Blog Repository"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Recovers a corrupted blog repository while keeping existing files intact."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-init --force</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Recovers a corrupted blog repository while reverting existing files to their initial state."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Recovers a corrupted blog repository while displaying a list of created files."
+msgstr ""
+
+#. Tag: bridgehead
+#, no-c-format
+msgid "Configuring a Blog"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "General Blog Settings"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config blog.title BlazeBlogger</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the blog title to <quote>BlazeBlogger</quote>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config blog.subtitle CMS without boundaries</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the blog subtitle to <quote>CMS without boundaries</quote>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config blog.description CMS without boundaries</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the blog description to <quote>CMS without boundaries</quote>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config blog.keywords blazeblogger, cms, blog</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the blog keywords to <quote>blazeblogger</quote>, <quote>cms</quote>, and <quote>blog</quote>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config blog.theme default.html</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the blog theme to <literal>default.html</literal>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config blog.style default.css</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the style sheet to <literal>default.css</literal>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config blog.lang en_US</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the blog translation to <literal>en_US</literal>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config blog.posts 10</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the number of blog posts to be listed on a single page to 10."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "User Settings"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config user.name Jaromír Hradílek</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the default blog post author to Jaromír Hradílek."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config user.nickname Blackened</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the default blog post author's nickname to Blackened."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config user.email jhradilek@gmail.com</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the email address to <email>jhradilek@gmail.com</email>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "RSS Feed Settings"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config feed.baseurl http://blaze.blackened.cz</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the URL of the blog to <ulink url=\"http://blaze.blackened.cz\" />."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config feed.posts 10</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the number of blog posts to be listed in the feed to 10."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config feed.fullposts true</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Enables inclusion of the whole content of a blog post to the feed."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Color Settings"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config color.list true</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Enables colors in the <command>blaze-list</command> utility output."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config color.log true</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Enables colors in the <command>blaze-log</command> utility output."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Advanced Blog Post Settings"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config post.author top</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Places the blog post author above the post."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config post.date top</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Places the date of publishing above the post."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config post.tags bottom</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Places the blog post tags below the post."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Advanced &PRODUCT; Settings"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config core.doctype html</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the document type to HTML."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config core.extension html</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the file extension to <filename class=\"extension\">html</filename>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config core.encoding UTF-8</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the character encoding to <literal>UTF-8</literal>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config core.editor 'gvim -f'</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Changes the external text editor to <application>GVim</application>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-config core.processor 'markdown %in% &gt; %out%'</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Configures <application>Markdown</application> to process each blog post or a page."
+msgstr ""
+
+#. Tag: bridgehead
+#, no-c-format
+msgid "Adding a Blog Post or a Page"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Adding a Blog Post"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-add</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens an external text editor for you to write the blog post in."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-add release.txt changelog.txt</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Creates blog posts from the <filename>release.txt</filename> and <filename>changelog.txt</filename> files."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-add --editor nano</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens the <application>nano</application> text editor for you to write the blog post in."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-add --no-processor</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens an external text editor for you to write the blog post in while disabling processing it by an external application afterwards."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Adding a Page"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-add --page</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens an external text editor for you to write the page in."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-add --page about.txt downloads.txt</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Creates pages from the <filename>about.txt</filename> and <filename>downloads.txt</filename> files."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-add --page --editor nano</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens the <application>nano</application> text editor for you to write the page in."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-add --page --no-processor</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens an external text editor for you to write the page in while disabling processing it by an external application afterwards."
+msgstr ""
+
+#. Tag: bridgehead
+#, no-c-format
+msgid "Editing a Blog Post or a Page"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Editing a Blog Post"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-edit 10</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens an external text editor for you to edit the blog post with ID <literal>10</literal> in."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-edit --editor nano 10</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens the <application>nano</application> text editor for you to edit the blog post with ID <literal>10</literal> in."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-edit --no-processor 10</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens an external text editor for you to edit the blog post with ID <literal>10</literal> in while disabling processing it by an external application afterwards."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-edit --force 10</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens an external text editor for you to edit the blog post with ID <literal>10</literal> in, creating an empty source file in case it does not already exist."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Editing a Page"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-edit --page 4</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens an external text editor for you to edit the page with ID <literal>4</literal> in."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-edit --page --editor nano 4</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens the <application>nano</application> text editor for you to edit the page with ID <literal>4</literal> in."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-edit --page --no-processor 4</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens an external text editor for you to edit the page with ID <literal>4</literal> in while disabling processing it by an external application afterwards."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-edit --page --force 4</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Opens an external text editor for you to edit the page with ID <literal>4</literal> in, creating an empty source file in case it does not already exist."
+msgstr ""
+
+#. Tag: bridgehead
+#, no-c-format
+msgid "Removing a Blog Post or a Page"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Removing a Blog Post"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-remove 3 4 11</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Removes the blog posts with ID <literal>3</literal>, <literal>4</literal>, and <literal>11</literal>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-remove --interactive 3 4 11</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Removes the blog posts with ID <literal>3</literal>, <literal>4</literal>, and <literal>11</literal> while requiring manual confirmation of each removal."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Removing a Page"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-remove --page 2 3 4</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Removes the pages with ID <literal>2</literal>, <literal>3</literal>, and <literal>4</literal>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-remove --page --interactive 2 3 4</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Removes the pages with ID <literal>2</literal>, <literal>3</literal>, and <literal>4</literal> while requiring manual confirmation of each removal."
+msgstr ""
+
+#. Tag: bridgehead
+#, no-c-format
+msgid "Listing Blog Posts or Pages"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Listing Blog Posts"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists all blog posts."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --reverse</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists all blog posts in reverse order."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --short</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists all blog posts, displaying each entry on a single line."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --number 7</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists the latest seven blog posts."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --author \"Jaromir Hradilek\"</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists blog posts written by Jaromir Hradilek."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --year 2009 --month 02</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists blog posts written in February 2009."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --tag release</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists blog posts tagged as <literal>release</literal>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --id 11</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Displays the blog post with ID <literal>11</literal>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Listing Pages"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --pages</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists all pages."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --pages --reverse</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists all pages in reverse order."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --pages --short</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists all pages, displaying each entry on a single line."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --pages --number 3</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists the latest three pages."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --pages --id 4</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Displays the page with ID <literal>4</literal>."
+msgstr ""
+
+#. Tag: bridgehead
+#, no-c-format
+msgid "Displaying Blog Statistics"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --stats</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Displays blog statistics."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-list --stats --short</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Displays blog statistics on a single line."
+msgstr ""
+
+#. Tag: bridgehead
+#, no-c-format
+msgid "Generating a Blog"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-make</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Generates a complete directory tree of static pages, including blog posts, single pages, monthly and yearly archives, tags, and an RSS feed."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-make --destdir ~/public_html</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Generates a complete directory tree of static pages in the <filename class=\"directory\">~/public_html/</filename> directory."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-make --verbose</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Generates a complete directory tree of static pages while displaying a list of created files."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-make --full-paths</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Generates a complete directory tree of static pages while including page names in generated links."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-make --no-rss</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Generates a complete directory tree of static pages while omitting the creation of the RSS feed."
+msgstr ""
+
+#. Tag: bridgehead
+#, no-c-format
+msgid "Displaying a Log"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-log</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists all log entries."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-log --reverse</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists all log entries in reverse order."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-log --short</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists all log entries, displaying each record on a single line."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>blaze-log --number 5</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Lists the latest five log entries."
+msgstr ""
+
+#. Tag: bridgehead
+#, no-c-format
+msgid "Creating a New Theme"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "List of Available Theme File Placeholders"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Form"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- START-DOCUMENT --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the document header followed by the opening HTML tag."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- END-DOCUMENT --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the closing HTML tag."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- content-type --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the Content-Type META tag."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- generator --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the Generator META tag."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- copyright --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the Copyright META tag."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- date --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the Date META tag."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- description --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the Description META tag."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- keywords --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the Keywords META tag."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- stylesheet --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the Stylesheet LINK tag."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- feed --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the RSS feed LINK tag."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- page-title --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with a page title."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- title --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the blog title."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- subtitle --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the blog subtitle."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- name --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the author's name."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- nickname --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the author's nickname."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- e-mail --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the author's email."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- year --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the current year."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- tags --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the list of tags."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- archive --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the list of months."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- pages --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the list of pages."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- posts --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the list of recent blog posts."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- content --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with the actual content."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>%root%</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with a relative path to the root directory of the blog."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>%home%</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with a relative path to the index page of the blog."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>%page[<replaceable>id</replaceable>]%</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with a relative path to a page with the given <replaceable>id</replaceable>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>%post[<replaceable>id</replaceable>]%</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with a relative path to a blog post with the given <replaceable>id</replaceable>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>%tag[<replaceable>name</replaceable>]%</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with a relative path to a tag with the given <replaceable>name</replaceable>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "List of Available Style Sheet Classes"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>post</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "A H2 tag containing the title of a blog post or a page."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>section</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "A DIV tag containing a section name."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>information</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "A DIV tag containing blog post meta information that are displayed above the post."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>post-footer</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "A DIV tag containing blog post meta information that are displayed below the post."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>date</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "A SPAN tag containing a date of publishing."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>author</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "A SPAN tag containing an author of a blog post."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>tags</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "A SPAN tag containing a list of attached tags."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>previous</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "A DIV tag containing a link to a page with older blog posts."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>next</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "A DIV tag containing a link to a page with newer blog posts."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>more</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "An A tag containing a <quote>Read more</quote> link."
+msgstr ""
+

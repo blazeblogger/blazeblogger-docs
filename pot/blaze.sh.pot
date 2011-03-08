@@ -1,0 +1,341 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"PO-Revision-Date: 2011-03-08T22:51:53\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "<command>blaze.sh</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze</command> allows you to run all &PRODUCT; utilities with a single command."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Synopsis"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze</command> <replaceable>command</replaceable> <optional><replaceable>option</replaceable>…</optional>\n"
+"\n"
+"<command>blaze</command> <option>help</option>|<option>man</option> <optional><replaceable>command</replaceable></optional>\n"
+"\n"
+"<command>blaze</command> <option>-h</option>|<option>-v</option>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Description"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze</command> provides a common way to run &PRODUCT; utilities with a single command."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Options"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Command Line Options"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-h</option>, <option>--help</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays usage information and exits."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-v</option>, <option>--version</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays version information and exits."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Available Commands"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>init</option>, <option>in</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Runs <command>blaze-init</command>, a utility that either creates a &PRODUCT; repository, or recovers a previously corrupted one. Refer to <xref linkend=\"sect-Core_Utilities-init\" /> for a full description of the command usage."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>config</option>, <option>cf</option>, <option>cfg</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Runs <command>blaze-config</command>, a utility that either displays, or sets &PRODUCT; configuration options. Refer to <xref linkend=\"sect-Core_Utilities-config\" /> for a full description of the command usage."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>add</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Runs <command>blaze-add</command>, a utility that adds a blog post or a page to the &PRODUCT; repository. Refer to <xref linkend=\"sect-Core_Utilities-add\" /> for a full description of the command usage."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>edit</option>, <option>ed</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Runs <command>blaze-edit</command>, a utility that edits a blog post or a page in the &PRODUCT; repository. Refer to <xref linkend=\"sect-Core_Utilities-edit\" /> for a full description of the command usage."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>remove</option>, <option>rm</option>, <option>del</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Runs <command>blaze-remove</command>, a utility that removes a blog post or a page from the &PRODUCT; repository. Refer to <xref linkend=\"sect-Core_Utilities-remove\" /> for a full description of the command usage."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>list</option>, <option>ls</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Runs <command>blaze-list</command>, a utility that lists blog posts or pages in the &PRODUCT; repository. Refer to <xref linkend=\"sect-Core_Utilities-list\" /> for a full description of the command usage."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>make</option>, <option>mk</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Runs <command>blaze-make</command>, a utility that generates a blog from the &PRODUCT; repository. Refer to <xref linkend=\"sect-Core_Utilities-make\" /> for a full description of the command usage."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>log</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Runs <command>blaze-log</command>, a utility that displays the &PRODUCT; repository log. Refer to <xref linkend=\"sect-Core_Utilities-log\" /> for a full description of the command usage."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>help</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays usage information, either for the utility itself, or for the selected <replaceable>command</replaceable>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>man</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays a manual page, either for the utility itself, or for the selected <replaceable>command</replaceable>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>version</option>, <option>vs</option>, <option>ver</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays version information."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Environment Variables"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<envar>EDITOR</envar>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Unless the <option>core.editor</option> option is set, <command>blaze</command> tries to use system-wide settings to decide which editor to use."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Example Usage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Run the <command>blaze-remove</command> command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze remove -p 4</command>\n"
+"Successfully removed the page with ID 4."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Display usage of the <command>blaze-config</command> command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze help config</command>\n"
+"Usage: blaze-config [-qV] [-b DIRECTORY] [-E EDITOR] OPTION [VALUE...]\n"
+"       blaze-config -e [-b DIRECTORY]\n"
+"       blaze-config -h|-v\n"
+"\n"
+"  -b, --blogdir DIRECTORY     specify a directory in which the BlazeBlogger\n"
+"                              repository is placed\n"
+"  -E, --editor EDITOR         specify an external text editor\n"
+"  -e, --edit                  edit the configuration in a text editor\n"
+"  -q, --quiet                 do not display unnecessary messages\n"
+"  -V, --verbose               display all messages\n"
+"  -h, --help                  display this help and exit\n"
+"  -v, --version               display version information and exit"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Display the manual page for the <command>blaze-init</command> command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze man init</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "See Also"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-init\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-config\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-config</command> displays or sets &PRODUCT; configuration options."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-add\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-edit\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-edit</command> edits a blog post or a page in the &PRODUCT; repository."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-remove\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-remove</command> removes a blog post or a page from the &PRODUCT; repository."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-list</command> lists blog posts or pages in the &PRODUCT; repository."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-make\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-make</command> generates a blog from the &PRODUCT; repository."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-log\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-log</command> displays the &PRODUCT; repository log."
+msgstr ""
+

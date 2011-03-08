@@ -1,0 +1,519 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"PO-Revision-Date: 2011-03-08T22:51:53\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "<command>blaze-config</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-config</command> displays or sets &PRODUCT; configuration options."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Synopsis"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <optional><option>-qV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-E</option> <replaceable>editor</replaceable></optional> <replaceable>option</replaceable> <optional><replaceable>value</replaceable>…</optional>\n"
+"\n"
+"<command>blaze-config</command> <option>-e</option> <optional><option>-b</option> <replaceable>directory</replaceable></optional>\n"
+"\n"
+"<command>blaze-config</command> <option>-h</option>|<option>-v</option>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Description"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-config</command> either sets &PRODUCT; configuration options, or displays their current value. Additionally, it can also open a configuration file in an external text editor."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Options"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Command Line Options"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-E</option> <replaceable>editor</replaceable>, <option>--editor</option> <replaceable>editor</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to specify an external text <replaceable>editor</replaceable>. When supplied, this option overrides the relevant configuration option."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-e</option>, <option>--edit</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to edit the configuration in a text editor."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-q</option>, <option>--quiet</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables displaying of unnecessary messages."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-V</option>, <option>--verbose</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enables displaying of all messages. This is the default option."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-h</option>, <option>--help</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays usage information and exits."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-v</option>, <option>--version</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays version information and exits."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Configuration Options"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>blog.title=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A title of your blog."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>blog.subtitle=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A subtitle of your blog."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>blog.description=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A brief description of your blog."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>blog.keywords=<replaceable>list</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A comma-separated list of keywords."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>blog.theme=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A theme for your blog. Note that it must point to an existing file in the <filename class=\"directory\">.blaze/theme/</filename> directory. The default option is <literal>default.html</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>blog.style=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A style sheet for your blog. Note that it must point to an existing file in the <filename class=\"directory\">.blaze/style/</filename> directory. The default option is <literal>default.css</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>blog.lang=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A translation of your blog. Note that it must point to an existing file in the <filename class=\"directory\">.blaze/lang/</filename> directory. The default option is <literal>en_US</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>blog.posts=<replaceable>integer</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A number of blog posts to be listed on a single page. The default option is <literal>10</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>color.list=<replaceable>boolean</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A boolean to enable (<literal>true</literal>) or disable (<literal>false</literal>) colors in the <command>blaze-list</command> output. The default option is <literal>false</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>color.log=<replaceable>boolean</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A boolean to enable (<literal>true</literal>) or disable (<literal>false</literal>) colors in the <command>blaze-log</command> output. The default option is <literal>false</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>core.doctype=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A document type. It can be either <literal>html</literal> for HTML, or <literal>xhtml</literal> for the XHTML standard. The default option is <literal>html</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>core.extension=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A file extension. The default option is <literal>html</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>core.encoding=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A character encoding. Note that it has to be in a form that is recognized by <acronym>W3C</acronym> standards. The default option is <literal>UTF-8</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>core.editor=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "An external text editor. When supplied, this option overrides the system-wide settings."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>core.processor=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "An external application to be used to process newly added or edited blog posts and pages. Note that you must supply <literal>%in%</literal> and <literal>%out%</literal> in place of an input and output file name respectively. This option is disabled by default."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>feed.baseurl=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A <acronym>URL</acronym> of your blog, for example <literal>http://example.com</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>feed.posts=<replaceable>integer</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A number of blog posts to be listed in the feed. The default option is <literal>10</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>feed.fullposts=<replaceable>boolean</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A boolean to enable (<literal>true</literal>) or disable (<literal>false</literal>) inclusion of the whole content of a blog post in the feed, even though the <command>&lt;!-- break --&gt;</command> form is used. The default option is <literal>false</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>post.author=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A location of a blog post author name. It can be placed above the post (<literal>top</literal>), below it (<literal>bottom</literal>), or nowhere on the page (<literal>none</literal>). The default option is <literal>top</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>post.date=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A location of a date of publishing, as it can either be placed above the post (<literal>top</literal>), below it (<literal>bottom</literal>), or nowhere on the page (<literal>none</literal>). The default option is <literal>top</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>post.tags=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A location of post tags, as they can either be placed above the post (<literal>top</literal>), below it (<literal>bottom</literal>), or nowhere on the page (<literal>none</literal>). The default option is <literal>top</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>user.name=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Your full name to be used in the copyright notice, and as the default post author. The default option is <literal>admin</literal>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>user.nickname=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Your nickname to be used as the default post author. When supplied, it overrides the <option>user.name</option> setting. This option is disabled by default."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>user.email=<replaceable>string</replaceable></option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Your email address. The default option is <literal>admin@localhost</literal>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Environment Variables"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<envar>EDITOR</envar>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Unless the <option>core.editor</option> option is set, <command>blaze-config</command> tries to use system-wide settings to decide which editor to use."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Files"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<filename>.blaze/config</filename>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A file containing the configuration."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<filename class=\"directory\">.blaze/theme/</filename>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A directory containing blog themes."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<filename class=\"directory\">.blaze/style/</filename>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A directory containing style sheets."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<filename class=\"directory\">.blaze/lang/</filename>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A directory containing language files."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Example Usage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Configure the default text editor:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-config core.editor nano</command>\n"
+"The option has been successfully saved."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Configure the user information:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-config user.name Jaromir Hradilek</command>\n"
+"The option has been successfully saved.\n"
+"~]$ <command>blaze-config user.email jhradilek@gmail.com</command>\n"
+"The option has been successfully saved."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Configure the blog appearance:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-config blog.title BlazeBlogger</command>\n"
+"The option has been successfully saved.\n"
+"~]$ <command>blaze-config blog.subtitle a CMS without boundaries</command>\n"
+"The option has been successfully saved.\n"
+"~]$ <command>blaze-config blog.theme keepitsimple.html</command>\n"
+"The option has been successfully saved.\n"
+"~]$ <command>blaze-config blog.style keepitsimple.css</command>\n"
+"The option has been successfully saved."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Configure the RSS feed:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-config feed.fullposts true</command>\n"
+"The option has been successfully saved.\n"
+"~]$ <command>blaze-config feed.posts 10</command>\n"
+"The option has been successfully saved.\n"
+"~]$ <command>blaze-config feed.baseurl http://blaze.blackened.cz/</command>\n"
+"The option has been successfully saved."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Open the configuration in a text editor:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-config -e</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "See Also"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-init\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one."
+msgstr ""
+
