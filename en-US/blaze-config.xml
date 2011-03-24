@@ -378,6 +378,13 @@ The option has been successfully saved.</screen>
       </listitem>
       <listitem>
         <para>
+          Enable the use of the Markdown markup language:
+        </para>
+        <screen>~]$ <command>blaze-config core.processor 'markdown %in% &gt; %out%'</command>
+The option has been successfully saved.</screen>
+      </listitem>
+      <listitem>
+        <para>
           Open the configuration in a text editor:
         </para>
         <screen>~]$ <command>blaze-config -e</command></screen>
