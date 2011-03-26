@@ -1241,14 +1241,6 @@
       <tbody>
         <row>
           <entry>
-            <command>post</command>
-          </entry>
-          <entry>
-            A H2 tag containing the title of a blog post or a page.
-          </entry>
-        </row>
-        <row>
-          <entry>
             <command>section</command>
           </entry>
           <entry>
@@ -1257,7 +1249,23 @@
         </row>
         <row>
           <entry>
-            <command>information</command>
+            <command>post</command>
+          </entry>
+          <entry>
+            A DIV tag surrounding a blog post or a page.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>post-heading</command>
+          </entry>
+          <entry>
+            A H2 tag containing the title of a blog post or a page.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>post-header</command>
           </entry>
           <entry>
             A DIV tag containing blog post meta information that are displayed above the post.
