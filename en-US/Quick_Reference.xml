@@ -34,10 +34,10 @@
         </row>
         <row>
           <entry>
-            <command>blaze-init --blogdir ~/public_html</command>
+            <command>blaze-init --blogdir <replaceable>directory</replaceable></command>
           </entry>
           <entry>
-            Creates a new blog repository in <filename class="directory">~/public_html/</filename>.
+            Creates a new blog repository in the given <replaceable>directory</replaceable> (for example, <quote>~/public_html/</quote>).
           </entry>
         </row>
         <row>
@@ -100,8 +100,8 @@
   <table id="tabl-Quick_Reference-Configuring-General">
     <title>General Blog Settings</title>
     <tgroup cols="2">
-      <colspec colname="command" colwidth="60*" />
-      <colspec colname="description" colwidth="40*" />
+      <colspec colname="command" />
+      <colspec colname="description" />
       <thead>
         <row>
           <entry>
@@ -115,66 +115,66 @@
       <tbody>
         <row>
           <entry>
-            <command>blaze-config blog.title BlazeBlogger</command>
+            <command>blaze-config blog.title <replaceable>title</replaceable></command>
           </entry>
           <entry>
-            Changes the blog title to <quote>BlazeBlogger</quote>.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-config blog.subtitle CMS without boundaries</command>
-          </entry>
-          <entry>
-            Changes the blog subtitle to <quote>CMS without boundaries</quote>.
+            Changes the blog title to <replaceable>title</replaceable> (for example, <quote>BlazeBlogger</quote>).
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-config blog.description CMS without boundaries</command>
+            <command>blaze-config blog.subtitle <replaceable>subtitle</replaceable></command>
           </entry>
           <entry>
-            Changes the blog description to <quote>CMS without boundaries</quote>.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-config blog.keywords blazeblogger, cms, blog</command>
-          </entry>
-          <entry>
-            Changes the blog keywords to <quote>blazeblogger</quote>, <quote>cms</quote>, and <quote>blog</quote>.
+            Changes the blog subtitle to <replaceable>subtitle</replaceable> (for example, <quote>a CMS without boundaries</quote>).
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-config blog.theme default.html</command>
+            <command>blaze-config blog.description <replaceable>description</replaceable></command>
           </entry>
           <entry>
-            Changes the blog theme to <literal>default.html</literal>.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-config blog.style default.css</command>
-          </entry>
-          <entry>
-            Changes the style sheet to <literal>default.css</literal>.
+            Changes the blog description to <replaceable>description</replaceable> (for example, <quote>BlazeBlogger is a simple-to-use CMS for the command line that produces static content.</quote>).
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-config blog.lang en_US</command>
+            <command>blaze-config blog.keywords <replaceable>keywords</replaceable></command>
           </entry>
           <entry>
-            Changes the blog translation to <literal>en_US</literal>.
+            Changes the blog keywords to <replaceable>keywords</replaceable> (for example, <quote>blazeblogger, blog, cms, perl, command line, cli</quote>).
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-config blog.posts 10</command>
+            <command>blaze-config blog.theme <replaceable>filename</replaceable></command>
           </entry>
           <entry>
-            Changes the number of blog posts to be listed on a single page to 10.
+            Changes the blog theme to <replaceable>filename</replaceable> (for example, <quote>keepitsimple.html</quote>).
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config blog.style <replaceable>filename</replaceable></command>
+          </entry>
+          <entry>
+            Changes the style sheet to <replaceable>filename</replaceable> (for example, <quote>keepitsimple.css</quote>).
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config blog.lang <replaceable>language</replaceable></command>
+          </entry>
+          <entry>
+            Changes the blog translation to <replaceable>language</replaceable> (for example, <quote>en_US</quote>).
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config blog.posts <replaceable>number</replaceable></command>
+          </entry>
+          <entry>
+            Changes the number of blog posts to be listed on a single page to <replaceable>number</replaceable> (for example, <quote>10</quote>).
           </entry>
         </row>
       </tbody>
@@ -183,8 +183,8 @@
   <table id="tabl-Quick_Reference-Configuring-User">
     <title>User Settings</title>
     <tgroup cols="2">
-      <colspec colname="command" colwidth="60*" />
-      <colspec colname="description" colwidth="40*" />
+      <colspec colname="command" />
+      <colspec colname="description" />
       <thead>
         <row>
           <entry>
@@ -198,26 +198,26 @@
       <tbody>
         <row>
           <entry>
-            <command>blaze-config user.name Jaromír Hradílek</command>
+            <command>blaze-config user.name <replaceable>name</replaceable></command>
           </entry>
           <entry>
-            Changes the default blog post author to Jaromír Hradílek.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-config user.nickname Blackened</command>
-          </entry>
-          <entry>
-            Changes the default blog post author's nickname to Blackened.
+            Changes the default blog post author to <replaceable>name</replaceable> (for example, <quote>Jaromír Hradílek</quote>).
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-config user.email jhradilek@gmail.com</command>
+            <command>blaze-config user.nickname <replaceable>nickname</replaceable></command>
           </entry>
           <entry>
-            Changes the email address to <email>jhradilek@gmail.com</email>.
+            Changes the default blog post author's nickname to <replaceable>nickname</replaceable> (for example, <quote>Blackened</quote>).
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config user.email <replaceable>email</replaceable></command>
+          </entry>
+          <entry>
+            Changes the email address to <replaceable>email</replaceable> (for example, <quote>jhradilek@gmail.com</quote>).
           </entry>
         </row>
       </tbody>
@@ -226,8 +226,8 @@
   <table id="tabl-Quick_Reference-Configuring-RSS">
     <title>RSS Feed Settings</title>
     <tgroup cols="2">
-      <colspec colname="command" colwidth="60*" />
-      <colspec colname="description" colwidth="40*" />
+      <colspec colname="command" />
+      <colspec colname="description" />
       <thead>
         <row>
           <entry>
@@ -241,26 +241,26 @@
       <tbody>
         <row>
           <entry>
-            <command>blaze-config feed.baseurl http://blaze.blackened.cz</command>
+            <command>blaze-config feed.baseurl <replaceable>url</replaceable></command>
           </entry>
           <entry>
-            Changes the URL of the blog to <ulink url="http://blaze.blackened.cz" />.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-config feed.posts 10</command>
-          </entry>
-          <entry>
-            Changes the number of blog posts to be listed in the feed to 10.
+            Changes the URL of the blog to <replaceable>url</replaceable> (for example, <quote>http://blaze.blackened.cz</quote>).
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-config feed.fullposts true</command>
+            <command>blaze-config feed.posts <replaceable>number</replaceable></command>
           </entry>
           <entry>
-            Enables inclusion of the whole content of a blog post to the feed.
+            Changes the number of blog posts to be listed in the feed to <replaceable>number</replaceable> (for example, <quote>10</quote>).
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config feed.fullposts <replaceable>boolean</replaceable></command>
+          </entry>
+          <entry>
+            Enables (<option>true</option>) or disables (<option>false</option>) inclusion of the whole content of a blog post to the feed.
           </entry>
         </row>
       </tbody>
@@ -269,8 +269,8 @@
   <table id="tabl-Quick_Reference-Configuring-Color">
     <title>Color Settings</title>
     <tgroup cols="2">
-      <colspec colname="command" colwidth="60*" />
-      <colspec colname="description" colwidth="40*" />
+      <colspec colname="command" />
+      <colspec colname="description" />
       <thead>
         <row>
           <entry>
@@ -284,18 +284,18 @@
       <tbody>
         <row>
           <entry>
-            <command>blaze-config color.list true</command>
+            <command>blaze-config color.list <replaceable>boolean</replaceable></command>
           </entry>
           <entry>
-            Enables colors in the <command>blaze-list</command> utility output.
+            Enables (<option>true</option>) or disables (<option>false</option>) colors in the <command>blaze-list</command> utility output.
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-config color.log true</command>
+            <command>blaze-config color.log <replaceable>boolean</replaceable></command>
           </entry>
           <entry>
-            Enables colors in the <command>blaze-log</command> utility output.
+            Enables (<option>true</option>) or disables (<option>false</option>) colors in the <command>blaze-log</command> utility output.
           </entry>
         </row>
       </tbody>
@@ -304,8 +304,8 @@
   <table id="id-Quick_Reference-Configuring-Post">
     <title>Advanced Blog Post Settings</title>
     <tgroup cols="2">
-      <colspec colname="command" colwidth="60*" />
-      <colspec colname="description" colwidth="40*" />
+      <colspec colname="command" />
+      <colspec colname="description" />
       <thead>
         <row>
           <entry>
@@ -319,26 +319,26 @@
       <tbody>
         <row>
           <entry>
-            <command>blaze-config post.author top</command>
+            <command>blaze-config post.author <replaceable>position</replaceable></command>
           </entry>
           <entry>
-            Places the blog post author above the post.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-config post.date top</command>
-          </entry>
-          <entry>
-            Places the date of publishing above the post.
+            Places the blog post author above the post (<option>top</option>), below the post (<option>bottom</option>), or hides it (<option>none</option>).
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-config post.tags bottom</command>
+            <command>blaze-config post.date <replaceable>position</replaceable></command>
           </entry>
           <entry>
-            Places the blog post tags below the post.
+            Places the date of publishing above the post (<option>top</option>), below the post (<option>bottom</option>), or hides it (<option>none</option>).
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config post.tags <replaceable>position</replaceable></command>
+          </entry>
+          <entry>
+            Places the blog post tags above the post (<option>top</option>), below the post (<option>bottom</option>), or hides it (<option>none</option>).
           </entry>
         </row>
       </tbody>
@@ -347,8 +347,8 @@
   <table id="tabl-Quick_Reference-Configuring-Advanced">
     <title>Advanced &PRODUCT; Settings</title>
     <tgroup cols="2">
-      <colspec colname="command" colwidth="60*" />
-      <colspec colname="description" colwidth="40*" />
+      <colspec colname="command" />
+      <colspec colname="description" />
       <thead>
         <row>
           <entry>
@@ -362,42 +362,42 @@
       <tbody>
         <row>
           <entry>
-            <command>blaze-config core.doctype html</command>
+            <command>blaze-config core.doctype <replaceable>doctype</replaceable></command>
           </entry>
           <entry>
-            Changes the document type to HTML.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-config core.extension html</command>
-          </entry>
-          <entry>
-            Changes the file extension to <filename class="extension">html</filename>.
+            Changes the document type to HTML (<option>html</option>) or XHTML (<option>xhtml</option>).
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-config core.encoding UTF-8</command>
+            <command>blaze-config core.extension <replaceable>extension</replaceable></command>
           </entry>
           <entry>
-            Changes the character encoding to <literal>UTF-8</literal>.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-config core.editor 'gvim -f'</command>
-          </entry>
-          <entry>
-            Changes the external text editor to <application>GVim</application>.
+            Changes the file extension to <replaceable>extension</replaceable> (for example, <quote>html</quote>).
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-config core.processor 'markdown %in% &gt; %out%'</command>
+            <command>blaze-config core.encoding <replaceable>encoding</replaceable></command>
           </entry>
           <entry>
-            Configures <application>Markdown</application> to process each blog post or a page.
+            Changes the character encoding to <replaceable>encoding</replaceable> (for example, <quote>UTF-8</quote>).
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config core.editor <replaceable>editor</replaceable></command>
+          </entry>
+          <entry>
+            Changes the external text editor to <replaceable>editor</replaceable> (for example, use <quote>gvim -f</quote> to edit the content in GVim).
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-config core.processor <replaceable>command</replaceable></command>
+          </entry>
+          <entry>
+            Specifies <replaceable>command</replaceable> to process each blog post or a page (for example, use <quote>'markdown %in% &gt; %out%'</quote> to write blog posts and pages in the Markdown markup language).
           </entry>
         </row>
       </tbody>
@@ -427,23 +427,23 @@
             <command>blaze-add</command>
           </entry>
           <entry>
-            Opens an external text editor for you to write the blog post in.
+            Allows you to write a blog post in an external text editor.
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-add release.txt changelog.txt</command>
+            <command>blaze-add <replaceable>filename</replaceable></command>
           </entry>
           <entry>
-            Creates blog posts from the <filename>release.txt</filename> and <filename>changelog.txt</filename> files.
+            Creates a blog post from <replaceable>filename</replaceable> (for example, <quote>release.html</quote>).
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-add --editor nano</command>
+            <command>blaze-add --editor <replaceable>editor</replaceable></command>
           </entry>
           <entry>
-            Opens the <application>nano</application> text editor for you to write the blog post in.
+            Allows you to write a blog post in <replaceable>editor</replaceable> (for example, <quote>nano</quote>).
           </entry>
         </row>
         <row>
@@ -451,7 +451,7 @@
             <command>blaze-add --no-processor</command>
           </entry>
           <entry>
-            Opens an external text editor for you to write the blog post in while disabling processing it by an external application afterwards.
+            Allows you to write a blog post in an external text editor, but does not process it by any external application afterward.
           </entry>
         </row>
       </tbody>
@@ -478,23 +478,23 @@
             <command>blaze-add --page</command>
           </entry>
           <entry>
-            Opens an external text editor for you to write the page in.
+            Allows you to write a page in an external text editor.
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-add --page about.txt downloads.txt</command>
+            <command>blaze-add --page <replaceable>filename</replaceable></command>
           </entry>
           <entry>
-            Creates pages from the <filename>about.txt</filename> and <filename>downloads.txt</filename> files.
+            Creates a page from <replaceable>filename</replaceable> (for example, <quote>about.html</quote>).
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-add --page --editor nano</command>
+            <command>blaze-add --page --editor <replaceable>editor</replaceable></command>
           </entry>
           <entry>
-            Opens the <application>nano</application> text editor for you to write the page in.
+            Allows you to write a page in <replaceable>editor</replaceable> (for example, <quote>nano</quote>).
           </entry>
         </row>
         <row>
@@ -502,7 +502,7 @@
             <command>blaze-add --page --no-processor</command>
           </entry>
           <entry>
-            Opens an external text editor for you to write the page in while disabling processing it by an external application afterwards.
+            Allows you to write a page in an external text editor, but does not process it by any external application afterward.
           </entry>
         </row>
       </tbody>
@@ -529,34 +529,34 @@
       <tbody>
         <row>
           <entry>
-            <command>blaze-edit 10</command>
+            <command>blaze-edit <replaceable>id</replaceable></command>
           </entry>
           <entry>
-            Opens an external text editor for you to edit the blog post with ID <literal>10</literal> in.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-edit --editor nano 10</command>
-          </entry>
-          <entry>
-            Opens the <application>nano</application> text editor for you to edit the blog post with ID <literal>10</literal> in.
+            Allows you to edit a blog post with the given <replaceable>id</replaceable> in an external text editor.
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-edit --no-processor 10</command>
+            <command>blaze-edit --editor <replaceable>editor</replaceable> <replaceable>id</replaceable></command>
           </entry>
           <entry>
-            Opens an external text editor for you to edit the blog post with ID <literal>10</literal> in while disabling processing it by an external application afterwards.
+            Allows you to edit a blog post with the given <replaceable>id</replaceable> in <replaceable>editor</replaceable>.
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-edit --force 10</command>
+            <command>blaze-edit --no-processor <replaceable>id</replaceable></command>
           </entry>
           <entry>
-            Opens an external text editor for you to edit the blog post with ID <literal>10</literal> in, creating an empty source file in case it does not already exist.
+            Allows you to edit a blog post with the given <replaceable>id</replaceable> in an external text editor, but does not process it by any external application afterward.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-edit --force <replaceable>id</replaceable></command>
+          </entry>
+          <entry>
+            Allows you to edit a blog post with the given <replaceable>id</replaceable> in an external text editor, creating an empty source file in case it does not exist.
           </entry>
         </row>
       </tbody>
@@ -580,34 +580,34 @@
       <tbody>
         <row>
           <entry>
-            <command>blaze-edit --page 4</command>
+            <command>blaze-edit --page <replaceable>id</replaceable></command>
           </entry>
           <entry>
-            Opens an external text editor for you to edit the page with ID <literal>4</literal> in.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-edit --page --editor nano 4</command>
-          </entry>
-          <entry>
-            Opens the <application>nano</application> text editor for you to edit the page with ID <literal>4</literal> in.
+            Allows you to edit a page with the given <replaceable>id</replaceable> in an external text editor.
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-edit --page --no-processor 4</command>
+            <command>blaze-edit --page --editor <replaceable>editor</replaceable> <replaceable>id</replaceable></command>
           </entry>
           <entry>
-            Opens an external text editor for you to edit the page with ID <literal>4</literal> in while disabling processing it by an external application afterwards.
+            Allows you to edit a page with the given <replaceable>id</replaceable> in <replaceable>editor</replaceable>.
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-edit --page --force 4</command>
+            <command>blaze-edit --page --no-processor <replaceable>id</replaceable></command>
           </entry>
           <entry>
-            Opens an external text editor for you to edit the page with ID <literal>4</literal> in, creating an empty source file in case it does not already exist.
+            Allows you to edit a page with the given <replaceable>id</replaceable> in an external text editor, but does not process it by any external application afterward.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-edit --page --force <replaceable>id</replaceable></command>
+          </entry>
+          <entry>
+            Allows you to edit a page with the given <replaceable>id</replaceable> in an external text editor, creating an empty source file in case it does not exist.
           </entry>
         </row>
       </tbody>
@@ -634,18 +634,18 @@
       <tbody>
         <row>
           <entry>
-            <command>blaze-remove 3 4 11</command>
+            <command>blaze-remove <replaceable>id</replaceable></command>
           </entry>
           <entry>
-            Removes the blog posts with ID <literal>3</literal>, <literal>4</literal>, and <literal>11</literal>.
+            Removes a blog post with the given <replaceable>id</replaceable>.
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-remove --interactive 3 4 11</command>
+            <command>blaze-remove --interactive <replaceable>id</replaceable></command>
           </entry>
           <entry>
-            Removes the blog posts with ID <literal>3</literal>, <literal>4</literal>, and <literal>11</literal> while requiring manual confirmation of each removal.
+            Removes a blog post with the given <replaceable>id</replaceable>, requiring a manual confirmation.
           </entry>
         </row>
       </tbody>
@@ -669,18 +669,18 @@
       <tbody>
         <row>
           <entry>
-            <command>blaze-remove --page 2 3 4</command>
+            <command>blaze-remove --page <replaceable>id</replaceable></command>
           </entry>
           <entry>
-            Removes the pages with ID <literal>2</literal>, <literal>3</literal>, and <literal>4</literal>.
+            Removes a page with the given <replaceable>id</replaceable>.
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-remove --page --interactive 2 3 4</command>
+            <command>blaze-remove --page --interactive <replaceable>id</replaceable></command>
           </entry>
           <entry>
-            Removes the pages with ID <literal>2</literal>, <literal>3</literal>, and <literal>4</literal> while requiring manual confirmation of each removal.
+            Removes a page with the given <replaceable>id</replaceable>, requiring a manual confirmation.
           </entry>
         </row>
       </tbody>
@@ -731,42 +731,42 @@
         </row>
         <row>
           <entry>
-            <command>blaze-list --number 7</command>
+            <command>blaze-list --number <replaceable>number</replaceable></command>
           </entry>
           <entry>
-            Lists the latest seven blog posts.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-list --author "Jaromir Hradilek"</command>
-          </entry>
-          <entry>
-            Lists blog posts written by Jaromir Hradilek.
+            Reduces the number of listed blog posts to <replaceable>number</replaceable>.
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-list --year 2009 --month 02</command>
+            <command>blaze-list --author <replaceable>name</replaceable></command>
           </entry>
           <entry>
-            Lists blog posts written in February 2009.
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <command>blaze-list --tag release</command>
-          </entry>
-          <entry>
-            Lists blog posts tagged as <literal>release</literal>.
+            Lists blog posts written by <replaceable>name</replaceable>.
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-list --id 11</command>
+            <command>blaze-list --year <replaceable>year</replaceable> --month <replaceable>month</replaceable></command>
           </entry>
           <entry>
-            Displays the blog post with ID <literal>11</literal>.
+            Lists blog posts written in the given <replaceable>month</replaceable> and <replaceable>year</replaceable>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --tag <replaceable>tag</replaceable></command>
+          </entry>
+          <entry>
+            Lists blog posts tagged as <replaceable>tag</replaceable>.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <command>blaze-list --id <replaceable>id</replaceable></command>
+          </entry>
+          <entry>
+            Displays a blog post with the given <replaceable>id</replaceable>.
           </entry>
         </row>
       </tbody>
@@ -814,18 +814,18 @@
         </row>
         <row>
           <entry>
-            <command>blaze-list --pages --number 3</command>
+            <command>blaze-list --pages --number <replaceable>number</replaceable></command>
           </entry>
           <entry>
-            Lists the latest three pages.
+            Reduces the number of listed pages to <replaceable>number</replaceable>
           </entry>
         </row>
         <row>
           <entry>
-            <command>blaze-list --pages --id 4</command>
+            <command>blaze-list --pages --id <replaceable>id</replaceable></command>
           </entry>
           <entry>
-            Displays the page with ID <literal>4</literal>.
+            Displays a page with the given <replaceable>id</replaceable>.
           </entry>
         </row>
       </tbody>
@@ -898,10 +898,10 @@
         </row>
         <row>
           <entry>
-            <command>blaze-make --destdir ~/public_html</command>
+            <command>blaze-make --destdir <replaceable>directory</replaceable></command>
           </entry>
           <entry>
-            Generates a complete directory tree of static pages in the <filename class="directory">~/public_html/</filename> directory.
+            Generates a complete directory tree of static pages in the given <replaceable>directory</replaceable> (for example, <quote>~/public_html/</quote>).
           </entry>
         </row>
         <row>
@@ -976,10 +976,10 @@
         </row>
         <row>
           <entry>
-            <command>blaze-log --number 5</command>
+            <command>blaze-log --number <replaceable>number</replaceable></command>
           </entry>
           <entry>
-            Lists the latest five log entries.
+            Reduces the number of listed log entries to <replaceable>number</replaceable>.
           </entry>
         </row>
       </tbody>
