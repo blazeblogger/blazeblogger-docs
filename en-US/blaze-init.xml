@@ -27,7 +27,7 @@
         <term><option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable></term>
         <listitem>
           <para>
-            Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is to be blaced. The default option is a current working directory.
+            Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is to be placed. The default option is a current working directory.
           </para>
         </listitem>
       </varlistentry>

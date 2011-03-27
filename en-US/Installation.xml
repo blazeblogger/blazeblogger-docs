@@ -103,7 +103,7 @@
     </para>
     <screen><command>make prefix=/usr install</command></screen>
     <para>
-      Alternatively, you can choose to install exacutables only. For instance, to install &PRODUCT; into your home directory, type:
+      Alternatively, you can choose to install executables only. For instance, to install &PRODUCT; into your home directory, type:
     </para>
     <screen><command>make prefix=$HOME install_bin</command></screen>
     <para>

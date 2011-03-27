@@ -148,7 +148,7 @@ The option has been successfully saved.</screen>
     <section id="sect-Getting_Started-Configuring-Metadata">
       <title>Changing a Blog Metadata</title>
       <para>
-        To change the descrption of a blog, run the following command:
+        To change the description of a blog, run the following command:
       </para>
       <screen><command>blaze-config</command> <option>blog.description</option> <replaceable>description</replaceable></screen>
       <para>
@@ -664,7 +664,7 @@ Done.</screen>
     </para>
     <note>
       <para>
-        Since version 0.9.0, &PRODUCT; allows you to enable a colored output for some of its utilites. To enable this feature for <command>blaze-log</command>, use the following command:
+        Since version 0.9.0, &PRODUCT; allows you to enable a colored output for some of its utilities. To enable this feature for <command>blaze-log</command>, use the following command:
       </para>
       <screen><command>blaze-config</command> <option>color.log</option> <option>true</option></screen>
     </note>
