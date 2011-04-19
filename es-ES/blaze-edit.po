@@ -1,0 +1,306 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"PO-Revision-Date: 2011-03-08T22:51:53\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "<command>blaze-edit</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-edit</command> edits a blog post or a page in the &PRODUCT; repository."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Synopsis"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-edit</command> <optional><option>-fpqCPV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-E</option> <replaceable>editor</replaceable></optional> <replaceable>id</replaceable>\n"
+"\n"
+"<command>blaze-edit</command> <option>-h</option>|<option>-v</option>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Description"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-edit</command> opens an existing blog post or a page with the specified <replaceable>id</replaceable> in an external text editor. Note that there are several special forms and placeholders that can be used in the text, and that will be replaced with a proper data when the blog is generated."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Special Forms"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<command>&lt;!-- break --&gt;</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A mark to delimit a blog post synopsis."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Placeholders"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<command>%root%</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A relative path to the root directory of the blog."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<command>%home%</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A relative path to the index page of the blog."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<command>%page[<replaceable>id</replaceable>]%</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A relative path to a page with the supplied <replaceable>id</replaceable>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<command>%post[<replaceable>id</replaceable>]%</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A relative path to a blog post with the supplied <replaceable>id</replaceable>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<command>%tag[<replaceable>name</replaceable>]%</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A relative path to a tag with the supplied <replaceable>name</replaceable>."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Options"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-E</option> <replaceable>editor</replaceable>, <option>--editor</option> <replaceable>editor</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to specify an external text <replaceable>editor</replaceable>. When supplied, this option overrides the relevant configuration option."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-p</option>, <option>--page</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Tells <command>blaze-edit</command> to edit a page or pages."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-P</option>, <option>--post</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Tells <command>blaze-edit</command> to edit a blog post or blog posts. This is the default option."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-f</option>, <option>--force</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Tells <command>blaze-edit</command> to create an empty source file in case it does not already exist. If the <option>core.processor</option> option is enabled, this file is used as the input to be processed by the selected application."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-C</option>, <option>--no-processor</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables processing a blog post or page with an external application."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-q</option>, <option>--quiet</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables displaying of unnecessary messages."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-V</option>, <option>--verbose</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enables displaying of all messages. This is the default option."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-h</option>, <option>--help</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays usage information and exits."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-v</option>, <option>--version</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays version information and exits."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Environment Variables"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<envar>EDITOR</envar>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Unless the <option>core.editor</option> option is set, <command>blaze-edit</command> tries to use system-wide settings to decide which editor to use."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Example Usage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Edit a blog post in an external text editor:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-edit 10</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Edit a page in an external text editor:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-edit -p 4</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Edit a page in <application>nano</application>:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-edit -p 2 -E nano</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "See Also"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-config\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-config</command> displays or sets &PRODUCT; configuration options."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-add\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-list\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-list</command> lists blog posts or pages in the &PRODUCT; repository."
+msgstr ""
+

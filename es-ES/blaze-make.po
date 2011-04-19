@@ -1,0 +1,289 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"PO-Revision-Date: 2011-03-08T22:51:53\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "<command>blaze-make</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-make</command> generates a blog from the &PRODUCT; repository."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Synopsis"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-make</command> <optional><option>-cpqrIFPTV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-d</option> <replaceable>directory</replaceable></optional>\n"
+"\n"
+"<command>blaze-make</command> <option>-h</option>|<option>-v</option>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Description"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-make</command> reads the &PRODUCT; repository, and generates a complete directory tree of static pages, including blog posts, single pages, monthly and yearly archives, tags, and even an RSS feed."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Options"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-d</option> <replaceable>directory</replaceable>, <option>--destdir</option> <replaceable>directory</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to specify a <replaceable>directory</replaceable> in which the generated blog is to be placed. The default option is a current working directory."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-c</option>, <option>--no-css</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables creating a style sheet."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-I</option>, <option>--no-index</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables creating the index page."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-p</option>, <option>--no-posts</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables creating blog posts."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-P</option>, <option>--no-pages</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables creating pages."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-T</option>, <option>--no-tags</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables creating tags."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-r</option>, <option>--no-rss</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables creating the RSS feed."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-F</option>, <option>--full-paths</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enables including page names in generated links."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-q</option>, <option>--quiet</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables displaying of unnecessary messages."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-V</option>, <option>--verbose</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enables displaying of all messages, including a list of created files."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-h</option>, <option>--help</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays usage information and exits."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-v</option>, <option>--version</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays version information and exits."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Files"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<filename class=\"directory\">.blaze/theme/</filename>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A directory containing blog themes."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<filename class=\"directory\">.blaze/style/</filename>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A directory containing style sheets."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<filename class=\"directory\">.blaze/lang/</filename>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A directory containing language files."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Example Usage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Generate a blog in a current working directory:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-make</command>\n"
+"Done."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Generate a blog in the <filename class=\"directory\">~/public_html/</filename> directory:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-make -d ~/public_html</command>\n"
+"Done."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Generate a blog with full paths enabled:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-make -F</command>\n"
+"Done."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "See Also"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-init\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-config\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-config</command> displays or sets &PRODUCT; configuration options."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-add\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository."
+msgstr ""
+

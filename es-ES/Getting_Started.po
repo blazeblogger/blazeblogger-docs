@@ -1,0 +1,1177 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"PO-Revision-Date: 2011-03-08T22:51:53\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Getting Started"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This chapter provides a brief introduction to &PRODUCT; and its usage, and covers how to create, configure, manage, and build a full-featured blog."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "On GNU/Linux, UNIX, and similar operating systems, you can use <command>blaze-<replaceable>command</replaceable></command> and more convenient <command>blaze <replaceable>command</replaceable></command> interchangeably. For a list of available commands, type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze help</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Creating a New Blog"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To create a new blog, move into the directory in which you want to keep its working copy, and type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-init</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This creates a hidden directory, <filename class=\"directory\">.blaze/</filename>, in which the blog data are stored. The actual content of this directory is not important, and it is recommended that you never touch the files in it directly."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To recover its content should it ever be damaged, use the same command again. You can also revert the existing configuration, theme, and language files to their initial state by supplying the <option>--force</option> (or <option>-f</option> for short) command line option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-init</command> <option>-f</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For a complete list of available command line options, refer to <xref linkend=\"sect-Core_Utilities-init\" />."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Creating a New Blog in the <filename class=\"directory\">~/public_html/</filename> Directory"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Many web servers are able to serve content from a certain directory within user's home directory, typically <filename class=\"directory\">~/public_html/</filename>. You can start a new blog in this directory by typing the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-init</command>\n"
+"Created a BlazeBlogger repository in .blaze."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Configuring a Blog"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In an attempt to make complex changes to the configuration as painless as possible, &PRODUCT; is shipped with a utility to help you with this task. To display the current value of a particular configuration option, use the <command>blaze-config</command> command followed by an option name:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <replaceable>option</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To change a configuration option, supply the new value:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <replaceable>option</replaceable> <replaceable>value</replaceable>…"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "&PRODUCT; also allows you to edit all available options at once in an external text editor. To do so, run the <command>blaze-config</command> command with the <option>--edit</option> (or <option>-e</option>) command line option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>-e</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Note that unless the <option>core.editor</option> configuration option is already set, you must also specify a text editor to use by adding the <option>--editor</option> (or <option>-E</option>) option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>-e</option> <option>-E</option> <replaceable>editor</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The rest of this section tries to cover the most common configuration tasks, and by no means serves as a full reference. For a complete list of available configuration options, refer to <xref linkend=\"sect-Core_Utilities-config\" />."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Configuring the Blog in <application>GVim</application>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To edit the configuration in the <application>GVim</application> text editor, run:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-config -e -E \"gvim -f\"</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You can set this editor as the default by typing the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-config core.editor \"gvim -f\"</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "General Blog Settings"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In order for web browsers to correctly determine the character encoding of a blog, each web page must include an appropriate information in its header. To change this information, update the <option>core.encoding</option> option with a value in the form that is recognized by W3C standards:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>core.encoding</option> <replaceable>encoding</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Keep in mind that this option must match the character encoding you use to write the content. &PRODUCT; does not change the encoding on its own, nor does it check the value you provided. The default option is <option>UTF-8</option>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To select the document type of the generated pages, use the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>core.doctype</option> <replaceable>type</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allowed options are <option>html</option> for <acronym>HTML</acronym> and <option>xhtml</option> for the <acronym>XHTML</acronym> standard. For compatibility reasons, the default option is to generate HTML pages."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Finally, to change the file extension of the generated pages, run:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>core.extension</option> <replaceable>extension</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The changes will take effect the next time you build the blog with the <command>blaze-make</command> command."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Changing the Blog Encoding"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In most cases, the use of UTF-8 is recommended. However, if you write your blog in other encoding such as ISO-8859-2 (that is, Latin-2), type:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-config core.encoding ISO-8859-2</command>\n"
+"The option has been successfully saved."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Configuring an RSS Feed"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To enable the creation of an RSS feed with the syndication of blog updates, supply a valid URL with the location of the blog, making sure that you include the <literal>http://</literal> (or <literal>https://</literal> if you use a secure protocol) prefix:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>feed.baseurl</option> <replaceable>url</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The feed will be created the next time you build the blog with the <command>blaze-make</command> command."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Enabling the Creation of an RSS Feed"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To enable an RSS feed for a blog located at <ulink url=\"http://blaze.blackened.cz/\">http://blaze.blackened.cz/</ulink>, type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-config feed.baseurl http://blaze.blackened.cz/</command>\n"
+"The option has been successfully saved."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Changing a Blog Title"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To change the title of a blog, use the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>blog.title</option> <replaceable>title</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Beside this option, &PRODUCT; also allows you to specify the subtitle. This is typically a brief description of the blog, or a motto. To change the blog subtitle, run:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>blog.subtitle</option> <replaceable>subtitle</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The changes will take effect the next time you run the <command>blaze-make</command> command."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Changing the Blog Title and Subtitle"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To change the blog title to <quote>BlazeBlogger</quote> and the corresponding subtitle to <quote>a CMS without boundaries</quote>, type the following commands at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-config blog.title BlazeBlogger</command>\n"
+"The option has been successfully saved.\n"
+"public_html]$ <command>blaze-config blog.subtitle a CMS without boundaries</command>\n"
+"The option has been successfully saved."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Changing a Blog Metadata"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To change the descrption of a blog, run the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>blog.description</option> <replaceable>description</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To specify a comma-separated list of keywords that characterize the blog, type:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>blog.keywords</option> <replaceable>keywords</replaceable>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Changing the Blog Description and Keywords"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To change the blog description to <quote>a CMS without boundaries</quote> and keywords to <quote>blazeblogger</quote>, <quote>cms</quote>, and <quote>blog</quote>, type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-config blog.description a CMS without boundaries</command>\n"
+"The option has been successfully saved.\n"
+"public_html]$ <command>blaze-config blog.keywords blazeblogger, cms, blog</command>\n"
+"The option has been successfully saved."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Changing a Blog Author"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To change the name of the author of a blog, run:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>user.name</option> <replaceable>full_name</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This name appears in the copyright notice, and is used as the default author for a new blog post or page. However, if you prefer to keep the full name in the copyright notice only, you can specify a nickname by using the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>user.nickname</option> <replaceable>nickname</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Additionally, you can supply an email address to allow readers to contact the blog author directly:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>user.email</option> <replaceable>email_address</replaceable>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Changing the Author Information"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To change the author's name to <quote>Jaromír Hradílek</quote>, author's nickname to <quote>Blackened</quote>, and the email address to <quote>jhradilek@gmail.com</quote>, type:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-config user.name Jaromír Hradílek</command>\n"
+"The option has been successfully saved.\n"
+"public_html]$ <command>blaze-config user.nickname Blackened</command>\n"
+"The option has been successfully saved.\n"
+"public_html]$ <command>blaze-config user.email jhradilek@gmail.com</command>\n"
+"The option has been successfully saved."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Changing a Blog Language"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To use a non-English translation of a blog, copy an appropriate language file to the <filename class=\"directory\">.blaze/lang/</filename> directory, and configure the blog to use this translation:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>blog.lang</option> <replaceable>language_code</replaceable>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Using the Basque Translation"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "When installing &PRODUCT; on Linux, UNIX, and similar operating systems from the source code, by default, all available language files are copied to the <filename class=\"directory\">/usr/local/share/blazeblogger/lang/</filename> directory. On such system, you can change the translation of your blog to the Basque language by running the following commands:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>cp /usr/local/share/blazeblogger/lang/eu_ES .blaze/lang/</command>\n"
+"public_html]$ <command>blaze-config blog.lang eu_ES</command>\n"
+"The option has been successfully saved."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Changing a Blog Theme"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To change the theme of a blog, copy the relevant files to the blog directory, and move the template and style sheet to <filename class=\"directory\">.blaze/theme/</filename> and <filename class=\"directory\">.blaze/style/</filename> respectively. Then change the configuration to use this theme by typing the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>blog.theme</option> <replaceable>template_file</replaceable>\n"
+"<command>blaze-config</command> <option>blog.style</option> <replaceable>stylesheet_file</replaceable>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Installing the VectorLover Theme"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To install the VectorLover theme on Linux, UNIX, and similar operating systems, download the archive from the website and extract its content to the directory with <filename class=\"directory\">.blaze/</filename>:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>wget http://blaze.blackened.cz/files/theme/vectorlover-1.0.2.tar.gz</command>\n"
+"--2011-02-14 00:53:07--  http://blaze.blackened.cz/files/theme/vectorlover-1.0.2.tar.gz\n"
+"Resolving blaze.blackened.cz... 87.236.199.95\n"
+"Connecting to blaze.blackened.cz|87.236.199.95|:80... connected.\n"
+"HTTP request sent, awaiting response... 200 OK\n"
+"Length: 59972 (59K) [application/x-gzip]\n"
+"Saving to: \"vectorlover-1.0.2.tar.gz\"\n"
+"\n"
+"100%[======================================&gt;] 59,972      --.-K/s   in 0.1s    \n"
+"\n"
+"2011-02-14 00:53:08 (397 KB/s) - \"vectorlover-1.0.2.tar.gz\" saved [59972/59972]\n"
+"\n"
+"public_html]$ <command>tar xfz vectorlover-1.0.2.tar.gz</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Then move the template file and the corresponding style sheet to <filename class=\"directory\">.blaze/theme/</filename> and <filename class=\"directory\">.blaze/style/</filename> respectively:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>mv vectorlover.html .blaze/theme/</command>\n"
+"public_html]$ <command>mv vectorlover.css .blaze/style/</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Finally, change the configuration to use this theme:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-config blog.theme vectorlover.html</command>\n"
+"The option has been successfully saved.\n"
+"public_html]$ <command>blaze-config blog.style vectorlover.css</command>\n"
+"The option has been successfully saved."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Adding a Blog Post or a Page"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To write a new blog post, run the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-add</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To write a new page, add the <option>--page</option> (or <option>-p</option>) command line option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-add</command> <option>-p</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This opens an external text editor with a pre-formatted header and brief instructions on how to compose a blog entry."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The blog post or page header contains important metadata, such as the title, author, or date of publishing of the entry. For a detailed explanation of all available options, refer to <xref linkend=\"tabl-Getting_Started-Adding-Header\" />."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "A List of Available Header Options"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Option"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Type"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Description"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<option>title</option>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Mandatory"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Specifies the title of the blog post or page."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<option>author</option>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Specifies the author of the blog post or page. The value of the <option>user.name</option> (or <option>user.nickname</option> if supplied) configuration option is used by default."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<option>date</option>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Specifies the date of publishing of the blog post or page, and has to be in the <literal>YYYY-MM-DD</literal> format. The current date is used by default."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<option>keywords</option>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Optional"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Allows you to specify a comma-separated list of keywords that are specific for the blog post or page."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<option>tags</option>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Allows you to specify a comma-separated list of categories the blog post belongs to. This option is not relevant for pages."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<option>url</option>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Allows you to specify the string to be used in the URL. It must contain alphanumeric characters, hyphens, and underscores only."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Besides ordinary elements defined by the HTML or XHTML standard, &PRODUCT; recognizes several special forms that can be used in the text itself. This includes various placeholders that ensure the cross-references within a particular blog are valid and always point to the expected target. For a complete list of these special forms, refer to <xref linkend=\"tabl-Getting_Started-Adding-Forms\" />."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "A List of Special Forms and Placeholders"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Form"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>&lt;!-- break --&gt;</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Delimits a blog post synopsis."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>%root%</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with a relative path to the root directory of the blog."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>%home%</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with a relative path to the index page of the blog."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>%page[<replaceable>id</replaceable>]%</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with a relative path to a page with the given <replaceable>id</replaceable>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>%post[<replaceable>id</replaceable>]%</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with a relative path to a blog post with the given <replaceable>id</replaceable>."
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "<command>%tag[<replaceable>name</replaceable>]%</command>"
+msgstr ""
+
+#. Tag: entry
+#, no-c-format
+msgid "Is replaced with a relative path to a tag with the given <replaceable>name</replaceable>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Refer to <xref linkend=\"sect-Core_Utilities-add\" /> for a full description of the <command>blaze-add</command> utility and its usage."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Writing a Blog Post"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To open an external editor in order to write a new blog post, type:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-add</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The blog post itself may look like the following:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "# This and the following lines beginning with '#' are the blog post header.\n"
+"# Please take your time and replace these options with desired values. Just\n"
+"# remember that the date has to be in the YYYY-MM-DD form, tags are a comma\n"
+"# separated list of categories the post (pages ignore these) belong to, and\n"
+"# the url,  if provided, should consist of alphanumeric characters, hyphens\n"
+"# and underscores only.  Specifying your own url  is especially recommended\n"
+"# in case you use non-ASCII characters in your blog post title.\n"
+"#\n"
+"#   title:    BlazeBlogger 1.1.1\n"
+"#   author:   Jaromír Hradílek\n"
+"#   date:     2010-10-30\n"
+"#   keywords: release, bug fix\n"
+"#   tags:     release\n"
+"#   url:\n"
+"#\n"
+"# The header ends here. The rest is the content of your blog post.\n"
+"\n"
+"&lt;p&gt;\n"
+"  BlazeBlogger 1.1.1 has been released! This release fixes four bugs that may have caused BlazeBlogger to sort entries in a wrong order, produce invalid RSS feed, or not to run properly when using an older version of Perl.\n"
+"&lt;/p&gt;\n"
+"\n"
+"&lt;!-- break --&gt;\n"
+"\n"
+"&lt;h3&gt;Bug Fixes&lt;/h3&gt;\n"
+"\n"
+"&lt;ul&gt;\n"
+"  &lt;li&gt;\n"
+"    When the &lt;code&gt;feed.fullposts&lt;/code&gt; configuration option was disabled, all HTML/XHTML entities were removed. However, this may have led to an invalid output. With this update, such entities are no longer stripped out, and the RSS feed is now created as expected. (&lt;a href=\"http://code.google.com/p/blazeblogger/issues/detail?id=18\"&gt;Issue 18&lt;/a&gt;, &lt;a href=\"http://code.google.com/p/blazeblogger/issues/detail?id=29\"&gt;29&lt;/a&gt;)\n"
+"  &lt;/li&gt;\n"
+"  &lt;li&gt;\n"
+"    Due to incorrect use of the &lt;code&gt;cmp&lt;/code&gt; operator, both &lt;code&gt;blaze-list&lt;/code&gt; and &lt;code&gt;blaze-make&lt;/code&gt; utilities may have listed blog posts in a wrong order. With this update, the comparison subroutine has been corrected, so that all entries are now sorted in a correct order. (&lt;a href=\"http://code.google.com/p/blazeblogger/issues/detail?id=26\"&gt;Issue 26&lt;/a&gt;)\n"
+"  &lt;/li&gt;\n"
+"  &lt;li&gt;\n"
+"    &lt;p&gt;When using an older version of Perl, attempting to run the &lt;code&gt;blaze-make&lt;/code&gt; utility may have failed with the following error message:&lt;/p&gt;\n"
+"    &lt;pre&gt;blaze-make: Creating `': mkdir : No such file or directory&lt;/pre&gt;\n"
+"    &lt;p&gt;This error no longer occurs, and &lt;code&gt;blaze-make&lt;/code&gt; now produces the expected output. (&lt;a href=\"http://code.google.com/p/blazeblogger/issues/detail?id=30\"&gt;Issue 30&lt;/a&gt;)&lt;/p&gt;\n"
+"  &lt;/li&gt;\n"
+"&lt;/ul&gt;"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Editing a Blog Post or a Page"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To edit an existing blog, run the <command>blaze-edit</command> command followed by an appropriate identification number:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-edit</command> <replaceable>id</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To edit a page, add the <option>--page</option> (or <option>-p</option>) command line option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-edit</command> <option>-p</option> <replaceable>id</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For a complete list of available command line options, refer to <xref linkend=\"sect-Core_Utilities-edit\" />."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Editing a Blog Post"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To edit a blog post with id 10, type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-edit 10</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Removing a Blog Post or a Page"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To delete a blog post from your blog, run the <command>blaze-remove</command> command followed by an appropriate identification number:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-remove</command> <replaceable>id</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To delete a page, add the <option>--page</option> (or <option>-p</option>) command line option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-remove</command> <option>-p</option> <replaceable>id</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For a complete list of available command line options, refer to <xref linkend=\"sect-Core_Utilities-remove\" />."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Be careful when using this command, as there is no easy way to take this action back. To prevent an accidental loss of potentially valuable data, run the command in the interactive mode by supplying the <option>--interactive</option> (or <option>-i</option>) option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-remove</command> <option>-i</option> <replaceable>id</replaceable>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Removing a Blog Post Safely"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Interactive mode gives you one last chance to ensure you are deleting a correct blog entry. To initiate the removal of a blog post with id 10 and then abort it, type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-remove -i 10</command>\n"
+"Remove the post with ID 10 titled `Debian and Fedora Packages'? <userinput>n</userinput>\n"
+"Aborted."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Displaying Blog Statistics"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To display detailed information about blog statistics, including the total number of blog posts and pages, the date of the very first blog post, and the date of the latest published post, use the <command>blaze-list</command> with the <option>--stats</option> (or <option>-S</option>) command line option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-list</command> <option>-S</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You can also display the short version of the above output by supplying the <option>--short</option> (or <option>-s</option>) command line option as well:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-list</command> <option>-Ss</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To display detailed blog statistics, type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-list -S</command>\n"
+"Number of pages: 5\n"
+"Number of posts: 11\n"
+"Last post date:  2010-07-25\n"
+"First post date: 2009-02-10"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To display the same information on a single line, type:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-list -Ss</command>\n"
+"There is a total number of 11 blog posts and 5 pages in the repository."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Listing Blog Posts or Pages"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To make the management of blog posts and pages easier, &PRODUCT; is shipped with the <command>blaze-list</command> utility that allows you to display the content of a blog. This includes the important information such as the identification number, date of publishing, title, and attached tags."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Since version 0.9.0, &PRODUCT; allows you to enable a colored output for some of its utilities. To enable this feature for <command>blaze-list</command>, use the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>color.list</option> <option>true</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To display all featured blog posts, type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-list</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Similarly, to display a complete list of available pages, add the <option>--pages</option> (or <option>-p</option>) command line option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-list</command> <option>-p</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "By default, the latest entries are listed first, and in most cases, this is a reasonable behavior. However, to change the sorting order and display the latest entries last, use the <option>--reverse</option> (or <option>-r</option>) option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-list</command> <option>-r</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You can also limit the number of listed entries by specifying the <option>--number</option> (or <option>-n</option>) option."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-list</command> <option>-n</option> <replaceable>number</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Additionally, you can limit the output by specifying a blog post author (<option>--author</option> or <option>-a</option>), a tag (<option>--tag</option> or <option>-T</option>), a matching title (<option>--title</option> or <option>-T</option>), a date of publishing, and other criteria."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For a complete list of available command line options, refer to <xref linkend=\"sect-Core_Utilities-list\" />."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Identifying the Very First Blog Post"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To display only the information about the first blog post, type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-list -n 1 -r</command>\n"
+"ID: 1 | 2009-02-10 | Jaromír Hradílek\n"
+"\n"
+"    Title: BlazeBlogger 0.7.0\n"
+"    Tags:  release\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Generating a Blog"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To generate a complete directory tree of static pages with all blog posts, single pages, monthly and yearly archives, tags, and an RSS feed, run the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-make</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Unless told otherwise, &PRODUCT; generates the blog in the current working directory. To use a different location, specify the <option>--destdir</option> (or <option>-d</option>) command line option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-make</command> <option>-d</option> <replaceable>directory</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To display the list of files as they are created, use <option>--verbose</option> (or <option>-V</option>) command line option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-make</command> <option>-V</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For a complete list of available command line options, refer to <xref linkend=\"sect-Core_Utilities-make\" />."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you intend your blog to be accessed offline, for example, if you want to review it before you publish it on your website, use the <option>--full-paths</option> (or <option>-F</option>) option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-make</command> <option>-F</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This option ensures that all generated links point directly to index pages, and not to their parent directories. Additionally, you can turn off the creation of the RSS feed as well. To do so, add the <option>--no-rss</option> (or <option>-r</option>) option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-make</command> <option>-Fr</option>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Generating a Blog Preview"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To generate a preview of your blog with a list of created files written to standard output, type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-make -VF</command>\n"
+"Created index.rss\n"
+"Created index.html\n"
+"Created index1.html\n"
+"Created 2010/10/index.html\n"
+"Created 2010/07/11-join-blazeblogger-on-irc/index.html\n"
+"Created 2009/12/10-debian-and-fedora-packages/index.html\n"
+"Created 2009/index.html\n"
+"Created 2010/07/index.html\n"
+"<emphasis>etc.</emphasis>\n"
+"Done."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Displaying a Log"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For the possibility of a future review, &PRODUCT; keeps track of all significant changes to the blog, including its initialization and recovery, addition of new content, changes to existing blog posts and pages, and their removal."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Since version 0.9.0, &PRODUCT; allows you to enable a colored output for some of its utilites. To enable this feature for <command>blaze-log</command>, use the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-config</command> <option>color.log</option> <option>true</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To display the complete history of the blog, type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-log</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "By default, log entries are sorted from the newest to oldest, so that the latest change is listed at the top. If you prefer the reverse order, use the <option>--reverse</option> (or <option>-r</option>) command line option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-log</command> <option>-r</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Finally, to display only a limited number of log entries, specify the <option>--number</option> (or <option>-n</option>) command line option:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-log</command> <option>-n</option> <replaceable>number</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "For a complete list of available command line options, refer to <xref linkend=\"sect-Core_Utilities-log\" />."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Identifying the Last Change to a Blog"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To display only the last change to a blog, type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "public_html]$ <command>blaze-log -n 1</command>\n"
+"Date: Sun Jul 25 16:48:22 2010\n"
+"\n"
+"    Edited the page with ID 5.\n"
+"\n"
+""
+msgstr ""
+

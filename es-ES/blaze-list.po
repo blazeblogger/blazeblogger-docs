@@ -1,0 +1,366 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"PO-Revision-Date: 2011-03-08T22:51:53\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "<command>blaze-list</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-list</command> lists blog posts or pages in the &PRODUCT; repository."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Synopsis"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-list</command> <optional><option>-cpqrsCPSV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-I</option> <replaceable>id</replaceable></optional> <optional><option>-a</option> <replaceable>author</replaceable></optional> <optional><option>-t</option> <replaceable>title</replaceable></optional> <optional><option>-T</option> <replaceable>tag</replaceable></optional> <optional><option>-d</option> <replaceable>day</replaceable></optional> <optional><option>-m</option> <replaceable>month</replaceable></optional> <optional><option>-y</option> <replaceable>year</replaceable></optional> <optional><option>-n</option> <replaceable>number</replaceable></optional>\n"
+"\n"
+"<command>blaze-list</command> <option>-h</option>|<option>-v</option>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Description"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-list</command> lists existing blog posts or pages in the &PRODUCT; repository. Additionally, it can also display basic repository statistics."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Options"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is placed. The default option is a current working directory."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-I</option> <replaceable>id</replaceable>, <option>--id</option> <replaceable>id</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to display a single blog post or a page with the specified <replaceable>id</replaceable>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-a</option> <replaceable>author</replaceable>, <option>--author</option> <replaceable>author</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to list blog posts or pages by the selected <replaceable>author</replaceable>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-t</option> <replaceable>title</replaceable>, <option>--title</option> <replaceable>title</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to list blog posts or pages with matching <replaceable>title</replaceable>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-T</option> <replaceable>tag</replaceable>, <option>--tag</option> <replaceable>tag</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to list blog posts or pages with matching <replaceable>tag</replaceable>."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-d</option> <replaceable>day</replaceable>, <option>--day</option> <replaceable>day</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to list blog posts or pages from the specified <replaceable>day</replaceable> of a month. The value has to be in the <replaceable>DD</replaceable> form."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-m</option> <replaceable>month</replaceable>, <option>--month</option> <replaceable>month</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to list blog posts or pages from the specified <replaceable>month</replaceable>. The value has to be in the <replaceable>MM</replaceable> form."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-y</option> <replaceable>year</replaceable>, <option>--year</option> <replaceable>year</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to list blog posts or pages from the specified <replaceable>year</replaceable>. The value has to be in the <replaceable>YYYY</replaceable> form."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-n</option> <replaceable>number</replaceable>, <option>--number</option> <replaceable>number</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to specify a <replaceable>number</replaceable> of blog posts or pages to be listed."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-p</option>, <option>--page</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Tells <command>blaze-list</command> to list pages."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-P</option>, <option>--post</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Tells <command>blaze-list</command> to list blog posts. This is the default option."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-S</option>, <option>--stats</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Tells <command>blaze-list</command> to display statistics."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-s</option>, <option>--short</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Tells <command>blaze-list</command> to display each blog post or page information on a single line."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-r</option>, <option>--reverse</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Tells <command>blaze-list</command> to display blog posts or pages in reverse order."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-c</option>, <option>--color</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enables colored output. When supplied, this option overrides the relevant configuration option."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-C</option>, <option>--no-color</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables colored output. When supplied, this option overrides the relevant configuration option."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-q</option>, <option>--quiet</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables displaying of unnecessary messages."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-V</option>, <option>--verbose</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enables displaying of all messages. This is the default option."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-h</option>, <option>--help</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays usage information and exits."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-v</option>, <option>--version</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays version information and exits."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Example Usage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "List all blog post:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-list</command>\n"
+"ID: 11 | 2010-07-05 | Jaromir Hradilek\n"
+"\n"
+"    Title: Join #blazeblogger on IRC\n"
+"    Tags:  announcement\n"
+"\n"
+"ID: 10 | 2009-12-16 | Jaromir Hradilek\n"
+"\n"
+"    Title: Debian and Fedora Packages\n"
+"    Tags:  announcement, archlinux, debian, fedora, ubuntu\n"
+"\n"
+"<emphasis>etc.</emphasis>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "List all blog post in reverse order:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-list -r</command>\n"
+"ID: 1 | 2009-02-10 | Jaromir Hradilek\n"
+"\n"
+"    Title: BlazeBlogger 0.7.0\n"
+"    Tags:  release\n"
+"\n"
+"ID: 2 | 2009-02-11 | Jaromir Hradilek\n"
+"\n"
+"    Title: BlazeBlogger 0.7.1\n"
+"    Tags:  release\n"
+"\n"
+"<emphasis>etc.</emphasis>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "List all pages:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-list -p</command>\n"
+"ID: 5 | 2009-02-10 | Jaromir Hradilek\n"
+"\n"
+"    Title: Downloads\n"
+"\n"
+"ID: 4 | 2009-02-10 | Jaromir Hradilek\n"
+"\n"
+"    Title: Themes\n"
+"\n"
+"<emphasis>etc.</emphasis>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "List each blog post on a single line:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-list -s</command>\n"
+"ID: 11 | 2010-07-05 | Join #blazeblogger on IRC\n"
+"ID: 10 | 2009-12-16 | Debian and Fedora Packages\n"
+"<emphasis>etc.</emphasis>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Display a short version of blog statistics:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-list -Ss</command>\n"
+"There is a total number of 11 blog posts and 5 pages in the repository."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "See Also"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-config\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-config</command> displays or sets &PRODUCT; configuration options."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-add\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository."
+msgstr ""
+
