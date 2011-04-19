@@ -1,0 +1,229 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"PO-Revision-Date: 2011-03-08T22:51:53\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Installation"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This chapter covers the installation of &PRODUCT; on various operating systems, including <acronym>GNU</acronym>/<trademark class=\"registered\">Linux</trademark>, and <trademark class=\"registered\">Microsoft</trademark> <trademark class=\"registered\">Windows</trademark>."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To run &PRODUCT; on your system, a working installation of <ulink url=\"http://www.perl.org\">Perl</ulink> is required, version <literal>5.8.8</literal> or higher."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Installing on GNU/Linux"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Installing on Arch Linux"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "&PRODUCT; is currently available in <firstterm>Arch User Repository</firstterm> (<acronym>AUR</acronym>). There are two ways to install it on <systemitem class=\"osname\">Arch Linux</systemitem>: you can either build the package manually, or you can use the <ulink url=\"https://wiki.archlinux.org/index.php/Yaourt\"><application>Yaourt</application></ulink> utility. In both cases, ensure that the <package>base-devel</package> is installed by running the following command as <systemitem class=\"username\">root</systemitem>:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>pacman -S base-devel</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To build the &PRODUCT; package manually, take the following steps:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Download the relevant <filename>PKGBUILD</filename> file from AUR. For example:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>wget -t 0 http://aur.archlinux.org/packages/blazeblogger/PKGBUILD</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Build the package by typing the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>makepkg -s</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "As <systemitem class=\"username\">root</systemitem>, install the newly built package by typing the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>pacman -U <replaceable>package_name</replaceable></command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To install the package by using the <application>Yaourt</application> utility, type:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>yaourt -S blazeblogger</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Installing on Debian"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "&PRODUCT; is currently available in both testing (<quote>Squeeze</quote>) and unstable (<quote>Sid</quote>) version of <systemitem class=\"osname\">Debian</systemitem>. To install it, open a terminal, and run the following command as <systemitem class=\"username\">root</systemitem>:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>apt-get install blazeblogger</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Installing on Fedora"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "&PRODUCT; is currently available in both <systemitem class=\"osname\">Fedora 13</systemitem> (<quote>Goddard</quote>) and <systemitem class=\"osname\">Fedora 14</systemitem> (<quote>Laughlin</quote>). To install it, open a terminal, and run the following command as <systemitem class=\"username\">root</systemitem>:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>yum install blazeblogger</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Installing on Gentoo"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "&PRODUCT; is currently available in <systemitem class=\"osname\">Gentoo</systemitem> Portage. To install it, open a terminal, and run the following command as <systemitem class=\"username\">root</systemitem>:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>emerge blazeblogger</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Installing on Ubuntu"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "&PRODUCT; is currently available in both <systemitem class=\"osname\">Ubuntu 10.04 LTS</systemitem> (<quote>Lucid Lynx</quote>) and <systemitem class=\"osname\">Ubuntu 10.10</systemitem> (<quote>Maverick Meerkat</quote>). To install it, open a terminal, and run the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>sudo apt-get install blazeblogger</command>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Installing on Windows"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Currently, there is no installer for <trademark class=\"registered\">Microsoft</trademark> <trademark class=\"registered\">Windows</trademark>. To use &PRODUCT; there, download the latest version from the <ulink url=\"http://blaze.blackened.cz/downloads/\">official homepage</ulink>, unpack it, and use the batch files that are located in <filename class=\"directory\">blazeblogger-&VERSION;/windows/</filename>. For example:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "C:\\blazeblogger-&VERSION;\\windows&gt; <command>blaze init</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Alternatively, you can use &PRODUCT; with <ulink url=\"http://www.cygwin.com/\"><application>Cygwin</application></ulink>. In that case, see <xref linkend=\"sect-Installation-Source\" /> for detailed installation instructions."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Installing from the Source Code"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To install &PRODUCT; from the source code, download the latest source package from the <ulink url=\"http://blaze.blackened.cz/downloads/\">official homepage</ulink>, and unpack it:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>tar xfz blazeblogger-&VERSION;.tar.gz</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A directory called <filename class=\"directory\">blazeblogger-&VERSION;</filename> will appear in the current working directory. Switch to superuser, get into the newly created directory, and type the following at a shell prompt:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>make install</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This will install executables, manual pages, documentation, and application data to the <filename class=\"directory\">/usr/local/</filename> directory, and place Bash completion file to <filename class=\"directory\">/etc/bash_completion.d/</filename>. To use a different installation directory, change the value of <option>prefix</option> on the command line. For example, if you want to install &PRODUCT; to <filename class=\"directory\">/usr/</filename>, type the following command:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>make prefix=/usr install</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Alternatively, you can choose to install exacutables only. For instance, to install &PRODUCT; into your home directory, type:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>make prefix=$HOME install_bin</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Finally, if you prefer to install all available files, but you do not have superuser privileges, change the value of <option>compdir</option> to a directory you have access to. For example:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>make prefix=$HOME compdir='$(prefix)/etc' install</command>"
+msgstr ""
+

@@ -1,0 +1,189 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"PO-Revision-Date: 2011-03-08T22:51:53\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "<command>blaze-init</command>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Synopsis"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "<command>blaze-init</command> <optional><option>-fqV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional>\n"
+"\n"
+"<command>blaze-init</command> <option>-h</option>|<option>-v</option>"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Description"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-init</command> either creates a fresh new &PRODUCT; repository, or recovers an existing one in case it is corrupted. Optionally, it can also revert a configuration and default templates to their original state, leaving all user data (that is, both blog posts and pages) intact."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Options"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-b</option> <replaceable>directory</replaceable>, <option>--blogdir</option> <replaceable>directory</replaceable>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Allows you to specify a <replaceable>directory</replaceable> in which the &PRODUCT; repository is to be blaced. The default option is a current working directory."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-f</option>, <option>--force</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Reverts existing configuration, theme, and language files to their initial state. By default, these files are kept intact."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-q</option>, <option>--quiet</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Disables displaying of unnecessary messages."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-V</option>, <option>--verbose</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Enables displaying of all messages, including a list of created files."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-h</option>, <option>--help</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays usage information and exits."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<option>-v</option>, <option>--version</option>"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Displays version information and exits."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Example Usage"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Create a new blog in a current directory:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-init</command>\n"
+"Created a BlazeBlogger repository in .blaze."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Create a new blog in <filename class=\"directory\">~/public_html</filename>:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-init -b ~/public_html</command>\n"
+"Created a BlazeBlogger repository in /home/jhradilek/public_html/.blaze."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Revert a configuration file and default templates to their initial state:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-init -f</command>\n"
+"Recovered a BlazeBlogger repository in .blaze."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Or if you want to see what files have been reverted:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "~]$ <command>blaze-init -fV</command>\n"
+"Created .blaze/config\n"
+"Created .blaze/theme/default.html\n"
+"Created .blaze/style/default.css\n"
+"Created .blaze/lang/en_US\n"
+"Recovered a BlazeBlogger repository in .blaze."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "See Also"
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-config\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-config</command> displays or sets &PRODUCT; configuration options."
+msgstr ""
+
+#. Tag: term
+#, no-c-format
+msgid "<xref linkend=\"sect-Core_Utilities-add\" />"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository."
+msgstr ""
+
