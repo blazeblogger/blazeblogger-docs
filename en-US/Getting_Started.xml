@@ -491,7 +491,7 @@ The option has been successfully saved.</screen>
   <section id="sect-Getting_Started-Editing">
     <title>Editing a Blog Post or a Page</title>
     <para>
-      To edit an existing blog, run the <command>blaze-edit</command> command followed by an appropriate identification number:
+      To edit an existing blog post, run the <command>blaze-edit</command> command followed by an appropriate identification number:
     </para>
     <screen><command>blaze-edit</command> <replaceable>id</replaceable></screen>
     <para>
