@@ -1,13 +1,14 @@
-# 
+#
 # AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"POT-Creation-Date: 2011-05-13T16:45:45\n"
 "PO-Revision-Date: 2011-03-08T22:51:53\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +30,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "<command>blaze-list</command> <optional><option>-cpqrsCPSV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-I</option> <replaceable>id</replaceable></optional> <optional><option>-a</option> <replaceable>author</replaceable></optional> <optional><option>-t</option> <replaceable>title</replaceable></optional> <optional><option>-T</option> <replaceable>tag</replaceable></optional> <optional><option>-d</option> <replaceable>day</replaceable></optional> <optional><option>-m</option> <replaceable>month</replaceable></optional> <optional><option>-y</option> <replaceable>year</replaceable></optional> <optional><option>-n</option> <replaceable>number</replaceable></optional>\n"
+msgid ""
+"<command>blaze-list</command> <optional><option>-cpqrsCPSV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-I</option> <replaceable>id</replaceable></optional> <optional><option>-a</option> <replaceable>author</replaceable></optional> <optional><option>-t</option> <replaceable>title</replaceable></optional> <optional><option>-T</option> <replaceable>tag</replaceable></optional> <optional><option>-d</option> <replaceable>day</replaceable></optional> <optional><option>-m</option> <replaceable>month</replaceable></optional> <optional><option>-y</option> <replaceable>year</replaceable></optional> <optional><option>-n</option> <replaceable>number</replaceable></optional>\n"
 "\n"
 "<command>blaze-list</command> <option>-h</option>|<option>-v</option>"
 msgstr ""
@@ -261,7 +263,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-list</command>\n"
+msgid ""
+"~]$ <command>blaze-list</command>\n"
 "ID: 11 | 2010-07-05 | Jaromir Hradilek\n"
 "\n"
 "    Title: Join #blazeblogger on IRC\n"
@@ -282,7 +285,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-list -r</command>\n"
+msgid ""
+"~]$ <command>blaze-list -r</command>\n"
 "ID: 1 | 2009-02-10 | Jaromir Hradilek\n"
 "\n"
 "    Title: BlazeBlogger 0.7.0\n"
@@ -303,7 +307,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-list -p</command>\n"
+msgid ""
+"~]$ <command>blaze-list -p</command>\n"
 "ID: 5 | 2009-02-10 | Jaromir Hradilek\n"
 "\n"
 "    Title: Downloads\n"
@@ -322,7 +327,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-list -s</command>\n"
+msgid ""
+"~]$ <command>blaze-list -s</command>\n"
 "ID: 11 | 2010-07-05 | Join #blazeblogger on IRC\n"
 "ID: 10 | 2009-12-16 | Debian and Fedora Packages\n"
 "<emphasis>etc.</emphasis>"
@@ -335,7 +341,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-list -Ss</command>\n"
+msgid ""
+"~]$ <command>blaze-list -Ss</command>\n"
 "There is a total number of 11 blog posts and 5 pages in the repository."
 msgstr ""
 
@@ -363,4 +370,3 @@ msgstr ""
 #, no-c-format
 msgid "<command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository."
 msgstr ""
-

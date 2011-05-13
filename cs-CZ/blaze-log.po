@@ -1,13 +1,14 @@
-# 
+#
 # AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"POT-Creation-Date: 2011-05-13T16:45:45\n"
 "PO-Revision-Date: 2011-03-08T22:51:53\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +30,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "<command>blaze-log</command> <optional><option>-cqrsCV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-n</option> <replaceable>number</replaceable></optional>\n"
+msgid ""
+"<command>blaze-log</command> <optional><option>-cqrsCV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-n</option> <replaceable>number</replaceable></optional>\n"
 "\n"
 "<command>blaze-log</command> <option>-h</option>|<option>-v</option>"
 msgstr ""
@@ -176,7 +178,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-log</command>\n"
+msgid ""
+"~]$ <command>blaze-log</command>\n"
 "Date: Sun Jul 25 16:48:22 2010\n"
 "\n"
 "    Edited the page with ID 5.\n"
@@ -195,7 +198,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-log -r</command>\n"
+msgid ""
+"~]$ <command>blaze-log -r</command>\n"
 "Date: Tue Feb 10 00:40:16 2009\n"
 "\n"
 "    Created/recovered a BlazeBlogger repository.\n"
@@ -214,7 +218,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-log -rs -n 1</command>\n"
+msgid ""
+"~]$ <command>blaze-log -rs -n 1</command>\n"
 "Tue Feb 10 00:40:16 2009 - Created/recovered a BlazeBlogger repository."
 msgstr ""
 
@@ -242,4 +247,3 @@ msgstr ""
 #, no-c-format
 msgid "<command>blaze-config</command> displays or sets &PRODUCT; configuration options."
 msgstr ""
-

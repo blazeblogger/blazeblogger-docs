@@ -1,13 +1,14 @@
-# 
+#
 # AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"POT-Creation-Date: 2011-05-13T16:45:44\n"
 "PO-Revision-Date: 2011-03-08T22:51:53\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -79,7 +80,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-init</command>\n"
+msgid ""
+"public_html]$ <command>blaze-init</command>\n"
 "Created a BlazeBlogger repository in .blaze."
 msgstr ""
 
@@ -220,7 +222,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-config core.encoding ISO-8859-2</command>\n"
+msgid ""
+"public_html]$ <command>blaze-config core.encoding ISO-8859-2</command>\n"
 "The option has been successfully saved."
 msgstr ""
 
@@ -256,7 +259,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-config feed.baseurl http://blaze.blackened.cz/</command>\n"
+msgid ""
+"public_html]$ <command>blaze-config feed.baseurl http://blaze.blackened.cz/</command>\n"
 "The option has been successfully saved."
 msgstr ""
 
@@ -302,7 +306,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-config blog.title BlazeBlogger</command>\n"
+msgid ""
+"public_html]$ <command>blaze-config blog.title BlazeBlogger</command>\n"
 "The option has been successfully saved.\n"
 "public_html]$ <command>blaze-config blog.subtitle a CMS without boundaries</command>\n"
 "The option has been successfully saved."
@@ -345,7 +350,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-config blog.description a CMS without boundaries</command>\n"
+msgid ""
+"public_html]$ <command>blaze-config blog.description a CMS without boundaries</command>\n"
 "The option has been successfully saved.\n"
 "public_html]$ <command>blaze-config blog.keywords blazeblogger, cms, blog</command>\n"
 "The option has been successfully saved."
@@ -398,7 +404,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-config user.name Jaromír Hradílek</command>\n"
+msgid ""
+"public_html]$ <command>blaze-config user.name Jaromír Hradílek</command>\n"
 "The option has been successfully saved.\n"
 "public_html]$ <command>blaze-config user.nickname Blackened</command>\n"
 "The option has been successfully saved.\n"
@@ -433,7 +440,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>cp /usr/local/share/blazeblogger/lang/eu_ES .blaze/lang/</command>\n"
+msgid ""
+"public_html]$ <command>cp /usr/local/share/blazeblogger/lang/eu_ES .blaze/lang/</command>\n"
 "public_html]$ <command>blaze-config blog.lang eu_ES</command>\n"
 "The option has been successfully saved."
 msgstr ""
@@ -450,7 +458,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "<command>blaze-config</command> <option>blog.theme</option> <replaceable>template_file</replaceable>\n"
+msgid ""
+"<command>blaze-config</command> <option>blog.theme</option> <replaceable>template_file</replaceable>\n"
 "<command>blaze-config</command> <option>blog.style</option> <replaceable>stylesheet_file</replaceable>"
 msgstr ""
 
@@ -466,7 +475,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>wget http://blaze.blackened.cz/files/theme/vectorlover-1.0.2.tar.gz</command>\n"
+msgid ""
+"public_html]$ <command>wget http://blaze.blackened.cz/files/theme/vectorlover-1.0.2.tar.gz</command>\n"
 "--2011-02-14 00:53:07--  http://blaze.blackened.cz/files/theme/vectorlover-1.0.2.tar.gz\n"
 "Resolving blaze.blackened.cz... 87.236.199.95\n"
 "Connecting to blaze.blackened.cz|87.236.199.95|:80... connected.\n"
@@ -488,7 +498,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>mv vectorlover.html .blaze/theme/</command>\n"
+msgid ""
+"public_html]$ <command>mv vectorlover.html .blaze/theme/</command>\n"
 "public_html]$ <command>mv vectorlover.css .blaze/style/</command>"
 msgstr ""
 
@@ -499,7 +510,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-config blog.theme vectorlover.html</command>\n"
+msgid ""
+"public_html]$ <command>blaze-config blog.theme vectorlover.html</command>\n"
 "The option has been successfully saved.\n"
 "public_html]$ <command>blaze-config blog.style vectorlover.css</command>\n"
 "The option has been successfully saved."
@@ -732,7 +744,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "# This and the following lines beginning with '#' are the blog post header.\n"
+msgid ""
+"# This and the following lines beginning with '#' are the blog post header.\n"
 "# Please take your time and replace these options with desired values. Just\n"
 "# remember that the date has to be in the YYYY-MM-DD form, tags are a comma\n"
 "# separated list of categories the post (pages ignore these) belong to, and\n"
@@ -869,7 +882,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-remove -i 10</command>\n"
+msgid ""
+"public_html]$ <command>blaze-remove -i 10</command>\n"
 "Remove the post with ID 10 titled `Debian and Fedora Packages'? <userinput>n</userinput>\n"
 "Aborted."
 msgstr ""
@@ -906,7 +920,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-list -S</command>\n"
+msgid ""
+"public_html]$ <command>blaze-list -S</command>\n"
 "Number of pages: 5\n"
 "Number of posts: 11\n"
 "Last post date:  2010-07-25\n"
@@ -920,7 +935,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-list -Ss</command>\n"
+msgid ""
+"public_html]$ <command>blaze-list -Ss</command>\n"
 "There is a total number of 11 blog posts and 5 pages in the repository."
 msgstr ""
 
@@ -1006,13 +1022,13 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-list -n 1 -r</command>\n"
+msgid ""
+"public_html]$ <command>blaze-list -n 1 -r</command>\n"
 "ID: 1 | 2009-02-10 | Jaromír Hradílek\n"
 "\n"
 "    Title: BlazeBlogger 0.7.0\n"
 "    Tags:  release\n"
 "\n"
-""
 msgstr ""
 
 #. Tag: title
@@ -1087,7 +1103,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-make -VF</command>\n"
+msgid ""
+"public_html]$ <command>blaze-make -VF</command>\n"
 "Created index.rss\n"
 "Created index.html\n"
 "Created index1.html\n"
@@ -1167,11 +1184,10 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "public_html]$ <command>blaze-log -n 1</command>\n"
+msgid ""
+"public_html]$ <command>blaze-log -n 1</command>\n"
 "Date: Sun Jul 25 16:48:22 2010\n"
 "\n"
 "    Edited the page with ID 5.\n"
 "\n"
-""
 msgstr ""
-

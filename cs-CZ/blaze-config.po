@@ -1,13 +1,14 @@
-# 
+#
 # AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"POT-Creation-Date: 2011-05-13T16:45:44\n"
 "PO-Revision-Date: 2011-03-08T22:51:53\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +30,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "<command>blaze-config</command> <optional><option>-qV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-E</option> <replaceable>editor</replaceable></optional> <replaceable>option</replaceable> <optional><replaceable>value</replaceable>…</optional>\n"
+msgid ""
+"<command>blaze-config</command> <optional><option>-qV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-E</option> <replaceable>editor</replaceable></optional> <replaceable>option</replaceable> <optional><replaceable>value</replaceable>…</optional>\n"
 "\n"
 "<command>blaze-config</command> <option>-e</option> <optional><option>-b</option> <replaceable>directory</replaceable></optional>\n"
 "\n"
@@ -443,7 +445,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-config core.editor nano</command>\n"
+msgid ""
+"~]$ <command>blaze-config core.editor nano</command>\n"
 "The option has been successfully saved."
 msgstr ""
 
@@ -454,7 +457,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-config user.name Jaromir Hradilek</command>\n"
+msgid ""
+"~]$ <command>blaze-config user.name Jaromir Hradilek</command>\n"
 "The option has been successfully saved.\n"
 "~]$ <command>blaze-config user.email jhradilek@gmail.com</command>\n"
 "The option has been successfully saved."
@@ -467,7 +471,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-config blog.title BlazeBlogger</command>\n"
+msgid ""
+"~]$ <command>blaze-config blog.title BlazeBlogger</command>\n"
 "The option has been successfully saved.\n"
 "~]$ <command>blaze-config blog.subtitle a CMS without boundaries</command>\n"
 "The option has been successfully saved.\n"
@@ -484,7 +489,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-config feed.fullposts true</command>\n"
+msgid ""
+"~]$ <command>blaze-config feed.fullposts true</command>\n"
 "The option has been successfully saved.\n"
 "~]$ <command>blaze-config feed.posts 10</command>\n"
 "The option has been successfully saved.\n"
@@ -516,4 +522,3 @@ msgstr ""
 #, no-c-format
 msgid "<command>blaze-init</command> creates a &PRODUCT; repository, or recovers a previously corrupted one."
 msgstr ""
-

@@ -1,13 +1,14 @@
-# 
+#
 # AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"POT-Creation-Date: 2011-05-13T16:45:45\n"
 "PO-Revision-Date: 2011-03-08T22:51:53\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +30,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "<command>blaze-remove</command> <optional><option>-fipqPV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <replaceable>id</replaceable>…\n"
+msgid ""
+"<command>blaze-remove</command> <optional><option>-fipqPV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <replaceable>id</replaceable>…\n"
 "\n"
 "<command>blaze-remove</command> <option>-h</option>|<option>-v</option>"
 msgstr ""
@@ -151,7 +153,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-remove 10</command>\n"
+msgid ""
+"~]$ <command>blaze-remove 10</command>\n"
 "Successfully removed the post with ID 10."
 msgstr ""
 
@@ -162,7 +165,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-remove -p 4</command>\n"
+msgid ""
+"~]$ <command>blaze-remove -p 4</command>\n"
 "Successfully removed the page with ID 4."
 msgstr ""
 
@@ -173,7 +177,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-remove 10 4 6</command>\n"
+msgid ""
+"~]$ <command>blaze-remove 10 4 6</command>\n"
 "Successfully removed the post with ID 10, 4 and 6."
 msgstr ""
 
@@ -184,7 +189,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-remove -i 10 4 6</command>\n"
+msgid ""
+"~]$ <command>blaze-remove -i 10 4 6</command>\n"
 "Remove the post with ID 10 titled `Debian and Fedora Packages'? <userinput>y</userinput>\n"
 "Remove the post with ID 4 titled `BlazeBlogger 0.8.0 RC2'? <userinput>y</userinput>\n"
 "Remove the post with ID 6 titled `BlazeBlogger 0.8.1'? <userinput>y</userinput>\n"
@@ -225,4 +231,3 @@ msgstr ""
 #, no-c-format
 msgid "<command>blaze-list</command> lists blog posts or pages in the &PRODUCT; repository."
 msgstr ""
-

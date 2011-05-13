@@ -1,13 +1,14 @@
-# 
+#
 # AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-03-08T22:51:53\n"
+"POT-Creation-Date: 2011-05-13T16:45:45\n"
 "PO-Revision-Date: 2011-03-08T22:51:53\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +30,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "<command>blaze-make</command> <optional><option>-cpqrIFPTV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-d</option> <replaceable>directory</replaceable></optional>\n"
+msgid ""
+"<command>blaze-make</command> <optional><option>-cpqrIFPTV</option></optional> <optional><option>-b</option> <replaceable>directory</replaceable></optional> <optional><option>-d</option> <replaceable>directory</replaceable></optional>\n"
 "\n"
 "<command>blaze-make</command> <option>-h</option>|<option>-v</option>"
 msgstr ""
@@ -226,7 +228,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-make</command>\n"
+msgid ""
+"~]$ <command>blaze-make</command>\n"
 "Done."
 msgstr ""
 
@@ -237,7 +240,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-make -d ~/public_html</command>\n"
+msgid ""
+"~]$ <command>blaze-make -d ~/public_html</command>\n"
 "Done."
 msgstr ""
 
@@ -248,7 +252,8 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "~]$ <command>blaze-make -F</command>\n"
+msgid ""
+"~]$ <command>blaze-make -F</command>\n"
 "Done."
 msgstr ""
 
@@ -286,4 +291,3 @@ msgstr ""
 #, no-c-format
 msgid "<command>blaze-add</command> adds a blog post or a page to the &PRODUCT; repository."
 msgstr ""
-
