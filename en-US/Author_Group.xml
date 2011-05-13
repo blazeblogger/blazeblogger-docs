@@ -9,5 +9,13 @@
     <surname>Hradílek</surname>
     <email>jhradilek@gmail.com</email>
   </author>
+  <author>
+    <firstname>TRANSLATORS_NAME</firstname>
+    <surname>TRANSLATORS_SURNAME</surname>
+    <affiliation>
+      <shortaffil>LANGUAGE translation</shortaffil>
+    </affiliation>
+    <email>TRANSLATORS_EMAIL@example.com</email>
+  </author>
 </authorgroup>
 
